@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh's blog</title><link>https://hargup.github.io/</link><description></description><atom:link href="https://hargup.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 27 May 2014 01:40:22 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>GSoC 2014 with Sympy</title><link>https://hargup.github.io/posts/gsoc-2014-with-sympy.html</link><description>&lt;div&gt;&lt;p&gt;Hi, I'm Harsh Gupta a undergrad student at IIT Kharagpur, I'm a Google Summer
+of Code student with Sympy. It is a requirement from my organisation to write
+regular blog posts about the work and I've been procrastinating on the blog all
+along. Probably because of the fear of being "wrong" in front of
+hundred's of potential reader. But it is ridiculous to not to attempt because of the fact
+that you can fail. And it is important to let the world know about your work.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So, What is a Google Summer of Code?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Google Summer of Code is a program by Google to promote opensource development.
+In this program Google pays handsome stipends to students to work for various opensource
+organisations. In the application phase the students have to write proposals to
+the organisations describing the projects they want to do with the organisation
+and how do they fit for it. If the proposal is accepted the student is provided
+with a mentor and with the guidance of the mentor the student has to complete
+the project in the given timeline. You can look at my proposal &lt;!-- Link to the
+proposal --&gt;. I proposed to work on improving the current equation solvers in
+Sympy. My mentors for the Project are Matthew Rocklin &lt;!-- Link --&gt; and Sergey
+B Kiperchev &lt;!-- Link  --&gt; &lt;!-- verify the name --&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A word about Sympy.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Sympy &lt;!-- Link --&gt; is a pure python library for symbolic computation. Symbolic
+computation is similar to the maths you do by hands and it differs from
+numerical computations. More about Symbolic and Numerical computation in the
+next post. Sympy has been created by hundreds of contributors starting from 2006.
+It has a awesome developer
+community and we encourage outsiders to contribute and get their hands dirty with
+the code. What do you need to start contributing? Some python skills and little
+patience. Download the latest development code. &lt;!-- Link --&gt;
+Go through the development workflow &lt;!-- Link --&gt;. Find something to work on
+&lt;!-- Link --&gt;. Code it and send us a pull request. Happy Coding.&lt;/p&gt;&lt;/div&gt;</description><guid>https://hargup.github.io/posts/gsoc-2014-with-sympy.html</guid><pubDate>Mon, 26 May 2014 00:54:22 GMT</pubDate></item></channel></rss>
