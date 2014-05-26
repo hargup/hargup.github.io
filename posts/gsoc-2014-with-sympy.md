@@ -8,20 +8,15 @@
 .. type: text
 -->
 
-Hi, I'm Harsh Gupta a undergrad student at IIT Kharagpur, I'm a Google Summer
-of Code student with Sympy. It is a requirement from my organisation to write
-regular blog posts about the work and I've been procrastinating on the blog all
-along. Probably because of the fear of being "wrong" in front of
-hundred's of potential reader and yeah of course also laziness.
-But it is ridiculous to not to attempt because of the fact
-that you can fail. And it is important to let the world know about your work.
+Hi, I'm Harsh Gupta an undergrad student at IIT Kharagpur, I've been accepted
+this year for the Google Summer of Code program with Sympy.
 
 **So, What is a Google Summer of Code?**
 
 Google Summer of Code is a program by Google to promote opensource development.
 In this program Google pays handsome stipends to students to work for various opensource
 organisations. In the application phase the students have to write proposals to
-the organisations describing the projects they want to do with the organisation
+the organisations describing the projects they want to do
 and how do they fit for it. If the proposal is accepted the student is provided
 with a mentor and with the guidance of the mentor the student has to complete
 the project in the given timeline. You can look at my
@@ -34,9 +29,9 @@ and [Sergey B Kipirchev](https://github.com/skirpichev).
 
 [Sympy](http://sympy.org/) is a pure python library for symbolic computation. Symbolic
 computation is similar to the maths you do by hands and it differs from
-numerical computations. More about Symbolic and Numerical computation in the
-next post. Sympy has been created by hundreds of contributors starting from 2006.
-It has a awesome developer
+numerical computations. More about Symbolic and Numerical computation in
+some other post. Sympy has been created by hundreds of contributors starting from 2006.
+It has an awesome developer
 community and we encourage outsiders to contribute and get their hands dirty with
 the code. What do you need to start contributing? Some python skills and little
 patience. Download the [latest development code](https://github.com/sympy/sympy).
@@ -44,3 +39,6 @@ Go through the [development workflow](https://github.com/sympy/sympy/wiki/Develo
 Find something to work on from the
 [EasyToFix Issues](https://github.com/sympy/sympy/issues?labels=Easy+to+Fix&milestone=&page=1&state=open).
 Code it and send us a [pull request](https://help.github.com/articles/using-pull-requests). Happy Coding.
+
+I'll give a brief about the project aim and current state of work in the next post.
+I'm looking forward for a great summer with Sympy.
