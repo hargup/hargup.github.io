@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh's blog</title><link>https://hargup.github.io/</link><description></description><atom:link href="https://hargup.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 09 Jun 2014 08:44:51 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Week 1 and Week 2</title><link>https://hargup.github.io/blog/week-1-and-week-2.html</link><description>&lt;div&gt;&lt;p&gt;Hi, As I told you about in the previous post, My work for this summer will be
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh's blog</title><link>https://hargup.github.io/</link><description></description><atom:link href="https://hargup.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jun 2014 16:48:34 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>week 3</title><link>https://hargup.github.io/posts/week-3.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;Hi,
+At the start of this week I wrote a method to check if a given solution
+lies in the domain of the equation or not. The problem it targeted was equations like &lt;code&gt;(x
+- 1)/(1 + 1/(x - 1))&lt;/code&gt; though at &lt;code&gt;x = 1&lt;/code&gt; the eqution has value zero the point is
+not present in the domain of the given equation. Though there is some
+disagreement on the implementation, the idea was to traverse the expression
+tree and check if any of the subexpression goes unbounded for the given
+value.  Later I observed that caching was messing with the tests. Sometimes
+the tests passed and sometimes the same test suit run without any
+modification in the code failed. To do the check on the subexpressions I need
+to have a copy of the original equation before the solver performs any
+simplification on it. Being not sure of the mutability of the equations
+I used deepcopy to copy the original equation to a variable. Later in a
+meeting we figured out that deepcopy was messing with caching. Aaron told me
+that every expression in sympy is immutable so don't need to perform deepcopy
+on anything.&lt;/p&gt;
+&lt;p&gt;This week we will restart working on the sets to represent infinite solutions,
+Almost every equation in complex domain other than polynomials and rationals
+has infinitly many solutions. For example even the simple equation &lt;code&gt;exp(x) ==
+1&lt;/code&gt; has infinitely many solutions that is &lt;code&gt;i*2*n*pi&lt;/code&gt; where &lt;code&gt;n&lt;/code&gt; is an integer.
+To return these solutions we first need to have infrastructure to handle them.
+The old(current) solvers does it wrong, it implicity mixes up the complex and real
+domains, the answer it returns to &lt;code&gt;exp(x) == 1&lt;/code&gt; is only &lt;code&gt;[0]&lt;/code&gt;. Earlier I was also doing it wrong
+so I decided that I should have two seperate solvers for reals and complex
+instead of one. This also simplifed the code for the reals solvers to a large
+extent.&lt;/p&gt;&lt;/div&gt;</description><guid>https://hargup.github.io/posts/week-3.html</guid><pubDate>Mon, 09 Jun 2014 14:50:06 GMT</pubDate></item><item><title>Week 1 and Week 2</title><link>https://hargup.github.io/posts/week-1-and-week-2.html</link><description>&lt;div&gt;&lt;p&gt;Hi, As I told you about in the previous post, My work for this summer will be
 improving the current equation solvers of sympy. There are basically three
 thing I'll have to do.&lt;/p&gt;
 &lt;ol&gt;&lt;li&gt;Create a basic set infrastructure for solvers to return sets.&lt;/li&gt;
@@ -26,7 +51,7 @@ PR&lt;/a&gt;.  My aim for this
 week will be.&lt;/p&gt;
 &lt;ol&gt;&lt;li&gt;Completing the rational solvers&lt;/li&gt;
 &lt;li&gt;Getting the open PR for the sets merged.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;</description><category>sympy</category><category>GSoC</category><guid>https://hargup.github.io/blog/week-1-and-week-2.html</guid><pubDate>Mon, 02 Jun 2014 11:45:54 GMT</pubDate></item><item><title>GSoC 2014 with Sympy</title><link>https://hargup.github.io/blog/gsoc-2014-with-sympy.html</link><description>&lt;div&gt;&lt;p&gt;Hi, I'm Harsh Gupta an undergrad student at IIT Kharagpur, I've been accepted
+&lt;/ol&gt;&lt;/div&gt;</description><category>sympy</category><category>GSoC</category><guid>https://hargup.github.io/posts/week-1-and-week-2.html</guid><pubDate>Mon, 02 Jun 2014 11:45:54 GMT</pubDate></item><item><title>GSoC 2014 with Sympy</title><link>https://hargup.github.io/posts/gsoc-2014-with-sympy.html</link><description>&lt;div&gt;&lt;p&gt;Hi, I'm Harsh Gupta an undergrad student at IIT Kharagpur, I've been accepted
 this year for the Google Summer of Code program with Sympy.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;So, What is a Google Summer of Code?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Google Summer of Code is a program by Google to promote opensource development.
@@ -54,4 +79,4 @@ Find something to work on from the
 &lt;a href="https://github.com/sympy/sympy/issues?labels=Easy+to+Fix&amp;amp;milestone=&amp;amp;page=1&amp;amp;state=open"&gt;EasyToFix Issues&lt;/a&gt;.
 Code it and send us a &lt;a href="https://help.github.com/articles/using-pull-requests"&gt;pull request&lt;/a&gt;. Happy Coding.&lt;/p&gt;
 &lt;p&gt;I'll give a brief about the project aim and current state of work in the next post.
-I'm looking forward for a great summer with Sympy.&lt;/p&gt;&lt;/div&gt;</description><guid>https://hargup.github.io/blog/gsoc-2014-with-sympy.html</guid><pubDate>Sun, 25 May 2014 19:24:22 GMT</pubDate></item><item><title>Blah</title><link>https://hargup.github.io/blog/blah.html</link><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>https://hargup.github.io/blog/blah.html</guid><pubDate>Tue, 13 May 2014 20:25:35 GMT</pubDate></item></channel></rss>
+I'm looking forward for a great summer with Sympy.&lt;/p&gt;&lt;/div&gt;</description><guid>https://hargup.github.io/posts/gsoc-2014-with-sympy.html</guid><pubDate>Sun, 25 May 2014 19:24:22 GMT</pubDate></item></channel></rss>
