@@ -50,6 +50,68 @@
     
     
         <div class="postbox">
+        <h1><a href="posts/week-4.html">week 4</a></h1>
+        <p style="text-align:right"><big>
+             Posted: <time class="published" datetime="2014-06-18T11:29:01+05:30">2014-06-18 11:29</time></big></p>
+        <hr><div><h3>Intersections of Infinitely indexed sets</h3>
+<p>This week I implemented a method to do intersection of imagesets using the
+solutions of Diophantine equations at <a href="https://github.com/sympy/sympy/pull/7587">PR</a>.</p>
+<p>Say you have
+to find the intersection of sets <code>2*n| n in Integers</code> and <code>3*m| m in Integers</code>.
+The intersection of these sets is the set of the common values in the two sets,
+which in this case is equivalent to the values of <code>n</code> for which the equation <code>2*n - 3*m</code> has
+some integral solution in <code>m</code>. Or the values of <code>m</code> for which the <code>2*n - 3*m</code>
+has some integral solution in <code>n</code>. Diophantine equations are equations for
+which only integral solutions are searched for.
+The Diophantine module was written by
+<a href="https://github.com/thilinarmtb">Thilina</a> as his GSoC project last year.
+It gives the parametric solution for such equation.</p>
+<div class="code"><pre><span class="n">In</span> <span class="p">[</span><span class="mi">17</span><span class="p">]</span><span class="o">:</span> <span class="n">diophantine</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">m</span><span class="p">)</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">17</span><span class="p">]</span><span class="o">:</span> <span class="p">{(</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">t</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="n">t</span><span class="p">)}</span>
+</pre></div>
+
+
+<p>The Solution is sorted according to alphabetic order of the variables involved.
+So the value of LHS (<code>2*n</code>) for which the equation is <code>2*(-3*t)</code> that is <code>-6*t</code>
+and it is the intersection of the sets described above <code>-6*t| t in Integers</code>.
+Since <code>-6*t| t in Integers</code> is same as <code>6*t| t in Integers</code> I also wrote some
+simplification rules for the imagesets with Integers as baseset.</p>
+<h3>Sets for Invert Function</h3>
+<p>The sets module turned out to be better than I expected. I had a perception
+that substitutions doesn't work properly with sets and I have even opened an
+<a href="https://github.com/sympy/sympy/issues/7483">issue</a> for that but it turned out
+I hadn't looked closely enough. It worked well for the free variables and it
+didn't worked for the things it shouldn't work i.e., the bound variables in the
+imagesets.</p>
+<p>Using sets simplified the code. All the list comprehensions like this
+<code>[i.subs(symbol, symbol/g) for i in _invert(h, symbol)]</code> were converted to
+simple substitutions for sets and other sets operations.  <code>_invert(h,
+symbol).subs(symbol, symbol/g)</code></p>
+<p>Just by changing the output of invert to sets, then by adding the inverse of
+trigonometric function and writing the code to rewrite then as tan I was able
+to return all the solutions of the equations like <code>cos(x) + sin(x) == 0</code> it
+turned to out to easier than I thought. Using sets as output makes thinking
+about the mathematics of the solvers much more easier and the code comes
+out to be pretty natural. Now when we can see the results I can surely say
+there can be no better output for solvers than sets.</p>
+<p>This week I'll study LambertW function and then code additional techniques to
+solve real equations. I'll also try to figure out techniques to perform Union
+on infinitely indexed sets.</p></div>
+        
+            
+    
+        
+    <p>
+    
+        <a href="posts/week-4.html#disqus_thread" data-disqus-identifier="cache/posts/week-4.html">Comments</a>
+    
+
+    
+
+        
+        </p></div>
+    
+        <div class="postbox">
         <h1><a href="posts/week-3.html">week 3</a></h1>
         <p style="text-align:right"><big>
              Posted: <time class="published" datetime="2014-06-09T20:20:06+05:30">2014-06-09 20:20</time></big></p>

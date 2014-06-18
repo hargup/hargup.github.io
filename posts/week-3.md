@@ -1,10 +1,10 @@
-<!-- 
+<!--
 .. title: week 3
 .. slug: week-3
 .. date: 2014/06/09 20:20:06
-.. tags: 
-.. link: 
-.. description: 
+.. tags: sympy, GSoC
+.. link:
+.. description:
 .. type: text
 .. author: Harsh Gupta
 -->
