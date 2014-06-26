@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="Harsh Gupta"><title>week 5 | Harsh's blog</title><link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"></head><body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top" id="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="https://hargup.github.io/">
+            Harsh's blog
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav"><li><a href="../archive.html">Archives</a>
+            
+        
+    
+        
+            
+                </li><li><a href="../categories/index.html">Tags</a>
+            
+        
+    
+        
+            
+                </li><li><a href="../rss.xml">RSS</a>
+            
+        
+    
+
+                </li></ul><ul class="nav pull-right"><li>
+		
+			<a href="week-5.md" id="sourcelink">Source</a>
+		
+		</li>
+                
+                </ul></div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <article class="postbox post-text"><div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+    <h1 class="p-name" itemprop="headline name">week 5</h1>
+    
+
+    <hr><small>
+        Posted: <time class="published dt-published" datetime="2014-06-26T17:13:01+05:30" itemprop="datePublished">2014-06-26 17:13</time>
+        
+    
+
+		
+    
+          |  More posts about
+        
+            <a class="tag" href="../categories/mathjax.html"><span class="badge badge-info">mathjax</span></a>
+        
+            <a class="tag" href="../categories/sympy.html"><span class="badge badge-info">sympy</span></a>
+        
+    
+
+          |  
+		
+		
+			<a href="week-5.md" id="sourcelink">Source</a>
+		
+		
+    </small>
+    <hr><div class="e-content" itemprop="articleBody text">
+    <div><h3>Solving Trigonometric Function (part I)</h3>
+<p>This week I spend time on making trigonometric solvers work.
+Every trigonometric function can be written in terms of tan.</p>
+<p>$$ sin(x) = \frac{2*tan(x/2)}{tan^{2}(x/2)} $$</p>
+<p>$$ cos(x) = \frac{-tan^{2}(x/2) + 1}{tan^{2}(x/2) + 1} $$</p>
+<p>$$ cot(x) = \frac{1}{tan(x)} $$</p>
+<p>A basic technique to solve trigonometric equations can be rewriting the equation in terms of tan.
+And if the equation is made by addition, multiplication or quotient of
+trigonometric functions then the transformed equation is a equivalent to a rational
+function in tan. That equation can be solved by the usual polynomial
+solving techniques.</p>
+<p>Taking the example from the <a href="https://github.com/sympy/sympy/wiki/solvers">doc</a>
+\( cos(x) + sin(x) \) gets converted to
+\( \frac{-tan^{2}(x/2) + 2*tan(x/2) + 1}{tan^{2}(x/2) + 1} \)</p>
+<p>The solution of this equations is \( tan(x/2) = 1 +- sqrt(2) \).
+Since the inverse of tan is
+\( \left\{2 \pi n + \operatorname{atan}{\left (y \right )}\; |\; n \in \mathbb{Z}\right\} \)
+the solution of the given equation is
+$$ \left\{2 \pi n - \frac{\pi}{8}\; |\; n \in \mathbb{Z}\right\} \cup \left\{2 \pi n + \frac{3 \pi}{8}\; |\; n \in \mathbb{Z}\right\} $$</p>
+<p>Though it appears this technique should work universally for trigonometric
+equation it fails for even \( sin(x) = 0 \). From the table above
+\( sin(x) = \frac{2*tan(x/2)}{tan^{2}(x/2)} \)
+So, the \( sin(x) = 0 \) occurs at \( tan(x/2) = 0 \) which has solution
+\( \left\{2 \pi n\; |\; n \in \mathbb{Z}\right\} \)
+But the solution is \( \left\{ \pi n\; |\; n \in \mathbb{Z}\right\} \)
+. Why are we missing some solutions? The
+reason is \( sin(x) = 0 \) also occurs when denominator tends to \( \infty \),
+i.e.,
+the values where \( tan^{2}(x/2) + 1 \) tends to \( \infty \).
+We had encountered a similar problem for the solution of
+$$ \frac{1}{\left(\frac{x}{x + 1} + 3\right)^{2}} $$</p>
+<p>here \( x = -1 \) is not a point in the domain of the of the equation. The solver
+simplifies the equation to</p>
+<p>$$ \frac{\left(x + 1\right)^{2}}{\left(4 x + 3\right)^{2}} $$</p>
+<p>which extends the domain to include the point \( x = -1 \) which is also the
+solution to the transformed equation. There we wrote a sub procedure
+<code>domain_check</code> to verify if the returned solution is part of the domain of the
+original equation. The problem here is slightly different in the sense that
+transforming the equation decreases the domain of the solutions and not increase
+it.</p>
+<p>To find such solution we have allow \( \infty \) to be solution to equations, we
+will be working on extended reals instead of just reals.  I think this change
+will simplify a lot of things.</p>
+<p>Another thing which should be taken care off is that we cannot naively search
+for the values for which the denominator tends to infinity as for the same
+value numerator might also attain infinitely large value, we will have to
+conceder the limiting value of the equation.</p>
+<!--
+A technique followed by current solvers is.
+- Git Rebase
+- The tan technique
+- The problems with tan technique
+- the Exp technique
+- The problem with exp technique
+- Complex logarithms and multivalued(set valued) functions
+--></div>
+    </div>
+    
+    </div>
+    
+    
+        <ul class="pager"><li class="previous">
+                <a href="week-4.html" rel="prev">← Previous post</a>
+            </li>
+        
+        
+        </ul><div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="hargup",
+        
+            disqus_url="https://hargup.github.io/posts/week-5.html",
+        
+        disqus_title="week 5",
+        disqus_identifier="cache/posts/week-5.html",
+        disqus_config = function () {
+            this.language = "";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    
+
+    
+    
+    
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}
+        });
+        </script><script src="../assets/js/mathjax.js"></script></article></div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2014         <a href="mailto:gupta.harsh96@gmail.com">Harsh Gupta</a> - Powered by NIKOLA <a href="#" rel="nofollow"></a>         
+</div>
+
+    
+        
+            <script src="../assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul><li><a class="addthis_button_facebook"></a>
+</li><li><a class="addthis_button_google_plusone_share"></a>
+</li><li><a class="addthis_button_linkedin"></a>
+</li><li><a class="addthis_button_twitter"></a>
+</li></ul></div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+    $(window).on('hashchange', function(){
+        if (location.hash && $(location.hash)[0]) {
+            $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
+        }
+    });
+    $(document).ready(function(){$(window).trigger('hashchange')});
+    </script></body></html>
