@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh's blog (mathjax)</title><link>https://hargup.github.io/</link><description></description><atom:link href="https://hargup.github.io/categories/mathjax.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 26 Jun 2014 19:54:45 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>week 5</title><link>https://hargup.github.io/posts/week-5.html</link><description>&lt;div&gt;&lt;h3&gt;Solving Trigonometric Function (part I)&lt;/h3&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh's blog (mathjax)</title><link>https://hargup.github.io/</link><description></description><language>en</language><lastBuildDate>Wed, 02 Jul 2014 23:44:58 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>week 6</title><link>https://hargup.github.io/posts/week-6.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;h3&gt;Solving Trigonometric Function (part II)&lt;/h3&gt;
+&lt;p&gt;There is another technique to solve trigonometric function. Just as every
+trigonometric function can be written in term of \( \tan \) it can also be written
+in terms of \( \exp \).&lt;/p&gt;
+&lt;p&gt;$$ sin(x) = - \frac{i}{2} \left(e^{i x} - e^{- i x}\right) $$
+$$ cos(x) = \frac{e^{i x}}{2} + \frac{1}{2} e^{- i x} $$
+$$ tan(x) = \frac{i \left(- e^{i x} + e^{- i x}\right)}{e^{i x} + e^{- i x}} $$
+$$ cot(x) = \frac{i \left(e^{i x} + e^{- i x}\right)}{e^{i x} - e^{- i x}} $$&lt;/p&gt;
+&lt;p&gt;So, solving a trigonometric equation is equivalent to solving a rational
+function in \( \exp \). Note: here the \( \exp \) is in complex domain and
+equation \( exp(x) = y \) has solution
+\( \left\{i \left(2 \pi n + \arg{\left (y \right )}\right) + \log{\left (\left\lvert{y}\right\rvert \right )}\; |\; n \in \mathbb{Z}\right\} \)
+when solved for \( x \).&lt;/p&gt;</description><category>mathjax</category><category>sympy</category><guid>https://hargup.github.io/posts/week-6.html</guid><pubDate>Wed, 02 Jul 2014 08:43:01 GMT</pubDate></item><item><title>week 5</title><link>https://hargup.github.io/posts/week-5.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;h3&gt;Solving Trigonometric Function (part I)&lt;/h3&gt;
 &lt;p&gt;This week I spend time on making trigonometric solvers work.
 Every trigonometric function can be written in terms of tan.&lt;/p&gt;
 &lt;p&gt;$$ sin(x) = \frac{2*tan(x/2)}{tan^{2}(x/2)} $$&lt;/p&gt;
@@ -54,4 +66,4 @@ A technique followed by current solvers is.
 - the Exp technique
 - The problem with exp technique
 - Complex logarithms and multivalued(set valued) functions
---&gt;&lt;/div&gt;</description><category>mathjax</category><category>sympy</category><guid>https://hargup.github.io/posts/week-5.html</guid><pubDate>Thu, 26 Jun 2014 11:43:01 GMT</pubDate></item></channel></rss>
+--&gt;</description><category>mathjax</category><category>sympy</category><guid>https://hargup.github.io/posts/week-5.html</guid><pubDate>Thu, 26 Jun 2014 11:43:01 GMT</pubDate></item></channel></rss>

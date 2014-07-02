@@ -1,59 +1,122 @@
-<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content=""><meta name="author" content="Harsh Gupta"><title>Harsh's blog | Harsh's blog</title><link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml"></head><body>
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Harsh's blog | Harsh's blog</title>
+
+                <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+
+                <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+
+      <link rel="canonical" href="https://hargup.github.io/index.html">
+
+
+
+    
+        <!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]-->
+
+    
+
+
+</head>
+<body>
+
 <!-- Menubar -->
-<div class="navbar navbar-fixed-top" id="navbar">
-    <div class="navbar-inner">
-        <div class="container">
 
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-        </a>
+            </button>
+            <a class="navbar-brand" href="https://hargup.github.io/">
 
-            <a class="brand" href="https://hargup.github.io/">
-            Harsh's blog
+                <span id="blog-title">Harsh's blog</span>
             </a>
-            <!-- Everything you want hidden at 940px or less, place within here -->
-            <div class="nav-collapse collapse">
-                <ul class="nav"><li><a href="archive.html">Archives</a>
-            
-        
-    
-        
-            
-                </li><li><a href="categories/index.html">Tags</a>
-            
-        
-    
-        
-            
-                </li><li><a href="rss.xml">RSS</a>
-            
-        
-    
-
-                </li></ul><ul class="nav pull-right"><li>
-                
-                </ul></div>
         </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                                <li>
+<a href="archive.html">Archives</a>
+                </li>
+<li>
+<a href="categories/index.html">Tags</a>
+                </li>
+<li>
+<a href="rss.xml">RSS</a>
+
+                
+            </li>
+</ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                
+            </ul>
+        </div>
+<!-- /.navbar-collapse -->
     </div>
-</div>
+<!-- /.container -->
+</nav>
+
 <!-- End of Menubar -->
-<div class="container-fluid" id="container-fluid">
-    <!--Body content-->
-    <div class="row-fluid">
-    <div class="span2"></div>
-    <div class="span8">
-    
-    
-        <div class="postbox">
-        <h1><a href="posts/week-5.html">week 5</a></h1>
-        <p style="text-align:right"><big>
-             Posted: <time class="published" datetime="2014-06-26T17:13:01+05:30">2014-06-26 17:13</time></big></p>
-        <hr><div><h3>Solving Trigonometric Function (part I)</h3>
+
+<div class="container">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+<div class="postindex">
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/week-6.html" class="u-url">week 6</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
+            <p class="dateline"><a href="posts/week-6.html" rel="bookmark"><time class="published dt-published" datetime="2014-07-02T14:13:01+05:30" itemprop="datePublished" title="Publication date">2014-07-02 14:13</time></a></p>
+                <p class="commentline">            <a href="posts/week-6.html#disqus_thread" data-disqus-identifier="cache/posts/week-6.html">Comments</a>
+
+
+        </p>
+</div>
+    </header>
+    <div class="e-content entry-content">
+    <h3>Solving Trigonometric Function (part II)</h3>
+<p>There is another technique to solve trigonometric function. Just as every
+trigonometric function can be written in term of \( \tan \) it can also be written
+in terms of \( \exp \).</p>
+<p>$$ sin(x) = - \frac{i}{2} \left(e^{i x} - e^{- i x}\right) $$
+$$ cos(x) = \frac{e^{i x}}{2} + \frac{1}{2} e^{- i x} $$
+$$ tan(x) = \frac{i \left(- e^{i x} + e^{- i x}\right)}{e^{i x} + e^{- i x}} $$
+$$ cot(x) = \frac{i \left(e^{i x} + e^{- i x}\right)}{e^{i x} - e^{- i x}} $$</p>
+<p>So, solving a trigonometric equation is equivalent to solving a rational
+function in \( \exp \). Note: here the \( \exp \) is in complex domain and
+equation \( exp(x) = y \) has solution
+\( \left\{i \left(2 \pi n + \arg{\left (y \right )}\right) + \log{\left (\left\lvert{y}\right\rvert \right )}\; |\; n \in \mathbb{Z}\right\} \)
+when solved for \( x \).</p>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/week-5.html" class="u-url">week 5</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
+            <p class="dateline"><a href="posts/week-5.html" rel="bookmark"><time class="published dt-published" datetime="2014-06-26T17:13:01+05:30" itemprop="datePublished" title="Publication date">2014-06-26 17:13</time></a></p>
+                <p class="commentline">            <a href="posts/week-5.html#disqus_thread" data-disqus-identifier="cache/posts/week-5.html">Comments</a>
+
+
+        </p>
+</div>
+    </header>
+    <div class="e-content entry-content">
+    <h3>Solving Trigonometric Function (part I)</h3>
 <p>This week I spend time on making trigonometric solvers work.
 Every trigonometric function can be written in terms of tan.</p>
 <p>$$ sin(x) = \frac{2*tan(x/2)}{tan^{2}(x/2)} $$</p>
@@ -108,26 +171,23 @@ A technique followed by current solvers is.
 - the Exp technique
 - The problem with exp technique
 - Complex logarithms and multivalued(set valued) functions
---></div>
-        
-            
-    
-        
-    <p>
-    
-        <a href="posts/week-5.html#disqus_thread" data-disqus-identifier="cache/posts/week-5.html">Comments</a>
-    
+-->
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/week-4.html" class="u-url">week 4</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
+            <p class="dateline"><a href="posts/week-4.html" rel="bookmark"><time class="published dt-published" datetime="2014-06-18T11:29:01+05:30" itemprop="datePublished" title="Publication date">2014-06-18 11:29</time></a></p>
+                <p class="commentline">            <a href="posts/week-4.html#disqus_thread" data-disqus-identifier="cache/posts/week-4.html">Comments</a>
 
-    
 
-        
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/week-4.html">week 4</a></h1>
-        <p style="text-align:right"><big>
-             Posted: <time class="published" datetime="2014-06-18T11:29:01+05:30">2014-06-18 11:29</time></big></p>
-        <hr><div><h3>Intersections of Infinitely indexed sets</h3>
+        </p>
+</div>
+    </header>
+    <div class="e-content entry-content">
+    <h3>Intersections of Infinitely indexed sets</h3>
 <p>This week I implemented a method to do intersection of imagesets using the
 solutions of Diophantine equations at <a href="https://github.com/sympy/sympy/pull/7587">PR</a>.</p>
 <p>Say you have
@@ -140,9 +200,9 @@ which only integral solutions are searched for.
 The Diophantine module was written by
 <a href="https://github.com/thilinarmtb">Thilina</a> as his GSoC project last year.
 It gives the parametric solution for such equation.</p>
-<div class="code"><pre><span class="n">In</span> <span class="p">[</span><span class="mi">17</span><span class="p">]</span><span class="o">:</span> <span class="n">diophantine</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">m</span><span class="p">)</span>
+<pre class="code literal-block"><span class="n">In</span> <span class="p">[</span><span class="mi">17</span><span class="p">]</span><span class="o">:</span> <span class="n">diophantine</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">m</span><span class="p">)</span>
 <span class="n">Out</span><span class="p">[</span><span class="mi">17</span><span class="p">]</span><span class="o">:</span> <span class="p">{(</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">t</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="n">t</span><span class="p">)}</span>
-</pre></div>
+</pre>
 
 
 <p>The Solution is sorted according to alphabetic order of the variables involved.
@@ -170,26 +230,23 @@ out to be pretty natural. Now when we can see the results I can surely say
 there can be no better output for solvers than sets.</p>
 <p>This week I'll study LambertW function and then code additional techniques to
 solve real equations. I'll also try to figure out techniques to perform Union
-on infinitely indexed sets.</p></div>
-        
-            
-    
-        
-    <p>
-    
-        <a href="posts/week-4.html#disqus_thread" data-disqus-identifier="cache/posts/week-4.html">Comments</a>
-    
+on infinitely indexed sets.</p>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/week-3.html" class="u-url">week 3</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
+            <p class="dateline"><a href="posts/week-3.html" rel="bookmark"><time class="published dt-published" datetime="2014-06-09T20:20:06+05:30" itemprop="datePublished" title="Publication date">2014-06-09 20:20</time></a></p>
+                <p class="commentline">            <a href="posts/week-3.html#disqus_thread" data-disqus-identifier="cache/posts/week-3.html">Comments</a>
 
-    
 
-        
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/week-3.html">week 3</a></h1>
-        <p style="text-align:right"><big>
-             Posted: <time class="published" datetime="2014-06-09T20:20:06+05:30">2014-06-09 20:20</time></big></p>
-        <hr><div><p>Hi,
+        </p>
+</div>
+    </header>
+    <div class="e-content entry-content">
+    <p>Hi,
 At the start of this week I wrote a method to check if a given solution
 lies in the domain of the equation or not. The problem it targeted was equations like <code>(x
 - 1)/(1 + 1/(x - 1))</code> though at <code>x = 1</code> the eqution has value zero the point is
@@ -214,34 +271,33 @@ The old(current) solvers does it wrong, it implicity mixes up the complex and re
 domains, the answer it returns to <code>exp(x) == 1</code> is only <code>[0]</code>. Earlier I was also doing it wrong
 so I decided that I should have two seperate solvers for reals and complex
 instead of one. This also simplifed the code for the reals solvers to a large
-extent.</p></div>
-        
-            
-    
-        
-    <p>
-    
-        <a href="posts/week-3.html#disqus_thread" data-disqus-identifier="cache/posts/week-3.html">Comments</a>
-    
+extent.</p>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/week-1-and-week-2.html" class="u-url">Week 1 and Week 2</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
+            <p class="dateline"><a href="posts/week-1-and-week-2.html" rel="bookmark"><time class="published dt-published" datetime="2014-06-02T17:15:54+05:30" itemprop="datePublished" title="Publication date">2014-06-02 17:15</time></a></p>
+                <p class="commentline">            <a href="posts/week-1-and-week-2.html#disqus_thread" data-disqus-identifier="cache/posts/week-1-and-week-2.html">Comments</a>
 
-    
 
-        
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/week-1-and-week-2.html">Week 1 and Week 2</a></h1>
-        <p style="text-align:right"><big>
-             Posted: <time class="published" datetime="2014-06-02T17:15:54+05:30">2014-06-02 17:15</time></big></p>
-        <hr><div><p>Hi, As I told you about in the previous post, My work for this summer will be
+        </p>
+</div>
+    </header>
+    <div class="e-content entry-content">
+    <p>Hi, As I told you about in the previous post, My work for this summer will be
 improving the current equation solvers of sympy. There are basically three
 thing I'll have to do.</p>
-<ol><li>Create a basic set infrastructure for solvers to return sets.</li>
+<ol>
+<li>Create a basic set infrastructure for solvers to return sets.</li>
 <li>Rewrite the current solvers to be clean and robust.</li>
 <li>On the top of 1 and 2 write new solvers and function, they will returning
    and handling all the solutions of equations like <code>sin(x) == 0</code> and a general
    singularity finder.</li>
-</ol><p>You can look at the details in my
+</ol>
+<p>You can look at the details in my
 <a href="https://github.com/sympy/sympy/wiki/GSoC-2014-Application-Harsh-Gupta:-Solvers">proposal</a></p>
 <p>A started working on the sets module in the community bonding period, basically
 writing a set difference class at <a href="https://github.com/sympy/sympy/pull/7462">this
@@ -258,28 +314,26 @@ do all them.  In a meeting with Matthew and Sergey we discussed that it would
 <p>I've started working on the univariate solvers <a href="https://github.com/sympy/sympy/pull/7523">at
 PR</a>.  My aim for this
 week will be.</p>
-<ol><li>Completing the rational solvers</li>
+<ol>
+<li>Completing the rational solvers</li>
 <li>Getting the open PR for the sets merged.</li>
-</ol></div>
-        
-            
-    
-        
-    <p>
-    
-        <a href="posts/week-1-and-week-2.html#disqus_thread" data-disqus-identifier="cache/posts/week-1-and-week-2.html">Comments</a>
-    
+</ol>
+    </div>
+    </article>
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/gsoc-2014-with-sympy.html" class="u-url">GSoC 2014 with Sympy</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
+            <p class="dateline"><a href="posts/gsoc-2014-with-sympy.html" rel="bookmark"><time class="published dt-published" datetime="2014-05-26T00:54:22+05:30" itemprop="datePublished" title="Publication date">2014-05-26 00:54</time></a></p>
+                <p class="commentline">            <a href="posts/gsoc-2014-with-sympy.html#disqus_thread" data-disqus-identifier="cache/posts/gsoc-2014-with-sympy.html">Comments</a>
 
-    
 
-        
-        </p></div>
-    
-        <div class="postbox">
-        <h1><a href="posts/gsoc-2014-with-sympy.html">GSoC 2014 with Sympy</a></h1>
-        <p style="text-align:right"><big>
-             Posted: <time class="published" datetime="2014-05-26T00:54:22+05:30">2014-05-26 00:54</time></big></p>
-        <hr><div><p>Hi, I'm Harsh Gupta an undergrad student at IIT Kharagpur, I've been accepted
+        </p>
+</div>
+    </header>
+    <div class="e-content entry-content">
+    <p>Hi, I'm Harsh Gupta an undergrad student at IIT Kharagpur, I've been accepted
 this year for the Google Summer of Code program with Sympy.</p>
 <p><strong>So, What is a Google Summer of Code?</strong></p>
 <p>Google Summer of Code is a program by Google to promote opensource development.
@@ -307,54 +361,50 @@ Find something to work on from the
 <a href="https://github.com/sympy/sympy/issues?labels=Easy+to+Fix&amp;milestone=&amp;page=1&amp;state=open">EasyToFix Issues</a>.
 Code it and send us a <a href="https://help.github.com/articles/using-pull-requests">pull request</a>. Happy Coding.</p>
 <p>I'll give a brief about the project aim and current state of work in the next post.
-I'm looking forward for a great summer with Sympy.</p></div>
-        
-            
-    
-        
-    <p>
-    
-        <a href="posts/gsoc-2014-with-sympy.html#disqus_thread" data-disqus-identifier="cache/posts/gsoc-2014-with-sympy.html">Comments</a>
-    
-
-    
-
-        
-        </p></div>
-    
-    
-    
-
-    
-    
-        
-    
-       <script>var disqus_shortname="hargup";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-          tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}
-        });
-        </script><script src="assets/js/mathjax.js"></script></div>
+I'm looking forward for a great summer with Sympy.</p>
     </div>
-    <!--End of body content-->
-</div>
-<div class="footerbox">
-    Contents © 2014         <a href="mailto:gupta.harsh96@gmail.com">Harsh Gupta</a> - Powered by NIKOLA <a href="#" rel="nofollow"></a>         
+    </article>
 </div>
 
+               <script>var disqus_shortname="hargup";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+
+
+        </div>
+        <!--End of body content-->
+
+        <footer>
+            Contents © 2014         <a href="mailto:gupta.harsh96@gmail.com">Harsh Gupta</a> - Powered by NIKOLA <a href="#" rel="nofollow"></a>         
+            
+        </footer>
+    </div>
+</div>
+
+            <script src="assets/js/all-nocdn.js"></script>
     
-        
-            <script src="assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
 <a class="addthis_button_more">Share</a>
-<ul><li><a class="addthis_button_facebook"></a>
-</li><li><a class="addthis_button_google_plusone_share"></a>
-</li><li><a class="addthis_button_linkedin"></a>
-</li><li><a class="addthis_button_twitter"></a>
-</li></ul></div>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
-    $(window).on('hashchange', function(){
-        if (location.hash && $(location.hash)[0]) {
-            $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
-        }
-    });
-    $(document).ready(function(){$(window).trigger('hashchange')});
-    </script></body></html>
+<ul>
+<li>
+<a class="addthis_button_facebook"></a>
+</li>
+<li>
+<a class="addthis_button_google_plusone_share"></a>
+</li>
+<li>
+<a class="addthis_button_linkedin"></a>
+</li>
+<li>
+<a class="addthis_button_twitter"></a>
+</li>
+</ul>
+</div>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+
+
+</body>
+</html>

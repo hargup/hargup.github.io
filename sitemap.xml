@@ -5,31 +5,87 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
+  <loc>https://hargup.github.io/2014/index.html</loc>
+  <lastmod>2014-07-02</lastmod>
+ </url>
+ <url>
   <loc>https://hargup.github.io/archive.html</loc>
-  <lastmod>2014-05-14</lastmod>
+  <lastmod>2014-07-02</lastmod>
+ </url>
+ <url>
+  <loc>https://hargup.github.io/blog/blah.html</loc>
+  <lastmod>2014-06-09</lastmod>
+ </url>
+ <url>
+  <loc>https://hargup.github.io/blog/gsoc-2014-with-sympy.html</loc>
+  <lastmod>2014-06-09</lastmod>
+ </url>
+ <url>
+  <loc>https://hargup.github.io/blog/week-1-and-week-2.html</loc>
+  <lastmod>2014-06-09</lastmod>
+ </url>
+ <url>
+  <loc>https://hargup.github.io/categories/gsoc.html</loc>
+  <lastmod>2014-07-02</lastmod>
  </url>
  <url>
   <loc>https://hargup.github.io/categories/index.html</loc>
-  <lastmod>2014-05-14</lastmod>
+  <lastmod>2014-07-02</lastmod>
+ </url>
+ <url>
+  <loc>https://hargup.github.io/categories/mathjax.html</loc>
+  <lastmod>2014-07-02</lastmod>
+ </url>
+ <url>
+  <loc>https://hargup.github.io/categories/sympy.html</loc>
+  <lastmod>2014-07-02</lastmod>
+ </url>
+ <url>
+  <loc>https://hargup.github.io/categories/testing.html</loc>
+  <lastmod>2014-06-02</lastmod>
  </url>
  <url>
   <loc>https://hargup.github.io/galleries/index.html</loc>
-  <lastmod>2014-05-14</lastmod>
- </url>
- <url>
-  <loc>https://hargup.github.io/galleries/rss.xml</loc>
-  <lastmod>2014-05-14</lastmod>
+  <lastmod>2014-07-02</lastmod>
  </url>
  <url>
   <loc>https://hargup.github.io/index.html</loc>
-  <lastmod>2014-05-14</lastmod>
+  <lastmod>2014-07-02</lastmod>
  </url>
  <url>
   <loc>https://hargup.github.io/listings/index.html</loc>
-  <lastmod>2014-05-14</lastmod>
+  <lastmod>2014-07-02</lastmod>
  </url>
  <url>
-  <loc>https://hargup.github.io/rss.xml</loc>
-  <lastmod>2014-05-14</lastmod>
+  <loc>https://hargup.github.io/posts/gsoc-2014-with-sympy.html</loc>
+  <lastmod>2014-07-02</lastmod>
+ </url>
+ <url>
+  <loc>https://hargup.github.io/posts/week-1-and-week-2.html</loc>
+  <lastmod>2014-07-02</lastmod>
+ </url>
+ <url>
+  <loc>https://hargup.github.io/posts/week-3.html</loc>
+  <lastmod>2014-07-02</lastmod>
+ </url>
+ <url>
+  <loc>https://hargup.github.io/posts/week-4.html</loc>
+  <lastmod>2014-07-02</lastmod>
+ </url>
+ <url>
+  <loc>https://hargup.github.io/posts/week-5.html</loc>
+  <lastmod>2014-07-02</lastmod>
+ </url>
+ <url>
+  <loc>https://hargup.github.io/posts/week-6.html</loc>
+  <lastmod>2014-07-02</lastmod>
+ </url>
+ <url>
+  <loc>https://hargup.github.io/posts/what-is-symbolic-computation.html</loc>
+  <lastmod>2014-05-27</lastmod>
+ </url>
+ <url>
+  <loc>https://hargup.github.io/tipue_search.html</loc>
+  <lastmod>2014-05-01</lastmod>
  </url>
 </urlset>
