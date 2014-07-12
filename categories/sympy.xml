@@ -1,5 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh's blog (sympy)</title><link>https://hargup.github.io/</link><description></description><language>en</language><lastBuildDate>Wed, 02 Jul 2014 23:44:58 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>week 6</title><link>https://hargup.github.io/posts/week-6.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;h3&gt;Solving Trigonometric Function (part II)&lt;/h3&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh's blog (sympy)</title><link>https://hargup.github.io/</link><description></description><language>en</language><lastBuildDate>Sat, 12 Jul 2014 19:47:24 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>week 7</title><link>https://hargup.github.io/posts/week-7.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;h2&gt;Week 7, 8&lt;/h2&gt;
+&lt;h3&gt;Fu Simplification&lt;/h3&gt;
+&lt;p&gt;In the early part of the week 7 was thinking and working on design decisions.
+I want the code to be very modular so that it could be easily extended by
+people other than me. This came up in a meeting with Matthew and I want the
+solvers to be like the Fu simplification explained by Matthew in this &lt;a href="https://www.youtube.com/watch?v=QldxygVVj-s&amp;amp;list=PLYx7XA2nY5GfuhCvStxgbynFNrxr3VFog&amp;amp;index=20"&gt;Scipy
+Talk&lt;/a&gt;.
+The idea was that we can see solving an equation as series of transformations.
+If we have a lot of small transformations such that the input type is same as
+output type, and some notion of what makes a "better" output we can search though
+the list of transformations running one on top of other. I also posted about
+it on the &lt;a href="https://groups.google.com/forum/#!topic/sympy/42GdMJ9ssyM"&gt;mailing
+list&lt;/a&gt; which brought
+out some flaws in the preliminary design. The idea is pretty crude in the
+current stage and I'll have to look deeper into it, but not now.&lt;/p&gt;
+&lt;p&gt;I also discussed about the implementing a pattern dispached based solver
+suggested by &lt;a href="https://groups.google.com/d/msg/sympy/moSEFHop0n4/e2hBKRQ9WP4J"&gt;F.B&lt;/a&gt;
+on the mailing list. But we decided that it will be better if we finish the
+equation solver by the current technique first.&lt;/p&gt;
+&lt;h3&gt;Intersection with S.Reals&lt;/h3&gt;
+&lt;p&gt;I decribed in the last post that one way to solve trigonometric equation is
+rewriting them in terms of \( exp \). But that is \( exp \) in the complex domain and
+the solution of \(exp(x) = a \) is \( \left\{i \left(2 \pi
+n + \arg{\left (a \right )}\right) + \log{\left
+(\left\lvert{a}\right\rvert \right )}\; |\; n \in \mathbb{Z}\right\}
+\). Hence we have to filter out real solutions from the obtained solutions.
+The filering is equivalent to the intersection of the solutions with the \( \mathbb{R}
+\) set. Suppose \( g(x) \) and \( h(x) \) are real valued functions and we
+have to perform
+$$ \mathbb{R} \cap \left\{g{\left (n \right )} + i h{\left (n \right )}\; |\; n \in \mathbb{Z}\right\} $$
+then the answer will be simply
+$$ \left\{g{\left (n \right )}\; |\; n \in \left\{h{\left (n \right )} = 0\; |\; n \in \mathbb{Z}\right\}\right\} $$&lt;/p&gt;
+&lt;p&gt;Separate the real and imaginary parts and equate the imaginary to zero
+but the problem was with the assumptions on the symbols. For example while
+separating real and imaginary parts of the equation.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;In&lt;/span&gt;&lt;span class="p"&gt;[]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;I&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="n"&gt;as_imag_real&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;Out&lt;/span&gt;&lt;span class="p"&gt;[]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;im&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;re&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;im&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;That is because &lt;code&gt;n&lt;/code&gt; is by default complex, even in the &lt;code&gt;Lambda(..).expr&lt;/code&gt;.
+I wrote some code to decide the
+assumption on the variable of imageset from the baseset. See &lt;a href="https://github.com/sympy/sympy/pull/7694"&gt;PR
+7694&lt;/a&gt;.
+There was another issue that needs to be resolved
+&lt;code&gt;S.Integers.intersect(S.Reals)&lt;/code&gt; doesn't evaluate to &lt;code&gt;S.Reals&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;LambertW and Multivariate Solvers&lt;/h3&gt;
+&lt;p&gt;The method to solve equation containing exp and log function is using the
+LambertW function. LambertW function is the inverse of \( x \exp(x) \).  The
+function is multivariate function both for the real and complex
+domains and Sympy has only one branch implemented. This also leads us to loss
+of solutions. Aaron gave an example
+&lt;a href="https://github.com/sympy/sympy/pull/2723#issuecomment-33760912"&gt;here&lt;/a&gt;. But I'm
+pretty unfamiliar with solving by LambertW and LambertW itself and it will take
+me some time to build an understanding of them.
+As an ad hoc solution I'm using the code in the &lt;code&gt;_tsolve&lt;/code&gt; in the
+&lt;code&gt;solvers.solvers&lt;/code&gt; module to do at least what the current solvers can do.&lt;/p&gt;
+&lt;p&gt;When the importing of &lt;code&gt;_tsolve&lt;/code&gt; method was done. I started working on the
+multivariate solvers. Here's how the current multivariate solvers work:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solving single multivariate equation&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;count the number of free symbols in f - no of symbols for
+equation. If the equation has exactly one symbol which is not asked for then
+use &lt;code&gt;solve_undetermined_coeffs&lt;/code&gt;, the &lt;code&gt;solve_undetermined_coeffs&lt;/code&gt; find the
+values of the coefficient in a univariate polynomial such that it always
+equates to zero.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then for each symbol &lt;code&gt;solve_linear&lt;/code&gt; is tried which tries to find a solution
+of that symbol in terms of constants or other symbols, the docstring says&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;No&lt;/span&gt; &lt;span class="n"&gt;simplification&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;done&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="n"&gt;other&lt;/span&gt; &lt;span class="n"&gt;than&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;mul&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;True&lt;/span&gt; &lt;span class="n"&gt;expansion&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="n"&gt;so&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;solution&lt;/span&gt; &lt;span class="n"&gt;will&lt;/span&gt; &lt;span class="n"&gt;correspond&lt;/span&gt; &lt;span class="n"&gt;strictly&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;unique&lt;/span&gt; &lt;span class="n"&gt;solution&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So we don't have to worry about loosing a solution. For every symbol it is
+checked if doesn't depend on previously solved symbols, if it does that
+solution is discarded.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;For the symbols for which the above method failed, the &lt;code&gt;_solve&lt;/code&gt; function is
+called for the equation for that variable and as above if the solution contains
+a variable already solved then that solution is discarded.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;System of equations in multiple variables&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Try to convert the system of equations into a system of polynomial equation
+  in variables&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If all the equations are linear solve then using &lt;code&gt;solve_linear_system&lt;/code&gt;, check
+  the result and return it. If asked for particular solution solve using
+  &lt;code&gt;minsolve_linear_system&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the number of symbols is same as the size of the system solve the
+  polynomial system using &lt;code&gt;solve_poly_system&lt;/code&gt;. In case the system is
+  over-determined All the free symbols intersection the variables asked for are
+  calculated. Then for every subset of such symbols of length equal to that of
+  the system, an attempt to solve the equations by &lt;code&gt;solve_poly_system&lt;/code&gt; is made.
+  Here if any of the solution depends on previously solved system the solution
+  is discarded.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the case there are failed equations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For every know result:&lt;/li&gt;
+&lt;li&gt;Substitute every thing into the failed equation and see if the equation turns to zero.
+  if it does accept the result otherwise put it in the bad_results group.&lt;/li&gt;
+&lt;li&gt;Then try to solve try to solve the failed equation using &lt;code&gt;solve&lt;/code&gt; for each symbol.&lt;/li&gt;
+&lt;li&gt;If that solution depends on any other previously solved symbols
+  discard it.&lt;/li&gt;
+&lt;li&gt;If it doesn't satisfy other equations, discard it.&lt;/li&gt;
+&lt;li&gt;Check if the solution doesn't set any denominator to zero, if it does
+  discard that solution.&lt;/li&gt;
+&lt;li&gt;If it satisfies the above conditions substitute this value in know
+  solutions and add it as a new result.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description><category>mathjax</category><category>sympy</category><guid>https://hargup.github.io/posts/week-7.html</guid><pubDate>Sat, 12 Jul 2014 14:00:01 GMT</pubDate></item><item><title>week 6</title><link>https://hargup.github.io/posts/week-6.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;h3&gt;Solving Trigonometric Function (part II)&lt;/h3&gt;
 &lt;p&gt;There is another technique to solve trigonometric function. Just as every
 trigonometric function can be written in term of \( \tan \) it can also be written
 in terms of \( \exp \).&lt;/p&gt;
