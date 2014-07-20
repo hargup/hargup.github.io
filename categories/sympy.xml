@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh's blog (sympy)</title><link>https://hargup.github.io/</link><description></description><language>en</language><lastBuildDate>Sat, 12 Jul 2014 19:47:24 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>week 7</title><link>https://hargup.github.io/posts/week-7.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;h2&gt;Week 7, 8&lt;/h2&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh's blog (sympy)</title><link>https://hargup.github.io/</link><description></description><language>en</language><lastBuildDate>Mon, 21 Jul 2014 00:20:30 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>week 9</title><link>https://hargup.github.io/posts/week-9.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;This week I moved back to college and my classes have restarted. This week
+I worked on a PR to allow infinitely indexed &lt;code&gt;Range&lt;/code&gt;. See
+https://github.com/sympy/sympy/pull/7741. While doing this PR I discovered
+that you cannot monkey patch &lt;code&gt;object&lt;/code&gt; to assign some attribute. And I want to
+mention that Sergey(one of my mentors) is damn good reviewer.&lt;/p&gt;</description><category>sympy</category><guid>https://hargup.github.io/posts/week-9.html</guid><pubDate>Sat, 19 Jul 2014 18:50:01 GMT</pubDate></item><item><title>week 7</title><link>https://hargup.github.io/posts/week-7.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;h2&gt;Week 7, 8&lt;/h2&gt;
 &lt;h3&gt;Fu Simplification&lt;/h3&gt;
 &lt;p&gt;In the early part of the week 7 was thinking and working on design decisions.
 I want the code to be very modular so that it could be easily extended by
