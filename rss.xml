@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh's blog</title><link>https://hargup.github.io/</link><description></description><language>en</language><lastBuildDate>Mon, 21 Jul 2014 00:20:30 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>week 9</title><link>https://hargup.github.io/posts/week-9.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;This week I moved back to college and my classes have restarted. This week
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh's blog</title><link>https://hargup.github.io/</link><description></description><language>en</language><lastBuildDate>Wed, 30 Jul 2014 00:38:53 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>week 10: Radical equations</title><link>https://hargup.github.io/posts/week-10.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;This week I worked on the solvers for the equations with radicals.
+Suppose you have to solve&lt;/p&gt;
+&lt;p&gt;$$ \sqrt{x} + x - 2 = 0 $$.&lt;/p&gt;
+&lt;p&gt;then you have to move the radical to the right hand side of the equation.&lt;/p&gt;
+&lt;p&gt;$$ x - 2 = - \sqrt{x} $$&lt;/p&gt;
+&lt;p&gt;and then square at both sides&lt;/p&gt;
+&lt;p&gt;$$ x^2 - 4x + 4 = x $$&lt;/p&gt;
+&lt;p&gt;Now the equation is a polynomial in \( x \) can be solved with usual
+polynomial solving methods. Note that squaring both sides produce some extra
+solutions and we will have to check all the solutions obtained against the
+original equation.  If there are more than one radicals involved we may
+have to apply the method recursively. For example in solving
+\( \sqrt{2x + 9} - \sqrt{x + 1} - \sqrt{x + 4} = 0 \)
+the method will recurse twice.&lt;/p&gt;
+&lt;p&gt;To implement the method I tried a pattern matching approach.
+The
+squaring part is easy the tricky part is identifying which part to move to
+the right hand side. First I tried to match the expression with the form
+&lt;code&gt;sqrt(p) + q&lt;/code&gt; but it failed even for case like &lt;code&gt;4*sqrt(x) + x - 2&lt;/code&gt; because no
+pattern matched to it. I had to use &lt;code&gt;a*sqrt(p) + q&lt;/code&gt; with the condition that the
+expression matched to a shouldn't be zero. Now I can simply move the expression
+matched with &lt;code&gt;p&lt;/code&gt; and terms multiplicated with it to the RHS and square both
+the sides.&lt;/p&gt;
+&lt;p&gt;Notice that this method for solving sqrt equation can work with any radical
+equation, if it were cube root instead of sqrt I just had to cube both the
+sides. OK so how do I mathch that expression? I tried to pattern matching with
+assumptions on the wild symbols but it doesn't work.  I tried to match with
+somthing like &lt;code&gt;a*p**Rational(1, m) + q&lt;/code&gt; but this also didn't work out because
+Rational(1, m) raises TypeError no matter what the assumption on the variable
+are.  There is a proposal for a new pattern matcher, I have not closely checked
+the details but it will be able to work with assumption. You can see the
+proposal on the wiki
+&lt;a href="https://github.com/sympy/sympy/wiki/Proposal-for-a-new-pattern-matching"&gt;here&lt;/a&gt;
+and if it is implemented then things will be good but I can't wait for it.
+I had no other option to check term by term for rational power. Here's the
+implementation&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span class="n"&gt;def&lt;/span&gt; &lt;span class="n"&gt;_has_rational_power&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;expr&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;q&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Wild&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sc"&gt;'a'&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;Wild&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sc"&gt;'p'&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;Wild&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sc"&gt;'q'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;pattern_match&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;expr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;match&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;q&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;pattern_match&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;None&lt;/span&gt; &lt;span class="n"&gt;or&lt;/span&gt; &lt;span class="n"&gt;pattern_match&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Zero&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;False&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;None&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;elif&lt;/span&gt; &lt;span class="n"&gt;isinstance&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pattern_match&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;q&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;Rational&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;not&lt;/span&gt; &lt;span class="n"&gt;pattern_match&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;q&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="n"&gt;q&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;One&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;True&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;pattern_match&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;q&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="n"&gt;q&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;not&lt;/span&gt; &lt;span class="n"&gt;isinstance&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pattern_match&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;Pow&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;or&lt;/span&gt; &lt;span class="n"&gt;isinstance&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pattern_match&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;Mul&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;False&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;None&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nl"&gt;else:&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;_has_rational_power&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;pattern_match&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/pre&gt;</description><category>sympy</category><guid>https://hargup.github.io/posts/week-10.html</guid><pubDate>Tue, 29 Jul 2014 12:09:01 GMT</pubDate></item><item><title>week 9</title><link>https://hargup.github.io/posts/week-9.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;This week I moved back to college and my classes have restarted. This week
 I worked on a PR to allow infinitely indexed &lt;code&gt;Range&lt;/code&gt;. See
 https://github.com/sympy/sympy/pull/7741. While doing this PR I discovered
 that you cannot monkey patch &lt;code&gt;object&lt;/code&gt; to assign some attribute. And I want to
