@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh's blog (sympy)</title><link>https://hargup.github.io/</link><description></description><language>en</language><lastBuildDate>Wed, 30 Jul 2014 00:38:53 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>week 10: Radical equations</title><link>https://hargup.github.io/posts/week-10.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;This week I worked on the solvers for the equations with radicals.
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh's blog (sympy)</title><link>https://hargup.github.io/</link><description></description><language>en</language><lastBuildDate>Sun, 10 Aug 2014 23:03:09 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Week 11 and Week 12: Wrapping up the project</title><link>https://hargup.github.io/posts/week-11.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;The GSoC is about to end. We have the suggested deadline tomorrow and the firm
+deadline next week. We are wrapping up the project now, cleaning up the code,
+writing the documentation and turning the project into a usable state.
+Since the new solvers cannot be called compelete I have to make sure that the
+next person working on it can pick it up easily. I plan come up with a post with
+the summary of the work that was done, that challenges we faced and thing that
+needs to done and how can they be tackled.&lt;/p&gt;</description><category>sympy</category><guid>https://hargup.github.io/posts/week-11.html</guid><pubDate>Sun, 10 Aug 2014 12:09:01 GMT</pubDate></item><item><title>week 10: Radical equations</title><link>https://hargup.github.io/posts/week-10.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;This week I worked on the solvers for the equations with radicals.
 Suppose you have to solve&lt;/p&gt;
 &lt;p&gt;$$ \sqrt{x} + x - 2 = 0 $$.&lt;/p&gt;
 &lt;p&gt;then you have to move the radical to the right hand side of the equation.&lt;/p&gt;
