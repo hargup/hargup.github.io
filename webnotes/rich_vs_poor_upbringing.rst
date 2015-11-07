@@ -1,6 +1,7 @@
-url: http://digitalsynopsis.com/inspiration/privileged-kids-on-a-plate-pencilsword-toby-morris/
-source: Facebook Feed
-title: This Brilliant Comic Strip On Rich Vs Poor Upbringing Will Humble You
+.. source: Facebook Feed
+.. url: http://digitalsynopsis.com/inspiration/privileged-kids-on-a-plate-pencilsword-toby-morris/
+.. title: This Brilliant Comic Strip On Rich Vs Poor Upbringing Will Humble You
+.. date: 2015-11-07
 
 
 The author two children one had rich parents and other had poor parents, for

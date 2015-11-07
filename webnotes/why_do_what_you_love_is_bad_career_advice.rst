@@ -1,5 +1,6 @@
-Title: Why “do what you love” is bad career advice
-url: http://qz.com/259190/why-do-what-you-love-is-bad-career-advice/
+.. title: Why “do what you love” is bad career advice?
+.. url: http://qz.com/259190/why-do-what-you-love-is-bad-career-advice/
+.. date: 2015-11-01
 
 
 Main Points
@@ -11,4 +12,3 @@ Main Points
 * If whatever you do doesn't pay your bill you end up hating it.
 * You don't get to hear the failure stories of the advice "Do what you love".
 * You can love more than one career path.
-

@@ -1,6 +1,7 @@
-title: Two Years without Facebook
-url: http://www.lguruprasad.in/blog/2013/11/19/two-years-without-facebook/
-date: 2015-11-07
+.. title: Two Years without Facebook
+.. url: http://www.lguruprasad.in/blog/2013/11/19/two-years-without-facebook/
+.. date: 2015-11-07
+.. source: Stumbled upon his blog through github
 
 I stumbled upon this blog post by Guru Prasad, where he describes spending two
 years without Facebook. He did it for privacy reasons and because Facebook is

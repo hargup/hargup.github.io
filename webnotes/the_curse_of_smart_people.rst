@@ -1,6 +1,6 @@
-title: The Curse of Smart People
-url: http://apenwarr.ca/log/?m=201407
-date: 2015-11-05
+.. title: The Curse of Smart People
+.. url: http://apenwarr.ca/log/?m=201407
+.. date: 2015-11-05
 
 
 After working with a series of startups the author starts working for a certain

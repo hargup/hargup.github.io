@@ -1,7 +1,7 @@
-Title: Why we use ANT?
-url: https://docs.google.com/document/d/1kS0QGdbhW4PDPRiSRPsrI75MVpH0fnJtv5mfyU3PBi0/edit
-original_post: http://bruceeckel.github.io/2015/03/31/avoiding-complexity/
-date: 2015-11-05
+.. title: Why we use ANT?
+.. url: https://docs.google.com/document/d/1kS0QGdbhW4PDPRiSRPsrI75MVpH0fnJtv5mfyU3PBi0/edit
+.. source : http://bruceeckel.github.io/2015/03/31/avoiding-complexity/
+.. date: 2015-11-05
 
 
 Bruce Eckel writes about his experience with ANT a build system in JAVA, which
