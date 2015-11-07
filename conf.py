@@ -80,10 +80,8 @@ TRANSLATIONS_PATTERN = "{path}.{ext}.{lang}"
 # You should provide a key-value pair for each used language.
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/webnotes', 'webnotes'),
-        ('/shorts', 'Shorts'),
-        ('/resume.html', 'Resume'),
-        ('/categories/index.html', 'Categories'),
+        ('/webnotes.html', 'Web Notes'),
+        ('/quotes.html', 'Quotes'),
     ),
 }
 
@@ -599,7 +597,9 @@ $('li>a', '.social-icons').hover(
 
 # Additional metadata that is added to a post when creating a new_post
 ADDITIONAL_METADATA = {
-        'author': 'Vivek Rai'
+        'author': 'Harsh Gupta',
+        'url': '',
+        'source': ''
 }
 
 # If you hate "Filenames with Capital Letters and Spaces.md", you should
