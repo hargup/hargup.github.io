@@ -12,6 +12,18 @@ ${helper.twitter_card_information(post)}
 <%block name="content">
     <div class="postdiv">
     <a href="${post.permalink()}"><h2>${post.title()}</a></h2>
+    <p>
+    % if post.meta('url'):
+        <i>This is a note on <a href="${post.meta('url')}">${post.meta('url')}</a> </i>
+    % endif
+    </p>
+
+    <p>
+    % if post.meta('source'):
+        <i>Source:<i> ${post.meta('source')}
+    % endif
+    </p>
+
     ${post.text(lang)}
     </div>
     <div class="postmeta">
