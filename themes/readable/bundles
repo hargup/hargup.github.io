@@ -1,0 +1,3 @@
+assets/css/all-nocdn.css=bootstrap.min.css,rst.css,code.css,colorbox.css,theme.css,custom.css,font-awesome.min.css,tooltipster.css
+assets/css/all.css=rst.css,code.css,colorbox.css,theme.css,custom.css
+assets/js/all-nocdn.js=jquery-2.1.1.min.js,bootstrap.min.js,imagesloaded.pkgd.min.js,custom.js,jquery.tooltipster.js,footnote.js

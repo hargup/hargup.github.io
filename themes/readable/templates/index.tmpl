@@ -1,0 +1,38 @@
+## -*- coding: utf-8 -*-
+<%namespace name="helper" file="index_helper.tmpl"/>
+<%namespace name="comments" file="comments_helper.tmpl"/>
+<%inherit file="base.tmpl"/>
+<%block name="content">
+    % for post in posts:
+    <div
+    class="post-wrapper">
+      <div
+        class="postdiv">
+        <a
+          href="${post.permalink()}"><h2>${post.title()}</h2>
+        </a>
+        ${post.text(teaser_only=index_teasers)}
+        </div>
+        <div
+          class="postmeta">
+          <small>&nbsp;§&nbsp;
+            <span class="dateline"><a href="${post.permalink()}" rel="bookmark"><time class="published dt-published" datetime="${post.date.isoformat()}" itemprop="datePublished" title="${messages("Publication date")}">${post.formatted_date(date_format)}</time></a></span>
+          </small>
+            % if not post.meta('nocomments') and site_has_comments:
+            · ${comments.comment_link(post.permalink(), post.base_path)}
+            % endif
+            <ul class="post-tags">
+              % for tag in post.tags:
+                <li>
+                            · <a href=${blog_url}categories/${tag}.html> ${tag} </a>
+                </li>
+              %endfor
+            </ul>
+        </div>
+        <hr>
+    </div>
+    % endfor
+    ${helper.html_pager()}
+    ${comments.comment_link_script()}
+	${helper.mathjax_script(posts)}
+</%block>
