@@ -1,5 +1,13 @@
 .. title: Quotes
 
+.. epigraph::
+    Their power was not given to them; it cannot be taken away.
+
+.. epigraph::
+    History doesn't go in a straight line.
+
+    -- Noam Chomsky
+
 
 .. epigraph::
     All programmers are optimists. Perhaps this modern sorcery attracts only those
