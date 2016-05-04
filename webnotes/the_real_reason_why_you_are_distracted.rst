@@ -2,6 +2,7 @@
 .. title: The real reason why you are distracted
 .. source: Fusion.net newsletter
 .. date: 2015-11-15 20:15
+.. tags: webnotes
 
 In this video essay Adam Westbrook tries to reason out why our generation so
 distracted. He gave two to three arguments which really didn't fit in. He first

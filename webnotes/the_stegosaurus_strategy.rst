@@ -1,6 +1,7 @@
 .. url: http://thesiswhisperer.com/2010/11/01/the-stegosaurus-strategy/
 .. title: The stegosaurus strategy
 .. date: 2015-11-08
+.. tags: webnotes
 
 Academicians by their nature and training are critical, they are skeptic and
 they are trained to see where things might go wrong. What can be faulty

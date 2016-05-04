@@ -1,6 +1,7 @@
 .. url: 
 .. title: Why you'll fail to have a good career
 .. date: Thursday 18 February 2016 02:56:59 PM IST
+.. tags: webnotes
 
 * Luck
 * Genius

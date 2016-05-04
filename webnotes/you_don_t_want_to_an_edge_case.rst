@@ -1,6 +1,7 @@
 .. url: http://www.cs.jhu.edu/~svitlana/posters/emnlp13-slides.pdf
 .. title: You don't want to be an edge case
 .. date: 2015-11-14 19:00
+.. tags: webnotes
 
 We are relying more and more on algorithms for making decisions for us but
 often they are designed for the "average" and people who are not in the

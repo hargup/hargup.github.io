@@ -1,6 +1,7 @@
 .. title: Giving with No Thought of Return
 .. url: https://www.linkedin.com/pulse/giving-thought-return-steve-holden?trk=hp-feed-article-title-like
 .. date: 2015-11-08
+.. tags: webnotes
 .. source: Shared by Travis Oliphant on LinkedIn
 
 

@@ -1,6 +1,7 @@
 .. url: https://www.youtube.com/watch?v=mY8B2lXIu6g
 .. Title: Sustaining Open Source
 .. date: Thursday 19 November 2015 01:38:41 AM IST
+.. tags: webnotes
 .. source: Blog of Krace Kumar http://kracekumar.com/post/126355787365/funding-oss-development
 
 

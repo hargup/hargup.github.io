@@ -1,6 +1,7 @@
 .. title: Just How Nepotistic Are We (USA)?
 .. url: http://www.nytimes.com/2015/03/22/opinion/sunday/seth-stephens-davidowitz-just-how-nepotistic-are-we.html
 .. date: 2015-11-01
+.. tags: webnotes
 
 The article does shallow number crunching to show that that you are 28 thousand
 more likely to be a billionaire if your father was a billionaire, some nine

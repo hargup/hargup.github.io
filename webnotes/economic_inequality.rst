@@ -1,6 +1,7 @@
 ..url: http://paulgraham.com/ineq.html
 ..title: Economic Inequality
 ..date: Sunday 03 January 2016 12:47:25 AM IST
+.. tags: webnotes
 
 When Paul started off saying he is interested in inequality because he created
 I was half expecting him to "this is what I've done wrong and I want to fix

@@ -1,6 +1,7 @@
 .. url: http://www.aaronsw.com/weblog/nonapology
 .. title: A Non-Programmer’s Apology
 .. date: Thursday 10 December 2015 02:26:18 AM IST
+.. tags: webnotes
 
 I pretty much agree with Aaron here. Why am I still doing programming? Because
 the programming I do is easy and it gets paid well and it is very uncomfortable
