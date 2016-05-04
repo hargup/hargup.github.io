@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta (sympy)</title><link>http://hargup.in/</link><description></description><atom:link href="http://hargup.in/categories/sympy.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 04 May 2016 18:18:56 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Week 11 and Week 12: Wrapping up the project</title><link>http://hargup.in/sympy/week-11.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;The GSoC is about to end. We have the suggested deadline tomorrow and the firm
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta (sympy)</title><link>http://hargup.in/</link><description></description><atom:link href="http://hargup.in/categories/sympy.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 04 May 2016 20:38:33 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Week 11 and Week 12: Wrapping up the project</title><link>http://hargup.in/sympy/week-11.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;The GSoC is about to end. We have the suggested deadline tomorrow and the firm
 deadline next week. We are wrapping up the project now, cleaning up the code,
 writing the documentation and turning the project into a usable state.
 Since the new solvers cannot be called compelete I have to make sure that the
@@ -345,4 +345,32 @@ week will be.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Completing the rational solvers&lt;/li&gt;
 &lt;li&gt;Getting the open PR for the sets merged.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;</description><category>GSoC</category><category>sympy</category><guid>http://hargup.in/sympy/week-1-and-week-2.html</guid><pubDate>Mon, 02 Jun 2014 11:45:54 GMT</pubDate></item></channel></rss>
+&lt;/ol&gt;&lt;/div&gt;</description><category>GSoC</category><category>sympy</category><guid>http://hargup.in/sympy/week-1-and-week-2.html</guid><pubDate>Mon, 02 Jun 2014 11:45:54 GMT</pubDate></item><item><title>GSoC 2014 with Sympy</title><link>http://hargup.in/sympy/gsoc-2014-with-sympy.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;Hi, I'm Harsh Gupta an undergrad student at IIT Kharagpur, I've been accepted
+this year for the Google Summer of Code program with Sympy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So, What is a Google Summer of Code?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Google Summer of Code is a program by Google to promote opensource development.
+In this program Google pays handsome stipends to students to work for various opensource
+organisations. In the application phase the students have to write proposals to
+the organisations describing the projects they want to do
+and how do they fit for it. If the proposal is accepted the student is provided
+with a mentor and with the guidance of the mentor the student has to complete
+the project in the given timeline. You can look at my
+&lt;a href="https://github.com/sympy/sympy/wiki/GSoC-2014-Application-Harsh-Gupta:-Solvers"&gt;proposal&lt;/a&gt;.
+I proposed to work on improving the current equation solvers in
+Sympy. My mentors for the Project are &lt;a href="https://github.com/mrocklin"&gt;Matthew Rocklin&lt;/a&gt;
+and &lt;a href="https://github.com/skirpichev"&gt;Sergey B Kipirchev&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A word about Sympy.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://sympy.org/"&gt;Sympy&lt;/a&gt; is a pure python library for symbolic computation. Symbolic
+computation is similar to the maths you do by hands and it differs from
+numerical computations. More about Symbolic and Numerical computation in
+some other post. Sympy has been created by hundreds of contributors starting from 2006.
+It has an awesome developer
+community and we encourage outsiders to contribute and get their hands dirty with
+the code. What do you need to start contributing? Some python skills and little
+patience. Download the &lt;a href="https://github.com/sympy/sympy"&gt;latest development code&lt;/a&gt;.
+Go through the &lt;a href="https://github.com/sympy/sympy/wiki/Development-workflow"&gt;development workflow&lt;/a&gt;.
+Find something to work on from the
+&lt;a href="https://github.com/sympy/sympy/issues?labels=Easy+to+Fix&amp;amp;milestone=&amp;amp;page=1&amp;amp;state=open"&gt;EasyToFix Issues&lt;/a&gt;.
+Code it and send us a &lt;a href="https://help.github.com/articles/using-pull-requests"&gt;pull request&lt;/a&gt;. Happy Coding.&lt;/p&gt;
+&lt;p&gt;I'll give a brief about the project aim and current state of work in the next post.
+I'm looking forward for a great summer with Sympy.&lt;/p&gt;&lt;/div&gt;</description><category>sympy</category><guid>http://hargup.in/sympy/gsoc-2014-with-sympy.html</guid><pubDate>Sun, 25 May 2014 19:24:22 GMT</pubDate></item></channel></rss>

@@ -2,7 +2,7 @@
 .. title: GSoC 2014 with Sympy
 .. slug: gsoc-2014-with-sympy
 .. date: 2014/05/26 00:54:22
-.. tags:
+.. tags: sympy
 .. link:
 .. description:
 .. type: text
