@@ -36,168 +36,316 @@ MathJax.Hub.Config({
         
     <div class="post-wrapper">
       <div class="postdiv">
-        <a href="giving_with_no_thought_of_return.html"><h2>Giving with No Thought of Return</h2>
+        <a href="../sympy/week-11.html"><h2>Week 11 and Week 12: Wrapping up the project</h2>
+        </a>
+        <p>The GSoC is about to end. We have the suggested deadline tomorrow and the firm
+deadline next week. We are wrapping up the project now, cleaning up the code,
+writing the documentation and turning the project into a usable state.
+Since the new solvers cannot be called compelete I have to make sure that the
+next person working on it can pick it up easily. I plan come up with a post with
+the summary of the work that was done, that challenges we faced and thing that
+needs to done and how can they be tackled.</p>
+        </div>
+        <div class="postmeta">
+          <small> § 
+            <span class="dateline"><a href="../sympy/week-11.html" rel="bookmark"><time class="published dt-published" datetime="2014-08-10T17:39:01+05:30" itemprop="datePublished" title="Publication date">2014-08-10 17:39</time></a></span>
+          </small>
+            · 
+        
+
+
+            <ul class="post-tags">
+<li>
+                            · <a href="http://hargup.in/categories/sympy.html"> sympy </a>
+                </li>
+            </ul>
+</div>
+        <hr>
+</div>
+    <div class="post-wrapper">
+      <div class="postdiv">
+        <a href="../sympy/week-10.html"><h2>week 10: Radical equations</h2>
         </a>
         <div>
-<p>Steven Holden a PSF board member writes about the question which industry often
-asks "What's in for Me?" when it comes to contributing to Open Source. And he
-tries to argue that this should be a question at all because money shouldn't be
-only thing that matters.</p>
-<p>In recent years I have also developed deep skepticism and kinda disgust for the
-big corporate and their mentality that profit justifies everything. And the
-sadder part is that a lot of commoners have also justfied this idea. This
-argument of "it sells" comes from everything from sexism in video games and
-advertising to privacy issues and the copyright laws.</p>
-<p>Hundereds of startups are booming up from Scilicon Valley to Bangalore it would
-be interesting to analyze how many of them wouldn't even have the scope of
-coming up if they didn't have all these open source tools and languages. Open
-Source has given them so much yet they ask "What's in for me?"</p>
+<p>This week I worked on the solvers for the equations with radicals.
+Suppose you have to solve</p>
+<p>$$ \sqrt{x} + x - 2 = 0 $$.</p>
+<p>then you have to move the radical to the right hand side of the equation.</p>
+<p>$$ x - 2 = - \sqrt{x} $$</p>
+<p>and then square at both sides</p>
+<p>$$ x^2 - 4x + 4 = x $$</p>
+<p>Now the equation is a polynomial in \( x \) can be solved with usual
+polynomial solving methods. Note that squaring both sides produce some extra
+solutions and we will have to check all the solutions obtained against the
+original equation.  If there are more than one radicals involved we may
+have to apply the method recursively. For example in solving
+\( \sqrt{2x + 9} - \sqrt{x + 1} - \sqrt{x + 4} = 0 \)
+the method will recurse twice.</p>
+<p>To implement the method I tried a pattern matching approach.
+The
+squaring part is easy the tricky part is identifying which part to move to
+the right hand side. First I tried to match the expression with the form
+<code>sqrt(p) + q</code> but it failed even for case like <code>4*sqrt(x) + x - 2</code> because no
+pattern matched to it. I had to use <code>a*sqrt(p) + q</code> with the condition that the
+expression matched to a shouldn't be zero. Now I can simply move the expression
+matched with <code>p</code> and terms multiplicated with it to the RHS and square both
+the sides.</p>
+<p>Notice that this method for solving sqrt equation can work with any radical
+equation, if it were cube root instead of sqrt I just had to cube both the
+sides. OK so how do I mathch that expression? I tried to pattern matching with
+assumptions on the wild symbols but it doesn't work.  I tried to match with
+somthing like <code>a*p**Rational(1, m) + q</code> but this also didn't work out because
+Rational(1, m) raises TypeError no matter what the assumption on the variable
+are.  There is a proposal for a new pattern matcher, I have not closely checked
+the details but it will be able to work with assumption. You can see the
+proposal on the wiki
+<a href="https://github.com/sympy/sympy/wiki/Proposal-for-a-new-pattern-matching">here</a>
+and if it is implemented then things will be good but I can't wait for it.
+I had no other option to check term by term for rational power. Here's the
+implementation</p>
+<pre class="code literal-block">def _has_rational_power(expr):
+    a, p, q = Wild('a'), Wild('p'), Wild('q')
+    pattern_match = expr.match(a*p**q)
+    if pattern_match is None or pattern_match[a] is S.Zero:
+        return (False, None)
+    elif isinstance(pattern_match[q], Rational):
+        if not pattern_match[q].q == S.One:
+            return (True, pattern_match[q].q)
+
+    if not isinstance(pattern_match[a], Pow) or isinstance(pattern_match[a], Mul):
+        return (False, None)
+    else:
+        return _has_rational_power(pattern_match[a])
+</pre>
 </div>
         </div>
         <div class="postmeta">
           <small> § 
-            <span class="dateline"><a href="giving_with_no_thought_of_return.html" rel="bookmark"><time class="published dt-published" datetime="2015-11-08T00:00:00+05:30" itemprop="datePublished" title="Publication date">2015-11-08 00:00</time></a></span>
+            <span class="dateline"><a href="../sympy/week-10.html" rel="bookmark"><time class="published dt-published" datetime="2014-07-29T17:39:01+05:30" itemprop="datePublished" title="Publication date">2014-07-29 17:39</time></a></span>
           </small>
             · 
         
 
 
-            <ul class="post-tags"></ul>
+            <ul class="post-tags">
+<li>
+                            · <a href="http://hargup.in/categories/sympy.html"> sympy </a>
+                </li>
+            </ul>
 </div>
         <hr>
 </div>
     <div class="post-wrapper">
       <div class="postdiv">
-        <a href="when_women_stopped_coding.html"><h2>When Women Stopped Coding</h2>
+        <a href="../sympy/week-9.html"><h2>week 9</h2>
         </a>
-        <p>In 1970's the number of women was low(10-15%) in every field, be in law,
-medicine, computer science and physical sciences. The numbers have been
-increasing steadily till date except for computer science, till 85 it was was
-something around 30% and then it started decreasing. Now computer science has
-less than 20% women and whereas other field have achieved near perfect gender
-equality in terms of percentage of women enrolled. What went wrong? According
-to the author, 80s saw a release of series of SciFi movies with a geeky male
-protaganist. At that time computers were only toys and they bought only for
-boys. We got our norm, men are geeky women are not and there by we got the
-diversity problem in tech.</p>
+        <p>This week I moved back to college and my classes have restarted. This week
+I worked on a PR to allow infinitely indexed <code>Range</code>. See
+https://github.com/sympy/sympy/pull/7741. While doing this PR I discovered
+that you cannot monkey patch <code>object</code> to assign some attribute. And I want to
+mention that Sergey(one of my mentors) is damn good reviewer.</p>
         </div>
         <div class="postmeta">
           <small> § 
-            <span class="dateline"><a href="when_women_stopped_coding.html" rel="bookmark"><time class="published dt-published" datetime="2015-11-07T00:00:00+05:30" itemprop="datePublished" title="Publication date">2015-11-07 00:00</time></a></span>
+            <span class="dateline"><a href="../sympy/week-9.html" rel="bookmark"><time class="published dt-published" datetime="2014-07-20T00:20:01+05:30" itemprop="datePublished" title="Publication date">2014-07-20 00:20</time></a></span>
           </small>
             · 
         
 
 
-            <ul class="post-tags"></ul>
+            <ul class="post-tags">
+<li>
+                            · <a href="http://hargup.in/categories/sympy.html"> sympy </a>
+                </li>
+            </ul>
 </div>
         <hr>
 </div>
     <div class="post-wrapper">
       <div class="postdiv">
-        <a href="two_years_without_facebook.html"><h2>Two Years without Facebook</h2>
-        </a>
-        <div>
-<p>I stumbled upon this blog post by Guru Prasad, where he describes spending two
-years without Facebook. He did it for privacy reasons and because Facebook is
-collecting way too much information than they should. He is also annoyed by the
-fact that Facebook is not as much a medium to stay in touch but a stream of
-photos and shares choosen by the algorithm of Facebook often to sell you
-targeted ads.</p>
-<p>I also tried such experiment last to last year, but that for two weeks not two
-years. And no one will care if you are there or not, most of the people won't
-even notice your absence. I also hate the fact that facebook track your every
-mouse gesture your every moment you spend on their website. I definitely don't
-mean to say that social media is evil phenomenon but that doesn't mean
-everything is good about them and I want to take the bad parts out. For the
-similar privacy/power balance reasons I want to move away from Google services.
-I already use DuckDuckGo for search and I've also diched Google Chrome for
-firefox. I'll try to spend some time this winter finding alternatives to gmail
-and how I can move away from it.</p>
-<p>I'm not diching Facebook yet, but I guess I can partially mitigate its bad
-parts. One of to do it would probably be using a command line client for
-facebook in which I choose who's posts and shares I subscribe to. I don't know
-if anyone has done it yet, but I think that should be possible given the api by
-facebook. Maybe I can also use elinks?</p>
-</div>
-        </div>
-        <div class="postmeta">
-          <small> § 
-            <span class="dateline"><a href="two_years_without_facebook.html" rel="bookmark"><time class="published dt-published" datetime="2015-11-07T00:00:00+05:30" itemprop="datePublished" title="Publication date">2015-11-07 00:00</time></a></span>
-          </small>
-            · 
-        
-
-
-            <ul class="post-tags"></ul>
-</div>
-        <hr>
-</div>
-    <div class="post-wrapper">
-      <div class="postdiv">
-        <a href="rich_vs_poor_upbringing.html"><h2>This Brilliant Comic Strip On Rich Vs Poor Upbringing Will Humble You</h2>
-        </a>
-        <p>The author two children one had rich parents and other had poor parents, for
-the rich one his privilege got building up during his lifetime and for the poor
-one her disadvantages got building up, little by little. In the end the rich
-was successful and the poor was not.</p>
-        </div>
-        <div class="postmeta">
-          <small> § 
-            <span class="dateline"><a href="rich_vs_poor_upbringing.html" rel="bookmark"><time class="published dt-published" datetime="2015-11-07T00:00:00+05:30" itemprop="datePublished" title="Publication date">2015-11-07 00:00</time></a></span>
-          </small>
-            · 
-        
-
-
-            <ul class="post-tags"></ul>
-</div>
-        <hr>
-</div>
-    <div class="post-wrapper">
-      <div class="postdiv">
-        <a href="anita_s_and_liana_k.html"><h2>Anita Sarkeesian and Liana K</h2>
+        <a href="../sympy/week-7.html"><h2>week 7</h2>
         </a>
         <div>
-<p>Today I recommended Anita Sarkeesian's "Tropes vs Women in Video Games" to a
-friend and realized that there is a new video in her playlist. It was about the
-"Women as Reward" trope, where women's bodies or their sexual attention is
-integrated in the game mechanics to act as rewards for players. Examples of
-these are cases where players get rewards for having sex with other Non
-Playable characters or get a smooch of victory or a sex of victory as a reward.
-Anita's video was eductional as ever a more pleasant experience was watching a
-video by Liana K.</p>
-<p>So when I first watched Anita Sarkeesian last year I could see a video titled
-"A female game developer's response to Anita Sarkeesian" in suggestions. Though
-there were some valid points in many of Anita's responses a lot of it was plain
-Ad hominem, because just because a woman says it doesn't make it right. This
-time I watched one of her video and I was pleased because she was actually
-trying to have a conversation, she posted a video where she reviewed the series
-she the series of videos she made and there she thanked Anita Sarkeesian for
-starting this dialogue on women in video games even though she disagreed with
-her. That's amazing. She was trying to bridge a gap and people actually
-listened, at least many of them. She didn't call things like "this is pro
-gamer", "this is anti gamer" but it was like "here I disagree", "here I don't".
-She also called on the reaction by some people that just because she, a woman,
-disagreed with Anita Sarkeesian all women disagree with Anita. She clearly
-called it out sexism and plain generalization because she does not represent
-her gender and can have individual independent thoughts.</p>
-<p>She is kinda inspiration and an example that "poles" can be brought close and
-bridges can be built. And I think this should point to the lesson that it is
-good to express your opinion, you can wrong or misinformed but if you are open
-minded and respectful, then can opinion can lead to a conversion which can lead
-to be better understanding for all.</p>
+<h2>Week 7, 8</h2>
+<h3>Fu Simplification</h3>
+<p>In the early part of the week 7 was thinking and working on design decisions.
+I want the code to be very modular so that it could be easily extended by
+people other than me. This came up in a meeting with Matthew and I want the
+solvers to be like the Fu simplification explained by Matthew in this <a href="https://www.youtube.com/watch?v=QldxygVVj-s&amp;list=PLYx7XA2nY5GfuhCvStxgbynFNrxr3VFog&amp;index=20">Scipy
+Talk</a>.
+The idea was that we can see solving an equation as series of transformations.
+If we have a lot of small transformations such that the input type is same as
+output type, and some notion of what makes a "better" output we can search though
+the list of transformations running one on top of other. I also posted about
+it on the <a href="https://groups.google.com/forum/#!topic/sympy/42GdMJ9ssyM">mailing
+list</a> which brought
+out some flaws in the preliminary design. The idea is pretty crude in the
+current stage and I'll have to look deeper into it, but not now.</p>
+<p>I also discussed about the implementing a pattern dispached based solver
+suggested by <a href="https://groups.google.com/d/msg/sympy/moSEFHop0n4/e2hBKRQ9WP4J">F.B</a>
+on the mailing list. But we decided that it will be better if we finish the
+equation solver by the current technique first.</p>
+<h3>Intersection with S.Reals</h3>
+<p>I decribed in the last post that one way to solve trigonometric equation is
+rewriting them in terms of \( exp \). But that is \( exp \) in the complex domain and
+the solution of \(exp(x) = a \) is \( \left\{i \left(2 \pi
+n + \arg{\left (a \right )}\right) + \log{\left
+(\left\lvert{a}\right\rvert \right )}\; |\; n \in \mathbb{Z}\right\}
+\). Hence we have to filter out real solutions from the obtained solutions.
+The filering is equivalent to the intersection of the solutions with the \( \mathbb{R}
+\) set. Suppose \( g(x) \) and \( h(x) \) are real valued functions and we
+have to perform
+$$ \mathbb{R} \cap \left\{g{\left (n \right )} + i h{\left (n \right )}\; |\; n \in \mathbb{Z}\right\} $$
+then the answer will be simply
+$$ \left\{g{\left (n \right )}\; |\; n \in \left\{h{\left (n \right )} = 0\; |\; n \in \mathbb{Z}\right\}\right\} $$</p>
+<p>Separate the real and imaginary parts and equate the imaginary to zero
+but the problem was with the assumptions on the symbols. For example while
+separating real and imaginary parts of the equation.</p>
+<pre class="code literal-block">In[]: (n + I*n).as_imag_real()
+Out[]:(re(n) - im(n), re(n) + im(n))
+</pre>
+
+
+<p>That is because <code>n</code> is by default complex, even in the <code>Lambda(..).expr</code>.
+I wrote some code to decide the
+assumption on the variable of imageset from the baseset. See <a href="https://github.com/sympy/sympy/pull/7694">PR
+7694</a>.
+There was another issue that needs to be resolved
+<code>S.Integers.intersect(S.Reals)</code> doesn't evaluate to <code>S.Reals</code>.</p>
+<h3>LambertW and Multivariate Solvers</h3>
+<p>The method to solve equation containing exp and log function is using the
+LambertW function. LambertW function is the inverse of \( x \exp(x) \).  The
+function is multivariate function both for the real and complex
+domains and Sympy has only one branch implemented. This also leads us to loss
+of solutions. Aaron gave an example
+<a href="https://github.com/sympy/sympy/pull/2723#issuecomment-33760912">here</a>. But I'm
+pretty unfamiliar with solving by LambertW and LambertW itself and it will take
+me some time to build an understanding of them.
+As an ad hoc solution I'm using the code in the <code>_tsolve</code> in the
+<code>solvers.solvers</code> module to do at least what the current solvers can do.</p>
+<p>When the importing of <code>_tsolve</code> method was done. I started working on the
+multivariate solvers. Here's how the current multivariate solvers work:</p>
+<p><strong>Solving single multivariate equation</strong></p>
+<ol>
+<li>
+<p>count the number of free symbols in f - no of symbols for
+equation. If the equation has exactly one symbol which is not asked for then
+use <code>solve_undetermined_coeffs</code>, the <code>solve_undetermined_coeffs</code> find the
+values of the coefficient in a univariate polynomial such that it always
+equates to zero.</p>
+</li>
+<li>
+<p>Then for each symbol <code>solve_linear</code> is tried which tries to find a solution
+of that symbol in terms of constants or other symbols, the docstring says</p>
+<pre class="code literal-block">No simplification is done to f other than and mul=True expansion,
+so the solution will correspond strictly to a unique solution.
+</pre>
+
+
+</li>
+</ol>
+<p>So we don't have to worry about loosing a solution. For every symbol it is
+checked if doesn't depend on previously solved symbols, if it does that
+solution is discarded.</p>
+<ol>
+<li>For the symbols for which the above method failed, the <code>_solve</code> function is
+called for the equation for that variable and as above if the solution contains
+a variable already solved then that solution is discarded.</li>
+</ol>
+<p><strong>System of equations in multiple variables</strong></p>
+<ul>
+<li>
+<p>Try to convert the system of equations into a system of polynomial equation
+  in variables</p>
+</li>
+<li>
+<p>If all the equations are linear solve then using <code>solve_linear_system</code>, check
+  the result and return it. If asked for particular solution solve using
+  <code>minsolve_linear_system</code></p>
+</li>
+<li>
+<p>If the number of symbols is same as the size of the system solve the
+  polynomial system using <code>solve_poly_system</code>. In case the system is
+  over-determined All the free symbols intersection the variables asked for are
+  calculated. Then for every subset of such symbols of length equal to that of
+  the system, an attempt to solve the equations by <code>solve_poly_system</code> is made.
+  Here if any of the solution depends on previously solved system the solution
+  is discarded.</p>
+</li>
+<li>
+<p>In the case there are failed equations:</p>
+<ul>
+<li>For every know result:</li>
+<li>Substitute every thing into the failed equation and see if the equation turns to zero.
+  if it does accept the result otherwise put it in the bad_results group.</li>
+<li>Then try to solve try to solve the failed equation using <code>solve</code> for each symbol.</li>
+<li>If that solution depends on any other previously solved symbols
+  discard it.</li>
+<li>If it doesn't satisfy other equations, discard it.</li>
+<li>Check if the solution doesn't set any denominator to zero, if it does
+  discard that solution.</li>
+<li>If it satisfies the above conditions substitute this value in know
+  solutions and add it as a new result.</li>
+</ul>
+</li>
+</ul>
 </div>
         </div>
         <div class="postmeta">
           <small> § 
-            <span class="dateline"><a href="anita_s_and_liana_k.html" rel="bookmark"><time class="published dt-published" datetime="2015-11-07T00:00:00+05:30" itemprop="datePublished" title="Publication date">2015-11-07 00:00</time></a></span>
+            <span class="dateline"><a href="../sympy/week-7.html" rel="bookmark"><time class="published dt-published" datetime="2014-07-12T19:30:01+05:30" itemprop="datePublished" title="Publication date">2014-07-12 19:30</time></a></span>
           </small>
             · 
         
 
 
-            <ul class="post-tags"></ul>
+            <ul class="post-tags">
+<li>
+                            · <a href="http://hargup.in/categories/mathjax.html"> mathjax </a>
+                </li>
+                <li>
+                            · <a href="http://hargup.in/categories/sympy.html"> sympy </a>
+                </li>
+            </ul>
+</div>
+        <hr>
+</div>
+    <div class="post-wrapper">
+      <div class="postdiv">
+        <a href="../sympy/week-6.html"><h2>week 6</h2>
+        </a>
+        <div>
+<h3>Solving Trigonometric Function (part II)</h3>
+<p>There is another technique to solve trigonometric function. Just as every
+trigonometric function can be written in term of \( \tan \) it can also be written
+in terms of \( \exp \).</p>
+<p>$$ sin(x) = - \frac{i}{2} \left(e^{i x} - e^{- i x}\right) $$
+$$ cos(x) = \frac{e^{i x}}{2} + \frac{1}{2} e^{- i x} $$
+$$ tan(x) = \frac{i \left(- e^{i x} + e^{- i x}\right)}{e^{i x} + e^{- i x}} $$
+$$ cot(x) = \frac{i \left(e^{i x} + e^{- i x}\right)}{e^{i x} - e^{- i x}} $$</p>
+<p>So, solving a trigonometric equation is equivalent to solving a rational
+function in \( \exp \). Note: here the \( \exp \) is in complex domain and
+equation \( exp(x) = y \) has solution
+\( \left\{i \left(2 \pi n + \arg{\left (y \right )}\right) + \log{\left (\left\lvert{y}\right\rvert \right )}\; |\; n \in \mathbb{Z}\right\} \)
+when solved for \( x \).</p>
+</div>
+        </div>
+        <div class="postmeta">
+          <small> § 
+            <span class="dateline"><a href="../sympy/week-6.html" rel="bookmark"><time class="published dt-published" datetime="2014-07-02T14:13:01+05:30" itemprop="datePublished" title="Publication date">2014-07-02 14:13</time></a></span>
+          </small>
+            · 
+        
+
+
+            <ul class="post-tags">
+<li>
+                            · <a href="http://hargup.in/categories/mathjax.html"> mathjax </a>
+                </li>
+                <li>
+                            · <a href="http://hargup.in/categories/sympy.html"> sympy </a>
+                </li>
+            </ul>
 </div>
         <hr>
 </div>
@@ -209,13 +357,17 @@ to be better understanding for all.</p>
             <li class="next">
                 <a href="index-1.html" rel="next">Older posts</a>
             </li>
-        </ul></nav>
+        </ul></nav><script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});</script><script src="../assets/js/mathjax.js"></script>
 </div>
     <div class="row-fluid">
         <div class="span6" style="text-align: right; border-right: 2px solid #ccc; padding-right: 20px;">
             <ul class="unstyled bottom">
 <li>
 <a href="../webnotes.html">Web Notes</a>
+                        </li>
+<li>
+<a href="../sympy.html">SymPy</a>
                         </li>
 <li>
 <a href="../quotes.html">Quotes</a>

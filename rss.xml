@@ -1,161 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta</title><link>http://hargup.in/</link><description>Personal website of Harsh Gupta</description><atom:link href="http://hargup.in/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 24 Nov 2015 16:58:54 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>How not to counter Modimania</title><link>http://hargup.in/webnotes/how_not_to_counter_modimania.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;A few weeks ago our prime minister Narendra Modi visited UK and a he was "not
-welcomed" there, at least by some of the people. An image of Modi with a sword
-in one hand and Om in background convering to Swastika symbolized that Modi is
-equivalent to Hitler. The author aptly said that such method to counter Hindu
-communalism aren't only outright offensive but also counter productive. The
-point is to attack Hindu Communalism not to attack Hindus. Author suggested
-that a better approach will be trying to evoke the spirit of tolerance and
-inclusiveness found in Vedic Hindism.&lt;/p&gt;</description><guid>http://hargup.in/webnotes/how_not_to_counter_modimania.html</guid><pubDate>Tue, 24 Nov 2015 13:28:50 GMT</pubDate></item><item><title>Mathematical alchemy and wrestling</title><link>http://hargup.in/webnotes/mathematical_alchemy_and_wrestling.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;I'm an Alchemist!&lt;/p&gt;</description><guid>http://hargup.in/webnotes/mathematical_alchemy_and_wrestling.html</guid><pubDate>Tue, 24 Nov 2015 12:45:41 GMT</pubDate></item><item><title>cross_device_tracking_using_ultrasonic</title><link>http://hargup.in/webnotes/cross_device_tracking_using_ultrasonic.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;Coorporates can now track you across devices. More reasons to use a fully free
-phone and support projects like Replicant.&lt;/p&gt;</description><guid>http://hargup.in/webnotes/cross_device_tracking_using_ultrasonic.html</guid><pubDate>Mon, 23 Nov 2015 18:30:00 GMT</pubDate></item><item><title>"Extremism"</title><link>http://hargup.in/webnotes/surveillance_bill.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;UK Government is trying to push a which will force internet and phone companies
-to store the all the data for 12 months. Indian government also pushed a draft
-of similar encryption policy a few months where everyone was required to store
-the plaintext of all the encryptions for 90 days. Probably UK and US government
-have laws where I can be arrested for being a terrorist "sympathizer" and I
-also heard a statement from David Cameroon that he wants to curb "non violent
-extremists". Tell me how is being a "extremist" here. Governments are simply
-creating Fear, Uncertainly and Doubt to control more and more aspects of our
-lives.&lt;/p&gt;
-&lt;p&gt;I'm hundred, maybe even thousand time more likely to die in a car crash than in
-a attack like that of Paris of Mumbai. Which party has its agenda, "we need to
-make safer cars", "we need to stop rash driving", "we need to force companies
-to make such a cars that can never kill anybody."&lt;/p&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/surveillance_bill.html</guid><pubDate>Sun, 22 Nov 2015 08:56:14 GMT</pubDate></item><item><title>K'Naan of censoring himself for Success</title><link>http://hargup.in/webnotes/k_naan_censoring_myself_for_sucess.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;K'Naan is amazing, I learned about him, when everybody learned about him during
-the 2010 FIFA world cup. A remix of his Wavin' Flag was selected as the theme
-song for the world cup. It was happy, fun and energetic song but when I
-listened to the original version of the song I was awestruck, the song tells a
-powerful story of people of Somalia and their struggle, the remix had nothing
-of it. The two talks about totally different freedoms, one is "freedom and
-fire" to rock the football field other is the freedom to live. I was discussing
-this with a friend last night and listened more of his older songs and newer
-songs. The older songs were deep and very personal telling one or the other
-tales of the civil wars and its autocracies. Newer songs were much more
-Americanized and in a sense they lacked substance.&lt;/p&gt;
-&lt;p&gt;I was happy to see that K'naan himself recognized this fact and wrote about it.
-He writes:&lt;/p&gt;
-&lt;blockquote class="epigraph"&gt;
-&lt;p&gt;Over breakfast in SoHo, we talked about how to keep my new American audience
-growing. My lyrics should change, my label’s executives said; radio
-programmers avoid subjects too far from fun and self-absorption.
-And for the first time, I felt the affliction of success. When I walked away
-from the table, there were bruises on the unheard lyrics of my yet-to-be-born
-songs. A question had raised its hand in the quiet of my soul: What do you do
-after success? What must you do to keep it?&lt;/p&gt;
-&lt;p&gt;If this was censorship, I thought, it was a new kind — one I had to do to
-myself. The label wasn’t telling me what to do. No, it was just giving me
-choices and information, about my audience — 15-year-old American girls,
-mostly, who knew little of Somalia. How much better to sing them songs about
-Americans.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/k_naan_censoring_myself_for_sucess.html</guid><pubDate>Thu, 19 Nov 2015 09:25:28 GMT</pubDate></item><item><title>sell_value_vs_use_value</title><link>http://hargup.in/webnotes/sell_value_vs_use_value.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;In a talk at PyCon Australia Russell Keith-Magee talks about the need to
-providing for providing money to Free and Open Source Software. The whole world
-is reaping a lot of benefit from FOSS and there are people who have become
-billionair on the leveling ground created by FOSS but unfortunately very few of
-those fruit come back to the FOSS developers and communities in terms of
-resources and money which is absolutely necessary for long term sustainance of
-any project be it software or otherwise.&lt;/p&gt;
-&lt;p&gt;One of the very important distinction Russell made was that of Use Value and
-Sale Value. Use Value of something is the measure of "usefulness" of something
-and sale value is how much you can sell it for. When you feel the sale value of
-something justifies the use value of something, you buy it, say a nice coffee
-mug you saw at a local store. When the coustomer is another business it is
-easier to compare the use value and the sale value. Business operates on things
-which can be sold but a whole lot of things have use value but not a sale
-value. Research can be great example for it, people can buy the end product of
-research, i.e., a new technology a new idea and a new perspective but you
-cannot buy reseach. Research is a process for every tangible/sellable result
-there are thousand results which are not sellable. [#1] Infrastructure is also
-an example. The use value of roads is very high but there will be very few
-who'll be able to pay for the construction of roads.&lt;/p&gt;
-&lt;p&gt;Governments&lt;/p&gt;
-&lt;p&gt;Joint Grants&lt;/p&gt;
-&lt;p&gt;Google Summer of Code&lt;/p&gt;
-&lt;p&gt;Fellowship&lt;/p&gt;
-&lt;p&gt;of creating new idea and it brings
-about concepts which couldn't have . Buying the end product doesn't&lt;/p&gt;
-&lt;p&gt;Should I buy grade A steel
-or grade B steel, whicher makes me more money.&lt;/p&gt;
-&lt;p&gt;But we shouldn't try to measure everything in terms of money.&lt;/p&gt;
-&lt;p&gt;But as you understand not&lt;/p&gt;
-&lt;p&gt;[#1]: One can say that one model of research can be a winner take all strategy,
-let a lot of researchers work on a problem and when someone arives at the
-solution give the winner a huge reward. This has two problems, first is the
-typical lifetime of research projects are very long it will very difficult for
-researchers to support themselves without external support. Even the "results"
-of a research can extend over generation. A second problem is that it will
-change the incentive structure of research and give more priority to low
-hanging short term projects.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta</title><link>http://hargup.in/</link><description>Personal website of Harsh Gupta</description><atom:link href="http://hargup.in/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 04 May 2016 18:36:39 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Normalization of Deviation</title><link>http://hargup.in/webnotes/wtf_wtf_wtf.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;span&gt;&lt;!-- url: http://danluu.com/wat/ --&gt;
+&lt;!-- title: Normalization of Deviation --&gt;
+&lt;!-- date --&gt;&lt;/span&gt;</description><guid>http://hargup.in/webnotes/wtf_wtf_wtf.html</guid><pubDate>Wed, 04 May 2016 18:30:00 GMT</pubDate></item><item><title>Failed Wikipedia</title><link>http://hargup.in/webnotes/why_wikipedia.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;ul&gt;
+&lt;li&gt;Contributors follow power law, the median number of contributors is 1.&lt;/li&gt;
+&lt;/ul&gt;</description><guid>http://hargup.in/webnotes/why_wikipedia.html</guid><pubDate>Wed, 04 May 2016 18:30:00 GMT</pubDate></item><item><title>once_upon_a_jihad</title><link>http://hargup.in/webnotes/once_upon_a_jihad.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;This essay provides a facinating account of westners who leave their homes to
+fight in middle east, Afghanistan and other places to fight for "jihad". The
+highlights that for these people going and fighting in a war is pretty much
+like a personal fairly tail&lt;/p&gt;</description><guid>http://hargup.in/webnotes/once_upon_a_jihad.html</guid><pubDate>Wed, 04 May 2016 18:30:00 GMT</pubDate></item><item><title>economic_inequality</title><link>http://hargup.in/webnotes/economic_inequality.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;When Paul started off saying he is interested in inequality because he created
+I was half expecting him to "this is what I've done wrong and I want to fix
+it". Unfortunately it was another essay to justify "undeserved" wealth in the
+hands of startup founders.&lt;/p&gt;
+&lt;p&gt;Paul's essay fails to look at the dynamics of power and money. The amount of
+money someone has is often a proxy for political power in the hand of someone.
+Increasing inequality amounts to increasing disbalance in political power.
+Concentration of political power is problematic because the powerful influence
+things in their in their favor knowingly or unknowlingly ignoring the rest.&lt;/p&gt;
+&lt;p&gt;Another issue that Paul fails to address is the reason for economic inequality.
+The wealth of someone grows exponentially, the money someone has the easier it
+will be for them to make even more money. That has nothing to do with how much
+"deserving" they are or how much wealth they have. Sure your startups have
+helped the world, but that doesn't mean they "deserve" all the wealth they
+have.&lt;/p&gt;
+&lt;p&gt;I don't have answer to the problem of inequality, but this doesn't mean the
+problem doesn't exist.&lt;/p&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/economic_inequality.html</guid><pubDate>Wed, 04 May 2016 18:30:00 GMT</pubDate></item><item><title>digital_activism</title><link>http://hargup.in/webnotes/digital_activism.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;ul&gt;
+&lt;li&gt;Technology by itself is not enough we need to leverage it to create the
+  effect we want it to have&lt;/li&gt;
+&lt;li&gt;Lumia&lt;/li&gt;
+&lt;li&gt;Democracy OS&lt;/li&gt;
+&lt;/ul&gt;</description><guid>http://hargup.in/webnotes/digital_activism.html</guid><pubDate>Wed, 04 May 2016 18:30:00 GMT</pubDate></item><item><title>bad_feminism</title><link>http://hargup.in/webnotes/bad_feminism.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;&amp;gt; All these bad-feminist articles do is reinforce the belief that feminism is the
+&amp;gt; purview of a legion of judgy women policing the mostly superficial choices of
+&amp;gt; others.&lt;/p&gt;</description><guid>http://hargup.in/webnotes/bad_feminism.html</guid><pubDate>Wed, 04 May 2016 18:30:00 GMT</pubDate></item><item><title>Why isn't the NSA a hot topic in the US elections?</title><link>http://hargup.in/webnotes/why_isnt_nsa_a_hot_topic_in_us_elections.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;The article talks about how NSA surveillance should be one of the topics of the
+US presidential election but isn't. It compares the situation with Germany
+where the population is very privacy conscious. It brings out important facts
+but doesn't connect them well, it says that German population is privacy
+conscious because of the human rights violation by Eastern Block Germany and
+earlier by the Nazi secret police, but it reaches the conclusion that
+surveillance isn't a hot topic because it is very nuanced and doesn't make good
+catch phrase. But every topic is nuanced if you look deep enough and every
+issue has only one answer on the surface. Politicians don't generally aim to
+change the norm during the election but rather try to attract a sect of people
+who already agrees with her/him. So the question here should be why does the
+German population care and US doesn't. Well one of the answers can be history
+as the author already mentioned, there have been thought policing in the
+McCarthy era too but not sure about the extent to which it affected the white
+population. Another important factor should be the corporate influence in
+politics and maybe media in America compared to Germany. Corporate surveillance
+goes hand in hand in government surveillance, if corporates doesn't support an
+issue the issue remains unattractive for the politicians. Also it would be an
+interesting exercise to study the relation between the profits a parent company
+make through breaches of privacy and its coverage on surveillance.&lt;/p&gt;</description><guid>http://hargup.in/webnotes/why_isnt_nsa_a_hot_topic_in_us_elections.html</guid><pubDate>Thu, 28 Apr 2016 15:15:55 GMT</pubDate></item><item><title>lessons_from_brain_scans</title><link>http://hargup.in/webnotes/lessons_from_brain_scans.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;SPECT Scans&lt;/p&gt;
+&lt;p&gt;Healthy scans are syematic&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;OCD front part is active
+* Seizer too much activity&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 8)&lt;/p&gt;
+&lt;p&gt;Unexpected indentation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;Phycatrists don't look at the organ they treat
+* Same symptoms can have very different brain scans&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 10)&lt;/p&gt;
+&lt;p&gt;Unexpected indentation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Research Grant; PSF, FSF as grantee
-- Jupyter Project&lt;/li&gt;
-&lt;li&gt;Google Summer of Code&lt;/li&gt;
-&lt;li&gt;Fellowship&lt;/li&gt;
-&lt;li&gt;BSD vs GPL: BSD vs Linux&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/sell_value_vs_use_value.html</guid><pubDate>Wed, 18 Nov 2015 20:08:41 GMT</pubDate></item><item><title>Paris attacks, deeper look</title><link>http://hargup.in/webnotes/level_headed_syria.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;Yonatan Zunger, tries to take a deeper look on the Paris attacks and why they
-happened.&lt;/p&gt;
-&lt;p&gt;1.) The Europe is wildly unaccepting of Muslim population, often pass laws
-which disrupts their lifestyle and see them as outsides even though they have
-been living in there from two to three generations.&lt;/p&gt;
-&lt;p&gt;2.) Wild unemployment and lack of food security in Middle East which can be
-linked directly to Climate Change and Global Warming.&lt;/p&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/level_headed_syria.html</guid><pubDate>Mon, 16 Nov 2015 08:29:56 GMT</pubDate></item><item><title>The real reason why you are distracted</title><link>http://hargup.in/webnotes/the_real_reason_why_you_are_distracted.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;In this video essay Adam Westbrook tries to reason out why our generation so
-distracted. He gave two to three arguments which really didn't fit in. He first
-told media and scientist are blaming the new technology which keeps us so
-distracted. It is the internet and the computers now, in 80s people blamed the
-distraction on TVs and 40 on radios and even earlier on movies. And the classic
-example where Socrates said that writing will bring forgetfulness in people's
-sole. I keep hearing this argument all the time and it is often used to say
-"You older generation you have always feared the new technology will bring
-distraction and have always been wrong and you are also wrong this time". This
-is sometime also accompanied by a picture of a lot of people reading newspaper in
-a bus and no one talking to one another. This argument I feel is very shallow,
-just because transition from one technology to another didn't causes people to
-become more "distracted" doesn't mean this upcoming transition won't or isn't
-doing the same. There is also an implicit assumption that the earlier
-transition didn't bring more "distraction" and as I said a belief the older
-generation is seeing the whole technology as bad. I like to see things the way
-Walter O. Jong described in his book Orality and Literacy, that Literacy didn't
-just "upgraded" orality, it completely changed who we are, we gained a lot but
-we also lost somethings and literacy even changed the definition of what we
-consider as gain and what as loss. I sincerely believe that internet is one
-awesome invention by humans but there are things we need to fix about it, soon.&lt;/p&gt;
-&lt;p&gt;Well in the beginning of the essay Adam talked about Mozzart and his amazing
-concentration. I don't see how it made sense. He took a single example out of
-time and context and just threw it.&lt;/p&gt;
-&lt;p&gt;In the middle of the essay he talked about the role of hyperlinks in
-distraction, every hyperlink is a decision, to click or not click. Often when
-on the internet you just keep browsing through the hyperlinks, one link to the
-another, forgetting where you came from and why. I enjoy doing it and sometimes
-I stumble upon very interesting content this way but of course this is not a
-good to get things done, and to learn something deeply and thoroughly. And I
-think I should do this random browsing less often, but it is not something evil
-that I should not do at all.&lt;/p&gt;
-&lt;p&gt;In the end he pointed out that many of the internet companies makes their
-profit from advertisements and it makes sense for them to keep us distracted,
-because the more pages we visit the more ads we see, a distracted person will
-visit more pages in unit time so more profit made. A more distracted population
-also makes sense for totalitarian governments and big cooperates because a more
-distracted population is less likely to notice their autocracies and is less
-likely to protest. A distracted population is a population which is easier to
-control. By the way a very problematic aspect of online advertisement is cross
-website tracking and surveillance. We seriously need to take a stand against
-it. If you have not done it already I highly recommend that you watch the
-interactive documentary "Do Not Track Us" &lt;a class="reference external" href="https://donottrack-doc.com/en/"&gt;https://donottrack-doc.com/en/&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/the_real_reason_why_you_are_distracted.html</guid><pubDate>Sun, 15 Nov 2015 14:45:00 GMT</pubDate></item><item><title>Inconsistency with Discrepency</title><link>http://hargup.in/webnotes/inconsitency_without_discrepency.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;This article shared an interesting and a very positive perspective on Nehru,
-the first Prime Minister of India. He was inconsistent without disagreement. Our
-present government says it is pro development, against development nothing
-matter and especially secularism should go to the dump. Nehru was a person who
-things as a whole, he recognized that scientific and industrial development is
-important to gain power but he also understood these are not the only thing we
-need to have. Our people need to have a depth of personality and sense of
-tolerance to see that they are not the only people who are right. Nehru was
-against dogma, including the dogma of science.&lt;/p&gt;
-&lt;p&gt;I saw a post where Nehru was being criticized for his Hindu rate of growth and
-that was the only thing mentioned about him. But other factors about Nehru
-often gets ignore, the time when Nehru took the lead of the Nation, it was in a
-utter state of Chaos. India is a country where people can be divided in
-thousands of different groups, be it by caste, religion or language. The fact
-that he managed to keep the Nation One I think is an achievement in itself.&lt;/p&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/inconsitency_without_discrepency.html</guid><pubDate>Sun, 15 Nov 2015 06:55:00 GMT</pubDate></item><item><title>You don't want to be an edge case</title><link>http://hargup.in/webnotes/you_don_t_want_to_an_edge_case.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;We are relying more and more on algorithms for making decisions for us but
-often they are designed for the "average" and people who are not in the
-"average" are left out. Here the "average" often means the elite or people who
-are already in power and control things. There have numerous cases of implicit
-sexism and racisim "by technology" [1] [2]. When designing technology we need
-to careful of whom we include but also who we exclude.&lt;/p&gt;
-&lt;p&gt;[1]: &lt;a class="reference external" href="http://www.theverge.com/2014/9/25/6844021/apple-promised-an-expansive-health-app-so-why-cant-i-track"&gt;http://www.theverge.com/2014/9/25/6844021/apple-promised-an-expansive-health-app-so-why-cant-i-track&lt;/a&gt;
-[2]: &lt;a class="reference external" href="http://www.theguardian.com/artanddesign/2013/jan/25/racism-colour-photography-exhibition"&gt;http://www.theguardian.com/artanddesign/2013/jan/25/racism-colour-photography-exhibition&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/you_don_t_want_to_an_edge_case.html</guid><pubDate>Sat, 14 Nov 2015 13:30:00 GMT</pubDate></item></channel></rss>
+&lt;li&gt;Mild Traumatic Brain Injury
+* Behavior is a expression of problem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;People who do bad things often do have bad brains.
+* Crime evaluation and treatement&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 16)&lt;/p&gt;
+&lt;p&gt;Unexpected indentation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;NFL causes brain damage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/lessons_from_brain_scans.html</guid><pubDate>Fri, 19 Feb 2016 15:39:08 GMT</pubDate></item><item><title>Why you'll fail to have a good career</title><link>http://hargup.in/webnotes/why_you_ll_fail_to_have_a_good_career.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;ul class="simple"&gt;
+&lt;li&gt;Luck&lt;/li&gt;
+&lt;li&gt;Genius&lt;/li&gt;
+&lt;li&gt;Weird&lt;/li&gt;
+&lt;li&gt;Nice normal people don't have passion&lt;/li&gt;
+&lt;li&gt;Interest vs Passion&lt;/li&gt;
+&lt;li&gt;Velcro vs UFT&lt;/li&gt;
+&lt;li&gt;I value human relationships more than accomplishment&lt;/li&gt;
+&lt;li&gt;Use your children as a shield&lt;/li&gt;
+&lt;li&gt;I was afraid to pursue it.&lt;/li&gt;
+&lt;li&gt;If only I had&lt;/li&gt;
+&lt;li&gt;Unless&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I watched this because a friend recommend this to me. This has nothing new to
+offer. Cut out the rhetoric and it didn't said a lot of either. It mainly
+summarized the "excuses" people give on why they failed to have a "great
+career". They fear they aren't lucky enough, they fear coming out as weird to
+others, they say "nice and normal people don't passion". And then he says
+people use children as shield and don't work hard.&lt;/p&gt;
+&lt;p&gt;Saying overcome your fear doesn't make you overcome it, Why have a "great"
+career at all? People do fuck up relationships for accomplishment, people do
+have to take care of their familes and kids and their are real constraints
+because of them. It also doesn't define what is a great career and what does it
+look like.&lt;/p&gt;
+&lt;p&gt;I find zero or rather negative value in this kinds of talk. It provides no
+solutions nor does it provide any clarity or new insights on the problem. All
+it does is to make people without "great careers" feel like lazy blob and it
+provides people with "great career" a kind of entitlement making them feel like
+they "deserved" it and they are somehow above those without a "great career".&lt;/p&gt;
+&lt;!-- First of all it doesn't define what is great career, --&gt;
+&lt;p&gt;Luck &lt;strong&gt;is&lt;/strong&gt; is a factor which decides who will have a "great career", rather I
+should say privilege is a great deciding factor, ofcouse not to say it is the
+only factor. Because luck or randomness is a factor doesn't mean you cannot
+improve your chances, but this talk gives no insight on that.&lt;/p&gt;
+&lt;p&gt;Then there are real constraints in making a great career, one of the reason of
+the glass ceiling is kids and the fact they have to work dabble shift, one at
+the office and other at home. Then there are people for whom there is really a
+very little margin of error and people who don't have strong backgrounds and
+people who don't have a great support structure. The risk taking ability of
+someone is often because of the external factors rather than the internals.&lt;/p&gt;
+&lt;p&gt;If it encourages and motivates that's great, but if you say it is your fault
+that you are not pursuing your passion, then fuck off.&lt;/p&gt;
+&lt;p&gt;Sometimes people trying to purse their passions&lt;/p&gt;
+&lt;p&gt;Careerism??&lt;/p&gt;
+&lt;p&gt;fuck it I don't feel like writing.&lt;/p&gt;
+&lt;div class="section" id="cut-out"&gt;
+&lt;h2&gt;Cut Out&lt;/h2&gt;
+&lt;p&gt;When some like this guy tells people from outside that
+they are making excuses, how do you know they aren't.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/why_you_ll_fail_to_have_a_good_career.html</guid><pubDate>Thu, 18 Feb 2016 09:26:59 GMT</pubDate></item><item><title>Normalization of Deviation</title><link>http://hargup.in/webnotes/normailization_of_deviation.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;This was a pretty well written post about how very messed up practices end up
+normalized. The answer is a weird combinatin of over optimism, rationalization
+and adaption. And when a messed up practice gets normalized it is very hard to
+see what's wrong with it.&lt;/p&gt;
+&lt;p&gt;A very simply solution that Atul Gawande talked about in the Checklist
+Manifesto is to have a checklist. In the book he compared the medical sector
+and infrastucture/construction sector. Both fields are immensely complex but
+medicial practitioners often end up making terrible mistakes, which includes
+cases like the one where a surgen forgot her equipment in the patient, where as
+in construction error which have any harm to human life are very very rare.&lt;/p&gt;
+&lt;p&gt;But you don't have checklist for every small thing, and Atul provided a
+guideline to making checklist, I don't clearly remember and I should go and
+read the sections of the book again.&lt;/p&gt;
+&lt;p&gt;Checklists are useful because they end up freeing your mind from the
+unnecessary boring detail. there are also other cases I can think of&lt;/p&gt;
+&lt;p&gt;Where to apply a rule:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Where the rewards or looses of doing something occur only in long term, we
+tend to ignore the long term result and focus on instant gratification.&lt;/li&gt;
+&lt;li&gt;Always and never rules&lt;/li&gt;
+&lt;li&gt;The projects the complete counts and not the one you start.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Formalization leads to gramatization, when a formal structure is in place it is
+harder see things in informal terms or whatever that doesn't fall into that
+formal structure tends to get ignored. A very clear example will be case where
+peolple who have only learned about information transfer uses of language tend
+find phatic usuages like that of small talk "useless".  But as it evident from
+the use of term phatic, the way we with problems of formalization is more
+formalization trying to capture things which weren't captured earlier, ofcourse
+that formalization also leaves something. But as it said in Statistics, all
+models are false but some are useful.&lt;/p&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/normailization_of_deviation.html</guid><pubDate>Wed, 30 Dec 2015 18:46:01 GMT</pubDate></item></channel></rss>

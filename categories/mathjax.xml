@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta (mathjax)</title><link>http://hargup.in/</link><description></description><atom:link href="http://hargup.in/categories/mathjax.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 04 May 2016 18:18:56 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>week 7</title><link>http://hargup.in/sympy/week-7.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;h2&gt;Week 7, 8&lt;/h2&gt;
+&lt;h3&gt;Fu Simplification&lt;/h3&gt;
+&lt;p&gt;In the early part of the week 7 was thinking and working on design decisions.
+I want the code to be very modular so that it could be easily extended by
+people other than me. This came up in a meeting with Matthew and I want the
+solvers to be like the Fu simplification explained by Matthew in this &lt;a href="https://www.youtube.com/watch?v=QldxygVVj-s&amp;amp;list=PLYx7XA2nY5GfuhCvStxgbynFNrxr3VFog&amp;amp;index=20"&gt;Scipy
+Talk&lt;/a&gt;.
+The idea was that we can see solving an equation as series of transformations.
+If we have a lot of small transformations such that the input type is same as
+output type, and some notion of what makes a "better" output we can search though
+the list of transformations running one on top of other. I also posted about
+it on the &lt;a href="https://groups.google.com/forum/#!topic/sympy/42GdMJ9ssyM"&gt;mailing
+list&lt;/a&gt; which brought
+out some flaws in the preliminary design. The idea is pretty crude in the
+current stage and I'll have to look deeper into it, but not now.&lt;/p&gt;
+&lt;p&gt;I also discussed about the implementing a pattern dispached based solver
+suggested by &lt;a href="https://groups.google.com/d/msg/sympy/moSEFHop0n4/e2hBKRQ9WP4J"&gt;F.B&lt;/a&gt;
+on the mailing list. But we decided that it will be better if we finish the
+equation solver by the current technique first.&lt;/p&gt;
+&lt;h3&gt;Intersection with S.Reals&lt;/h3&gt;
+&lt;p&gt;I decribed in the last post that one way to solve trigonometric equation is
+rewriting them in terms of \( exp \). But that is \( exp \) in the complex domain and
+the solution of \(exp(x) = a \) is \( \left\{i \left(2 \pi
+n + \arg{\left (a \right )}\right) + \log{\left
+(\left\lvert{a}\right\rvert \right )}\; |\; n \in \mathbb{Z}\right\}
+\). Hence we have to filter out real solutions from the obtained solutions.
+The filering is equivalent to the intersection of the solutions with the \( \mathbb{R}
+\) set. Suppose \( g(x) \) and \( h(x) \) are real valued functions and we
+have to perform
+$$ \mathbb{R} \cap \left\{g{\left (n \right )} + i h{\left (n \right )}\; |\; n \in \mathbb{Z}\right\} $$
+then the answer will be simply
+$$ \left\{g{\left (n \right )}\; |\; n \in \left\{h{\left (n \right )} = 0\; |\; n \in \mathbb{Z}\right\}\right\} $$&lt;/p&gt;
+&lt;p&gt;Separate the real and imaginary parts and equate the imaginary to zero
+but the problem was with the assumptions on the symbols. For example while
+separating real and imaginary parts of the equation.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;In[]: (n + I*n).as_imag_real()
+Out[]:(re(n) - im(n), re(n) + im(n))
+&lt;/pre&gt;
+
+
+&lt;p&gt;That is because &lt;code&gt;n&lt;/code&gt; is by default complex, even in the &lt;code&gt;Lambda(..).expr&lt;/code&gt;.
+I wrote some code to decide the
+assumption on the variable of imageset from the baseset. See &lt;a href="https://github.com/sympy/sympy/pull/7694"&gt;PR
+7694&lt;/a&gt;.
+There was another issue that needs to be resolved
+&lt;code&gt;S.Integers.intersect(S.Reals)&lt;/code&gt; doesn't evaluate to &lt;code&gt;S.Reals&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;LambertW and Multivariate Solvers&lt;/h3&gt;
+&lt;p&gt;The method to solve equation containing exp and log function is using the
+LambertW function. LambertW function is the inverse of \( x \exp(x) \).  The
+function is multivariate function both for the real and complex
+domains and Sympy has only one branch implemented. This also leads us to loss
+of solutions. Aaron gave an example
+&lt;a href="https://github.com/sympy/sympy/pull/2723#issuecomment-33760912"&gt;here&lt;/a&gt;. But I'm
+pretty unfamiliar with solving by LambertW and LambertW itself and it will take
+me some time to build an understanding of them.
+As an ad hoc solution I'm using the code in the &lt;code&gt;_tsolve&lt;/code&gt; in the
+&lt;code&gt;solvers.solvers&lt;/code&gt; module to do at least what the current solvers can do.&lt;/p&gt;
+&lt;p&gt;When the importing of &lt;code&gt;_tsolve&lt;/code&gt; method was done. I started working on the
+multivariate solvers. Here's how the current multivariate solvers work:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Solving single multivariate equation&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;count the number of free symbols in f - no of symbols for
+equation. If the equation has exactly one symbol which is not asked for then
+use &lt;code&gt;solve_undetermined_coeffs&lt;/code&gt;, the &lt;code&gt;solve_undetermined_coeffs&lt;/code&gt; find the
+values of the coefficient in a univariate polynomial such that it always
+equates to zero.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then for each symbol &lt;code&gt;solve_linear&lt;/code&gt; is tried which tries to find a solution
+of that symbol in terms of constants or other symbols, the docstring says&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;No simplification is done to f other than and mul=True expansion,
+so the solution will correspond strictly to a unique solution.
+&lt;/pre&gt;
+
+
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;So we don't have to worry about loosing a solution. For every symbol it is
+checked if doesn't depend on previously solved symbols, if it does that
+solution is discarded.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;For the symbols for which the above method failed, the &lt;code&gt;_solve&lt;/code&gt; function is
+called for the equation for that variable and as above if the solution contains
+a variable already solved then that solution is discarded.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;System of equations in multiple variables&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Try to convert the system of equations into a system of polynomial equation
+  in variables&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If all the equations are linear solve then using &lt;code&gt;solve_linear_system&lt;/code&gt;, check
+  the result and return it. If asked for particular solution solve using
+  &lt;code&gt;minsolve_linear_system&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the number of symbols is same as the size of the system solve the
+  polynomial system using &lt;code&gt;solve_poly_system&lt;/code&gt;. In case the system is
+  over-determined All the free symbols intersection the variables asked for are
+  calculated. Then for every subset of such symbols of length equal to that of
+  the system, an attempt to solve the equations by &lt;code&gt;solve_poly_system&lt;/code&gt; is made.
+  Here if any of the solution depends on previously solved system the solution
+  is discarded.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the case there are failed equations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For every know result:&lt;/li&gt;
+&lt;li&gt;Substitute every thing into the failed equation and see if the equation turns to zero.
+  if it does accept the result otherwise put it in the bad_results group.&lt;/li&gt;
+&lt;li&gt;Then try to solve try to solve the failed equation using &lt;code&gt;solve&lt;/code&gt; for each symbol.&lt;/li&gt;
+&lt;li&gt;If that solution depends on any other previously solved symbols
+  discard it.&lt;/li&gt;
+&lt;li&gt;If it doesn't satisfy other equations, discard it.&lt;/li&gt;
+&lt;li&gt;Check if the solution doesn't set any denominator to zero, if it does
+  discard that solution.&lt;/li&gt;
+&lt;li&gt;If it satisfies the above conditions substitute this value in know
+  solutions and add it as a new result.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><category>mathjax</category><category>sympy</category><guid>http://hargup.in/sympy/week-7.html</guid><pubDate>Sat, 12 Jul 2014 14:00:01 GMT</pubDate></item><item><title>week 6</title><link>http://hargup.in/sympy/week-6.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;h3&gt;Solving Trigonometric Function (part II)&lt;/h3&gt;
+&lt;p&gt;There is another technique to solve trigonometric function. Just as every
+trigonometric function can be written in term of \( \tan \) it can also be written
+in terms of \( \exp \).&lt;/p&gt;
+&lt;p&gt;$$ sin(x) = - \frac{i}{2} \left(e^{i x} - e^{- i x}\right) $$
+$$ cos(x) = \frac{e^{i x}}{2} + \frac{1}{2} e^{- i x} $$
+$$ tan(x) = \frac{i \left(- e^{i x} + e^{- i x}\right)}{e^{i x} + e^{- i x}} $$
+$$ cot(x) = \frac{i \left(e^{i x} + e^{- i x}\right)}{e^{i x} - e^{- i x}} $$&lt;/p&gt;
+&lt;p&gt;So, solving a trigonometric equation is equivalent to solving a rational
+function in \( \exp \). Note: here the \( \exp \) is in complex domain and
+equation \( exp(x) = y \) has solution
+\( \left\{i \left(2 \pi n + \arg{\left (y \right )}\right) + \log{\left (\left\lvert{y}\right\rvert \right )}\; |\; n \in \mathbb{Z}\right\} \)
+when solved for \( x \).&lt;/p&gt;&lt;/div&gt;</description><category>mathjax</category><category>sympy</category><guid>http://hargup.in/sympy/week-6.html</guid><pubDate>Wed, 02 Jul 2014 08:43:01 GMT</pubDate></item><item><title>week 5</title><link>http://hargup.in/sympy/week-5.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;h3&gt;Solving Trigonometric Function (part I)&lt;/h3&gt;
+&lt;p&gt;This week I spend time on making trigonometric solvers work.
+Every trigonometric function can be written in terms of tan.&lt;/p&gt;
+&lt;p&gt;$$ sin(x) = \frac{2*tan(x/2)}{tan^{2}(x/2)} $$&lt;/p&gt;
+&lt;p&gt;$$ cos(x) = \frac{-tan^{2}(x/2) + 1}{tan^{2}(x/2) + 1} $$&lt;/p&gt;
+&lt;p&gt;$$ cot(x) = \frac{1}{tan(x)} $$&lt;/p&gt;
+&lt;p&gt;A basic technique to solve trigonometric equations can be rewriting the equation in terms of tan.
+And if the equation is made by addition, multiplication or quotient of
+trigonometric functions then the transformed equation is a equivalent to a rational
+function in tan. That equation can be solved by the usual polynomial
+solving techniques.&lt;/p&gt;
+&lt;p&gt;Taking the example from the &lt;a href="https://github.com/sympy/sympy/wiki/solvers"&gt;doc&lt;/a&gt;
+\( cos(x) + sin(x) \) gets converted to
+\( \frac{-tan^{2}(x/2) + 2*tan(x/2) + 1}{tan^{2}(x/2) + 1} \)&lt;/p&gt;
+&lt;p&gt;The solution of this equations is \( tan(x/2) = 1 +- sqrt(2) \).
+Since the inverse of tan is
+\( \left\{2 \pi n + \operatorname{atan}{\left (y \right )}\; |\; n \in \mathbb{Z}\right\} \)
+the solution of the given equation is
+$$ \left\{2 \pi n - \frac{\pi}{8}\; |\; n \in \mathbb{Z}\right\} \cup \left\{2 \pi n + \frac{3 \pi}{8}\; |\; n \in \mathbb{Z}\right\} $$&lt;/p&gt;
+&lt;p&gt;Though it appears this technique should work universally for trigonometric
+equation it fails for even \( sin(x) = 0 \). From the table above
+\( sin(x) = \frac{2*tan(x/2)}{tan^{2}(x/2)} \)
+So, the \( sin(x) = 0 \) occurs at \( tan(x/2) = 0 \) which has solution
+\( \left\{2 \pi n\; |\; n \in \mathbb{Z}\right\} \)
+But the solution is \( \left\{ \pi n\; |\; n \in \mathbb{Z}\right\} \)
+. Why are we missing some solutions? The
+reason is \( sin(x) = 0 \) also occurs when denominator tends to \( \infty \),
+i.e.,
+the values where \( tan^{2}(x/2) + 1 \) tends to \( \infty \).
+We had encountered a similar problem for the solution of
+$$ \frac{1}{\left(\frac{x}{x + 1} + 3\right)^{2}} $$&lt;/p&gt;
+&lt;p&gt;here \( x = -1 \) is not a point in the domain of the of the equation. The solver
+simplifies the equation to&lt;/p&gt;
+&lt;p&gt;$$ \frac{\left(x + 1\right)^{2}}{\left(4 x + 3\right)^{2}} $$&lt;/p&gt;
+&lt;p&gt;which extends the domain to include the point \( x = -1 \) which is also the
+solution to the transformed equation. There we wrote a sub procedure
+&lt;code&gt;domain_check&lt;/code&gt; to verify if the returned solution is part of the domain of the
+original equation. The problem here is slightly different in the sense that
+transforming the equation decreases the domain of the solutions and not increase
+it.&lt;/p&gt;
+&lt;p&gt;To find such solution we have allow \( \infty \) to be solution to equations, we
+will be working on extended reals instead of just reals.  I think this change
+will simplify a lot of things.&lt;/p&gt;
+&lt;p&gt;Another thing which should be taken care off is that we cannot naively search
+for the values for which the denominator tends to infinity as for the same
+value numerator might also attain infinitely large value, we will have to
+conceder the limiting value of the equation.&lt;/p&gt;
+&lt;!--
+A technique followed by current solvers is.
+- Git Rebase
+- The tan technique
+- The problems with tan technique
+- the Exp technique
+- The problem with exp technique
+- Complex logarithms and multivalued(set valued) functions
+--&gt;&lt;/div&gt;</description><category>mathjax</category><category>sympy</category><guid>http://hargup.in/sympy/week-5.html</guid><pubDate>Thu, 26 Jun 2014 11:43:01 GMT</pubDate></item></channel></rss>
