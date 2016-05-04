@@ -34,7 +34,7 @@
  </url>
  <url>
   <loc>http://hargup.in/categories/</loc>
-  <lastmod>2016-05-04</lastmod>
+  <lastmod>2016-05-05</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/categories/gsoc.html</loc>
@@ -49,6 +49,10 @@
   <lastmod>2016-05-05</lastmod>
  </url>
  <url>
+  <loc>http://hargup.in/categories/webnotes.html</loc>
+  <lastmod>2016-05-05</lastmod>
+ </url>
+ <url>
   <loc>http://hargup.in/quotes.html</loc>
   <lastmod>2016-05-05</lastmod>
  </url>
@@ -57,88 +61,8 @@
   <lastmod>2016-05-05</lastmod>
  </url>
  <url>
-  <loc>http://hargup.in/sympy/2013/08/30/case_for_static_websites.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/2013/09/09/plotting_graphs_with_python.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/_templates/page.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/_templates/post.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/drafts/writing_the_review_of_to_kill_a_mocking_bird.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
   <loc>http://hargup.in/sympy/gsoc-2014-with-sympy.html</loc>
   <lastmod>2016-05-05</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/master.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/themes/signal0/boilerplate/changelog.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/themes/signal0/boilerplate/contributing.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/themes/signal0/boilerplate/doc/crossdomain.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/themes/signal0/boilerplate/doc/css.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/themes/signal0/boilerplate/doc/extend.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/themes/signal0/boilerplate/doc/faq.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/themes/signal0/boilerplate/doc/htaccess.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/themes/signal0/boilerplate/doc/html.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/themes/signal0/boilerplate/doc/js.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/themes/signal0/boilerplate/doc/misc.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/themes/signal0/boilerplate/doc/toc.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/themes/signal0/boilerplate/doc/usage.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/themes/signal0/boilerplate/license.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/sympy/themes/signal0/boilerplate/readme.html</loc>
-  <lastmod>2016-05-04</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/sympy/week-1-and-week-2.html</loc>
@@ -182,7 +106,7 @@
  </url>
  <url>
   <loc>http://hargup.in/webnotes/</loc>
-  <lastmod>2016-05-04</lastmod>
+  <lastmod>2016-05-05</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/webnotes/a_non_programmers_apology.html</loc>
@@ -231,14 +155,6 @@
  <url>
   <loc>http://hargup.in/webnotes/index-1.html</loc>
   <lastmod>2016-05-05</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/webnotes/index-10.html</loc>
-  <lastmod>2016-05-04</lastmod>
- </url>
- <url>
-  <loc>http://hargup.in/webnotes/index-11.html</loc>
-  <lastmod>2016-05-04</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/webnotes/index-2.html</loc>

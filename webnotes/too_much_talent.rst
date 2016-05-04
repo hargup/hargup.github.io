@@ -1,6 +1,7 @@
 .. url: http://www.scientificamerican.com/article/the-surprising-problem-of-too-much-talent/
 .. title: The Surprising Problem of Too Much Talent
 .. date: Tuesday 08 December 2015 04:12:55 PM IST
+.. tags: webnotes
 
 The study from some sports suggests that add more talented people decreases the
 overall team performance probably due to decreased coversion in the team. I

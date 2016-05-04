@@ -1,6 +1,7 @@
 .. title: When Women Stopped Coding
 .. url: http://www.npr.org/sections/money/2014/10/21/357629765/when-women-stopped-coding
 .. date: 2015-11-07
+.. tags: webnotes
 .. source: shared by a friend through e-mail
 
 In 1970's the number of women was low(10-15%) in every field, be in law,

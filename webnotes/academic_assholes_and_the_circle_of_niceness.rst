@@ -1,6 +1,7 @@
 .. url: https://thesiswhisperer.com/2013/02/13/academic-assholes/
 .. title: Academic Assholes and the circle of niceness
 .. date: 2015-11-08 17:10
+.. tags: webnotes
 
 Academia has a problem of Assholes, people who belittle other people, bash for
 not knowing something etc. In this article the author discuss what promotes

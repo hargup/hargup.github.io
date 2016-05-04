@@ -1,4 +1,5 @@
 .. date: 2015-11-07
+.. tags: webnotes
 .. title: Anita Sarkeesian and Liana K
 .. url: https://www.youtube.com/watch?v=Nk4eF0uJZ68
 

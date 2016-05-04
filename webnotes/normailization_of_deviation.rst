@@ -1,6 +1,7 @@
 .. url: http://danluu.com/wat/
 .. title: Normalization of Deviation
 .. date: Thursday 31 December 2015 12:16:01 AM IST
+.. tags: webnotes
 
 This was a pretty well written post about how very messed up practices end up
 normalized. The answer is a weird combinatin of over optimism, rationalization

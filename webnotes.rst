@@ -12,3 +12,4 @@ write a two line note about it. I'm hoping that this will slow me down and will
 force me to think about the information I consume.
 
 .. post-list::
+    :tags: webnotes

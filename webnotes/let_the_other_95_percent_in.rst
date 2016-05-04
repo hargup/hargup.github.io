@@ -1,6 +1,7 @@
 .. title: Let the other 95% Of Reality In
 .. url: http://gilesbowkett.blogspot.in/2015/06/let-other-95-of-reality-in.html
 .. date: 2015-11-10
+.. tags: webnotes
 .. source: Through a obscure chain of links.
 
 This is a rebuttal of Paul Graham's essay "Let the 95% in", where PG argues to

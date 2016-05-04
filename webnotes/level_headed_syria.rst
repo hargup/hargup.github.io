@@ -1,6 +1,7 @@
 .. url: https://plus.google.com/+YonatanZunger/posts/RN2yx54bxPa
 .. title: Paris attacks, deeper look
 .. date: Monday 16 November 2015 01:59:56 PM IST
+.. tags: webnotes
 .. source: Shared on twitter by someone
 
 Yonatan Zunger, tries to take a deeper look on the Paris attacks and why they

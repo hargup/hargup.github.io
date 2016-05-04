@@ -1,6 +1,7 @@
 .. url: http://www.dw.com/en/why-isnt-the-nsa-a-hot-topic-in-the-us-elections/a-19207455
 .. title: Why isn't the NSA a hot topic in the US elections?
 .. date: Thursday 28 April 2016 08:45:55 PM IST
+.. tags: webnotes
 
 The article talks about how NSA surveillance should be one of the topics of the
 US presidential election but isn't. It compares the situation with Germany

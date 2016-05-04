@@ -1,6 +1,7 @@
 .. url: http://www.theguardian.com/world/2015/nov/10/surveillance-bill-dire-consequences-apple-tim-cook
 .. title: "Extremism"
 .. date: Sunday 22 November 2015 02:26:14 PM IST
+.. tags: webnotes
 
 UK Government is trying to push a which will force internet and phone companies
 to store the all the data for 12 months. Indian government also pushed a draft

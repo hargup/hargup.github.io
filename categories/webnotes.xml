@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta</title><link>http://hargup.in/</link><description>Personal website of Harsh Gupta</description><atom:link href="http://hargup.in/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 04 May 2016 20:37:06 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Normalization of Deviation</title><link>http://hargup.in/webnotes/wtf_wtf_wtf.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;span&gt;&lt;!-- url: http://danluu.com/wat/ --&gt;
-&lt;!-- title: Normalization of Deviation --&gt;
-&lt;!-- date --&gt;&lt;/span&gt;</description><guid>http://hargup.in/webnotes/wtf_wtf_wtf.html</guid><pubDate>Wed, 04 May 2016 18:30:00 GMT</pubDate></item><item><title>Failed Wikipedia</title><link>http://hargup.in/webnotes/why_wikipedia.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;ul&gt;
-&lt;li&gt;Contributors follow power law, the median number of contributors is 1.&lt;/li&gt;
-&lt;/ul&gt;</description><guid>http://hargup.in/webnotes/why_wikipedia.html</guid><pubDate>Wed, 04 May 2016 18:30:00 GMT</pubDate></item><item><title>once_upon_a_jihad</title><link>http://hargup.in/webnotes/once_upon_a_jihad.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;This essay provides a facinating account of westners who leave their homes to
-fight in middle east, Afghanistan and other places to fight for "jihad". The
-highlights that for these people going and fighting in a war is pretty much
-like a personal fairly tail&lt;/p&gt;</description><guid>http://hargup.in/webnotes/once_upon_a_jihad.html</guid><pubDate>Wed, 04 May 2016 18:30:00 GMT</pubDate></item><item><title>economic_inequality</title><link>http://hargup.in/webnotes/economic_inequality.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;When Paul started off saying he is interested in inequality because he created
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta (webnotes)</title><link>http://hargup.in/</link><description></description><atom:link href="http://hargup.in/categories/webnotes.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 04 May 2016 20:37:06 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>economic_inequality</title><link>http://hargup.in/webnotes/economic_inequality.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;When Paul started off saying he is interested in inequality because he created
 I was half expecting him to "this is what I've done wrong and I want to fix
 it". Unfortunately it was another essay to justify "undeserved" wealth in the
 hands of startup founders.&lt;/p&gt;
@@ -22,12 +15,7 @@ will be for them to make even more money. That has nothing to do with how much
 helped the world, but that doesn't mean they "deserve" all the wealth they
 have.&lt;/p&gt;
 &lt;p&gt;I don't have answer to the problem of inequality, but this doesn't mean the
-problem doesn't exist.&lt;/p&gt;&lt;/div&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/economic_inequality.html</guid><pubDate>Wed, 04 May 2016 18:30:00 GMT</pubDate></item><item><title>digital_activism</title><link>http://hargup.in/webnotes/digital_activism.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;ul&gt;
-&lt;li&gt;Technology by itself is not enough we need to leverage it to create the
-  effect we want it to have&lt;/li&gt;
-&lt;li&gt;Lumia&lt;/li&gt;
-&lt;li&gt;Democracy OS&lt;/li&gt;
-&lt;/ul&gt;</description><guid>http://hargup.in/webnotes/digital_activism.html</guid><pubDate>Wed, 04 May 2016 18:30:00 GMT</pubDate></item><item><title>Why isn't the NSA a hot topic in the US elections?</title><link>http://hargup.in/webnotes/why_isnt_nsa_a_hot_topic_in_us_elections.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;The article talks about how NSA surveillance should be one of the topics of the
+problem doesn't exist.&lt;/p&gt;&lt;/div&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/economic_inequality.html</guid><pubDate>Wed, 04 May 2016 18:30:00 GMT</pubDate></item><item><title>Why isn't the NSA a hot topic in the US elections?</title><link>http://hargup.in/webnotes/why_isnt_nsa_a_hot_topic_in_us_elections.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;The article talks about how NSA surveillance should be one of the topics of the
 US presidential election but isn't. It compares the situation with Germany
 where the population is very privacy conscious. It brings out important facts
 but doesn't connect them well, it says that German population is privacy
@@ -130,4 +118,35 @@ was not a Trade Unionist.&lt;/p&gt;
 Jew.&lt;/p&gt;
 &lt;p&gt;Then they came for me and there was no one left to speak for me.&lt;/p&gt;
 &lt;p class="attribution"&gt;—Martin Niemöller&lt;/p&gt;
-&lt;/blockquote&gt;&lt;/div&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/let_fear_not_defeat_our_values.html</guid><pubDate>Sat, 12 Dec 2015 19:16:47 GMT</pubDate></item></channel></rss>
+&lt;/blockquote&gt;&lt;/div&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/let_fear_not_defeat_our_values.html</guid><pubDate>Sat, 12 Dec 2015 19:16:47 GMT</pubDate></item><item><title>A Non-Programmer’s Apology</title><link>http://hargup.in/webnotes/a_non_programmers_apology.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;I pretty much agree with Aaron here. Why am I still doing programming? Because
+the programming I do is easy and it gets paid well and it is very uncomfortable
+to move to newer areas, especially because they involve a lot of uncertaintly.
+But do I want to do programming for life? Programming is great and powerful
+tool but programming as end of things is not something that I want. I can learn
+the new skills with time, I guess this time it is important that I don't take
+pure programming jobs, or else it will become harder and harded to come out of
+comfort zone. Take computational social science or ethics or civics intern and
+more policy and social issue and please keep writing and share your writings.
+You'll be misrepresented/misunderstood a few times, but its okay thats the way
+you'll learn.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/a_non_programmers_apology.html</guid><pubDate>Wed, 09 Dec 2015 20:56:18 GMT</pubDate></item><item><title>The Surprising Problem of Too Much Talent</title><link>http://hargup.in/webnotes/too_much_talent.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;The study from some sports suggests that add more talented people decreases the
+overall team performance probably due to decreased coversion in the team. I
+guess the problem is more because of hiring assholes rather than hiring talent.
+People skills and physical/sports/domain ability often don't come together.
+And as suggested by _&amp;lt;stegasourous strategy&amp;gt;, in some areas assholery appears
+more clever (say talented).&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/too_much_talent.html</guid><pubDate>Tue, 08 Dec 2015 10:42:55 GMT</pubDate></item><item><title>The problem with Female SuperHeros</title><link>http://hargup.in/webnotes/problem_with_female_superheroes.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;The article summarized a research which found that exposure to a 13 minute clip
+featuring the Damsel in distress trop reduced the gender egalitarian views of
+the participant and exposure of hypersexualized female characters reduced their
+body esteem. To me the results were not unexpected. The comments thread wasn't
+unexpected either. A lot of people were saying why there are studying the
+effect on only women and not on men. Others were saying men are sexualized too.
+Both are valid propositions if they are poposed as extension of research but
+totally unvalid in the context because they were used to discredit the
+research. Just because men suffer doesn't mean the sufferings of men and women
+are equal and the problems of women are not worth the attention.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/problem_with_female_superheroes.html</guid><pubDate>Tue, 08 Dec 2015 10:24:06 GMT</pubDate></item><item><title>How not to counter Modimania</title><link>http://hargup.in/webnotes/how_not_to_counter_modimania.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;A few weeks ago our prime minister Narendra Modi visited UK and a he was "not
+welcomed" there, at least by some of the people. An image of Modi with a sword
+in one hand and Om in background convering to Swastika symbolized that Modi is
+equivalent to Hitler. The author aptly said that such method to counter Hindu
+communalism aren't only outright offensive but also counter productive. The
+point is to attack Hindu Communalism not to attack Hindus. Author suggested
+that a better approach will be trying to evoke the spirit of tolerance and
+inclusiveness found in Vedic Hindism.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/how_not_to_counter_modimania.html</guid><pubDate>Tue, 24 Nov 2015 13:28:50 GMT</pubDate></item></channel></rss>

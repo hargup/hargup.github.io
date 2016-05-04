@@ -1,6 +1,7 @@
 .. url: http://kafila.org/2015/11/15/nehru-inconsistent-without-discrepency/
 .. title: Inconsistency with Discrepency
 .. date: 2015-11-15 12:25
+.. tags: webnotes
 
 
 This article shared an interesting and a very positive perspective on Nehru,

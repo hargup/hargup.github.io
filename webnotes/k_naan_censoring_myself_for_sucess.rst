@@ -1,6 +1,7 @@
 .. url: www.nytimes.com/2012/12/09/opinion/sunday/knaan-on-censoring-himself-for-success.html
 .. title: K'Naan of censoring himself for Success
 .. date: Thursday 19 November 2015 02:55:28 PM IST
+.. tags: webnotes
 
 K'Naan is amazing, I learned about him, when everybody learned about him during
 the 2010 FIFA world cup. A remix of his Wavin' Flag was selected as the theme

@@ -1,5 +1,6 @@
 .. title: The problem with Female SuperHeros
 .. date: Tuesday 08 December 2015 03:54:06 PM IST
+.. tags: webnotes
 .. url: http://www.scientificamerican.com/article/the-problem-with-female-superheroes/
 
 The article summarized a research which found that exposure to a 13 minute clip

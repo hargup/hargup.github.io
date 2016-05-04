@@ -1,6 +1,7 @@
 .. title: Why “do what you love” is bad career advice?
 .. url: http://qz.com/259190/why-do-what-you-love-is-bad-career-advice/
 .. date: 2015-11-01
+.. tags: webnotes
 
 
 Main Points
