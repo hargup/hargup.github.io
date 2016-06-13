@@ -14,6 +14,8 @@ SITE_URL = "http://hargup.in/"
 # BASE_URL = "http://hargup.in/"
 BLOG_EMAIL = "gupta.harsh96@gmail.com"
 BLOG_DESCRIPTION = "Personal website of Harsh Gupta"  # (translatable)
+
+WRITE_TAG_CLOUD = True
 # Nikola is multilingual!
 #
 # Currently supported languages are:
@@ -81,7 +83,9 @@ TRANSLATIONS_PATTERN = "{path}.{ext}.{lang}"
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/webnotes.html', 'Web Notes'),
+        ('/sympy.html', 'SymPy'),
         ('/quotes.html', 'Quotes'),
+        ('https://medium.com/@hargup', 'Medium Blog')
     ),
 }
 
@@ -128,6 +132,8 @@ POSTS = (
 # ("posts/*.md", "blog", "post.tmpl"),
 ("webnotes/*.rst", "webnotes", "post.tmpl"),
 ("webnotes/*.md", "webnotes", "post.tmpl"),
+("sympy/*.rst", "sympy", "post.tmpl"),
+("sympy/*.md", "sympy", "post.tmpl"),
 )
 
 PAGES = (
@@ -138,7 +144,7 @@ PAGES = (
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of "source" "relative destination".
 # Default is:
-FILES_FOLDERS = {'files': 'files' }
+FILES_FOLDERS = {'files': '' }
 # Which means copy 'files' into 'output'
 
 # A mapping of languages to file-extensions that represent that language.
@@ -327,7 +333,7 @@ FILTERS = {
                              # the main (the newest) index page (index.html)
 
 # Name of the theme to use.
-THEME = "readable"
+THEME = "blogtxt"
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
