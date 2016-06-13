@@ -85,6 +85,10 @@
 * https://en.wikipedia.org/wiki/Matthew_effect 
 
 * http://www.aserenko.com/papers/JOI_Serenko_Superstar_Phenomenon_Published.pdf
+
+* http://vidhilegalpolicy.in
+
+
   Superstar effect in Science
 
 * https://en.wikipedia.org/wiki/The_internal_contradictions_of_capital_accumulation
@@ -92,11 +96,13 @@
 
 * https://en.wikipedia.org/wiki/Wealth_concentration
 
+  * http://whopayswriters.com
+
 ## Technology and life
 
 * http://www.theguardian.com/technology/2016/feb/03/how-facebook-changed-our-friendships
 
-## Suviellance
+## Surveillance
 
 * https://theintercept.com/2016/04/28/new-study-shows-mass-surveillance-breeds-meekness-fear-and-self-censorship
 
@@ -108,6 +114,11 @@
 * https://www.youtube.com/watch?v=pIRfeVcG-eM&feature=youtu.be
 
 * http://arstechnica.com/tech-policy/2016/04/child-porn-suspect-jailed-for-7-months-for-refusing-to-decrypt-hard-drives/
+
+
+## Blogs
+
+* http://blog.invisiblethings.org/index.html
 
 
 - * * _
