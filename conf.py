@@ -333,7 +333,7 @@ FILTERS = {
                              # the main (the newest) index page (index.html)
 
 # Name of the theme to use.
-THEME = "blogtxt"
+THEME = "lanyon"
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
