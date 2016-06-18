@@ -15,7 +15,7 @@
 
 * https://tacticaltech.org/projects/all : Tactical Tech is an international organisation dedicated to the use of information in activism.
 
-* https://exposingtheinvisible.org/ : Has a series of case studies, interviews and tools that explore the far reaches of metadata in its capacity to protect, investigate and expose abuses of power. 
+* https://exposingtheinvisible.org/ : Has a series of case studies, interviews and tools that explore the far reaches of metadata in its capacity to protect, investigate and expose abuses of power.
 
 * https://wifo.org/ : World Intellectual Freedom Organization
 
@@ -82,7 +82,7 @@
 
 * http://blogs.harvard.edu/vrm/
 
-* https://en.wikipedia.org/wiki/Matthew_effect 
+* https://en.wikipedia.org/wiki/Matthew_effect
 
 * http://www.aserenko.com/papers/JOI_Serenko_Superstar_Phenomenon_Published.pdf
 
@@ -97,6 +97,12 @@
 * https://en.wikipedia.org/wiki/Wealth_concentration
 
   * http://whopayswriters.com
+
+# Privacy
+
+* http://precog.iiitd.edu.in
+
+* Alessandro Acquisti http://www.heinz.cmu.edu/~acquisti/
 
 ## Technology and life
 

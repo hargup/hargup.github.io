@@ -5,7 +5,8 @@
 <meta name="description" content="Personal website of Harsh Gupta">
 <meta name="viewport" content="width=device-width">
 <title>Harsh Gupta (old posts, page 2) | Harsh Gupta</title>
-<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 <link rel="canonical" href="http://hargup.in/webnotes/index-2.html">
 <link rel="prev" href="index-3.html" type="text/html">
@@ -24,44 +25,72 @@ MathJax.Hub.Config({
 </script><!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><link href="//fonts.googleapis.com/css?family=Open+Sans:300,600,400" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div id="wrapper">
-    <div id="container">
-        <div id="content">
-            <div id="header">
-                <h1 id="blog-title">
-                    <a href="http://hargup.in/" title="Harsh Gupta">Harsh Gupta</a>
-                </h1>
-                
-                
-            </div>
-        <div class="hfeed">
-            <!--Body content-->
-            
-        <div class="post hfeed">
-            <h2 class="entry-title"><a href="../sympy/week-11.html">Week 11 and Week 12: Wrapping up the project</a></h2>
-            <div class="entry-content">
-                <p>The GSoC is about to end. We have the suggested deadline tomorrow and the firm
+    <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+            styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"><!-- Toggleable sidebar --><div class="sidebar" id="sidebar">
+        <div class="sidebar-item">
+            <p>A reserved <a href="https://getnikola.com" target="_blank">Nikola</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> for Jekyll,
+            ported to Nikola by <a href="https://twitter.com/ralsina" target="_blank">@ralsina</a>.</p>
+        </div>
+        
+    <nav id="menu" role="navigation" class="sidebar-nav"><a class="sidebar-nav-item" href="../webnotes.html">Web Notes</a>
+        <a class="sidebar-nav-item" href="../sympy.html">SymPy</a>
+        <a class="sidebar-nav-item" href="../quotes.html">Quotes</a>
+        <a class="sidebar-nav-item" href="https://medium.com/@hargup">Medium Blog</a>
+    
+    
+    </nav>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          
+    <h3 id="brand" class="masthead-title">
+      <a href="http://hargup.in/" title="Harsh Gupta" rel="home">Harsh Gupta</a>
+    </h3>
+
+        </div>
+      </div>
+
+      <div class="container content" id="content">
+        
+
+<div class="posts">
+    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="../sympy/week-11.html" class="u-url">Week 11 and Week 12: Wrapping up the project</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
+            <p class="dateline"><a href="../sympy/week-11.html" rel="bookmark"><time class="post-date published dt-published" datetime="2014-08-10T17:39:01+05:30" title="2014-08-10 17:39">2014-08-10 17:39</time></a></p>
+                <p class="commentline">
+        
+
+
+        </p>
+</div>
+    </header><div class="p-summary entry-summary">
+    <p>The GSoC is about to end. We have the suggested deadline tomorrow and the firm
 deadline next week. We are wrapping up the project now, cleaning up the code,
 writing the documentation and turning the project into a usable state.
 Since the new solvers cannot be called compelete I have to make sure that the
 next person working on it can pick it up easily. I plan come up with a post with
 the summary of the work that was done, that challenges we faced and thing that
 needs to done and how can they be tackled.</p>
-            </div>
-            <div class="entry-meta">
-                <span class="meta-sep">|</span>
-                <span class="entry-date">Posted: <time class="published" datetime="2014-08-10T17:39:01+05:30">2014-08-10 17:39</time></span>
-                <span class="meta-sep">|</span>
-    		        
+    </div>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="../sympy/week-10.html" class="u-url">week 10: Radical equations</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
+            <p class="dateline"><a href="../sympy/week-10.html" rel="bookmark"><time class="post-date published dt-published" datetime="2014-07-29T17:39:01+05:30" title="2014-07-29 17:39">2014-07-29 17:39</time></a></p>
+                <p class="commentline">
         
 
 
-            </div>
-        </div>
-        <div class="post hfeed">
-            <h2 class="entry-title"><a href="../sympy/week-10.html">week 10: Radical equations</a></h2>
-            <div class="entry-content">
-                <div>
+        </p>
+</div>
+    </header><div class="p-summary entry-summary">
+    <div>
 <p>This week I worked on the solvers for the equations with radicals.
 Suppose you have to solve</p>
 <p>$$ \sqrt{x} + x - 2 = 0 $$.</p>
@@ -113,40 +142,36 @@ implementation</p>
         return _has_rational_power(pattern_match[a])
 </pre>
 </div>
-            </div>
-            <div class="entry-meta">
-                <span class="meta-sep">|</span>
-                <span class="entry-date">Posted: <time class="published" datetime="2014-07-29T17:39:01+05:30">2014-07-29 17:39</time></span>
-                <span class="meta-sep">|</span>
-    		        
+    </div>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="../sympy/week-9.html" class="u-url">week 9</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
+            <p class="dateline"><a href="../sympy/week-9.html" rel="bookmark"><time class="post-date published dt-published" datetime="2014-07-20T00:20:01+05:30" title="2014-07-20 00:20">2014-07-20 00:20</time></a></p>
+                <p class="commentline">
         
 
 
-            </div>
-        </div>
-        <div class="post hfeed">
-            <h2 class="entry-title"><a href="../sympy/week-9.html">week 9</a></h2>
-            <div class="entry-content">
-                <p>This week I moved back to college and my classes have restarted. This week
+        </p>
+</div>
+    </header><div class="p-summary entry-summary">
+    <p>This week I moved back to college and my classes have restarted. This week
 I worked on a PR to allow infinitely indexed <code>Range</code>. See
 https://github.com/sympy/sympy/pull/7741. While doing this PR I discovered
 that you cannot monkey patch <code>object</code> to assign some attribute. And I want to
 mention that Sergey(one of my mentors) is damn good reviewer.</p>
-            </div>
-            <div class="entry-meta">
-                <span class="meta-sep">|</span>
-                <span class="entry-date">Posted: <time class="published" datetime="2014-07-20T00:20:01+05:30">2014-07-20 00:20</time></span>
-                <span class="meta-sep">|</span>
-    		        
+    </div>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="../sympy/week-7.html" class="u-url">week 7</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
+            <p class="dateline"><a href="../sympy/week-7.html" rel="bookmark"><time class="post-date published dt-published" datetime="2014-07-12T19:30:01+05:30" title="2014-07-12 19:30">2014-07-12 19:30</time></a></p>
+                <p class="commentline">
         
 
 
-            </div>
-        </div>
-        <div class="post hfeed">
-            <h2 class="entry-title"><a href="../sympy/week-7.html">week 7</a></h2>
-            <div class="entry-content">
-                <div>
+        </p>
+</div>
+    </header><div class="p-summary entry-summary">
+    <div>
 <h2>Week 7, 8</h2>
 <h3>Fu Simplification</h3>
 <p>In the early part of the week 7 was thinking and working on design decisions.
@@ -271,21 +296,19 @@ a variable already solved then that solution is discarded.</li>
 </li>
 </ul>
 </div>
-            </div>
-            <div class="entry-meta">
-                <span class="meta-sep">|</span>
-                <span class="entry-date">Posted: <time class="published" datetime="2014-07-12T19:30:01+05:30">2014-07-12 19:30</time></span>
-                <span class="meta-sep">|</span>
-    		        
+    </div>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="../sympy/week-6.html" class="u-url">week 6</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
+            <p class="dateline"><a href="../sympy/week-6.html" rel="bookmark"><time class="post-date published dt-published" datetime="2014-07-02T14:13:01+05:30" title="2014-07-02 14:13">2014-07-02 14:13</time></a></p>
+                <p class="commentline">
         
 
 
-            </div>
-        </div>
-        <div class="post hfeed">
-            <h2 class="entry-title"><a href="../sympy/week-6.html">week 6</a></h2>
-            <div class="entry-content">
-                <div>
+        </p>
+</div>
+    </header><div class="p-summary entry-summary">
+    <div>
 <h3>Solving Trigonometric Function (part II)</h3>
 <p>There is another technique to solve trigonometric function. Just as every
 trigonometric function can be written in term of \( \tan \) it can also be written
@@ -300,18 +323,10 @@ equation \( exp(x) = y \) has solution
 \( \left\{i \left(2 \pi n + \arg{\left (y \right )}\right) + \log{\left (\left\lvert{y}\right\rvert \right )}\; |\; n \in \mathbb{Z}\right\} \)
 when solved for \( x \).</p>
 </div>
-            </div>
-            <div class="entry-meta">
-                <span class="meta-sep">|</span>
-                <span class="entry-date">Posted: <time class="published" datetime="2014-07-02T14:13:01+05:30">2014-07-02 14:13</time></span>
-                <span class="meta-sep">|</span>
-    		        
-        
+    </div>
+    </article>
+</div>
 
-
-            </div>
-        </div>
-    
         <nav class="postindexpager"><ul class="pager">
 <li class="previous">
                 <a href="index-3.html" rel="prev">Newer posts</a>
@@ -320,62 +335,18 @@ when solved for \( x \).</p>
                 <a href="index-1.html" rel="next">Older posts</a>
             </li>
         </ul></nav><script type="text/x-mathjax-config">
-        MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});</script><script src="../assets/js/mathjax.js"></script><!--End of body content-->
-</div>
-<!-- .hfeed -->
-    </div>
-<!-- #content -->
-</div>
-<!-- #container -->
-
-<div id="primary" class="theme_sidebar">
-    <ul>
-<li>
-<h3><a href="../webnotes.html">Web Notes</a></h3>
-            
-            
-            </li>
-<li>
-<h3><a href="../sympy.html">SymPy</a></h3>
-            
-            
-            </li>
-<li>
-<h3><a href="../quotes.html">Quotes</a></h3>
-            
-            
-            </li>
-<li>
-<h3><a href="https://medium.com/@hargup">Medium Blog</a></h3>
-            
-            
-        </li>
-<li>
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="../files/cc-by-sa4.png"></a>
-
-        </li>
-<li>
-    </li>
-</ul>
-</div>
-<!-- #primary .theme_sidebar -->
-
-<div id="footer">
-    <span id="theme-link"><a href="http://www.plaintxt.org/themes/blogtxt/" title="blog.txt theme for WordPress" rel="follow designer">blog.txt</a> 'theme by <span class="vcard"><a class="url fn n" href="http://scottwallick.com/" title="scottwallick.com" rel="follow designer"><span class="given-name">Scott</span><span class="additional-name"> Allan</span><span class="family-name"> Wallick</span></a></span></span>
-    <small>
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});</script><script src="../assets/js/mathjax.js"></script><footer id="footer" role="contentinfo"><p>
+</p>
 <div class="social-icons">
 <li> <a href="https://github.com/hargup/"> <i class="fa fa-2x fa-github"></i> </a> </li>
 <li> <a href="http://in.linkedin.com/hargup/"> <i class="fa fa-2x fa-linkedin"></i> </a> </li>
 <li> <a href="https://twitter.com/hargup13"> <i class="fa fa-2x fa-twitter"></i> </a> </li>
 </div>
 <a href="mailto:gupta.harsh96@gmail.com">Harsh Gupta</a>, Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a><br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="../files/cc-by-sa4.png"></a>
-<br></small><p>
-</p>
+<br></footer>
 </div>
-<!-- #footer -->
-
-</div>
-<!-- #wrapper -->
+    </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
     
 <script src="../assets/js/footnote.js"></script><script>
 $('li>a', '.social-icons').hover(
