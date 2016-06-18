@@ -12,7 +12,7 @@ SITE_URL = "http://hargup.in/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://hargup.in/"
-BLOG_EMAIL = "gupta.harsh96@gmail.com"
+BLOG_EMAIL = "mail@hargup.in"
 BLOG_DESCRIPTION = "Personal website of Harsh Gupta"  # (translatable)
 
 WRITE_TAG_CLOUD = True
@@ -392,14 +392,13 @@ LICENSE = """
 
 # A small copyright notice for the page footer (in HTML).
 CONTENT_FOOTER = """
-<div class="social-icons">
-<li> <a href="https://github.com/hargup/"> <i class="fa fa-2x fa-github"></i> </a> </li>
-<li> <a href="http://in.linkedin.com/hargup/"> <i class="fa fa-2x fa-linkedin" ></i> </a> </li>
-<li> <a href="https://twitter.com/hargup13"> <i class="fa fa-2x fa-twitter" ></i> </a> </li>
-</div>
-<a href='mailto:{email}'>{author}</a>, Powered by <a href='http://getnikola.com' rel='nofollow'>Nikola</a><br>
-{license}<br>
+{license}
 """
+# <div class="social-icons">
+# <li> <a href="https://github.com/hargup/"> <i class="fa fa-2x fa-github"></i> </a> </li>
+# <li> <a href="http://in.linkedin.com/hargup/"> <i class="fa fa-2x fa-linkedin" ></i> </a> </li>
+# <li> <a href="https://twitter.com/hargup13"> <i class="fa fa-2x fa-twitter" ></i> </a> </li>
+# </div>
 CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
                                        author=BLOG_AUTHOR,
                                        date=time.gmtime().tm_year,
