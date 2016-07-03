@@ -4,12 +4,12 @@
 .. tags: webnotes
 
 UK Government is trying to push a which will force internet and phone companies
-to store the all the data for 12 months. Indian government also pushed a draft
-of similar encryption policy a few months where everyone was required to store
-the plaintext of all the encryptions for 90 days. Probably UK and US government
-have laws where I can be arrested for being a terrorist "sympathizer" and I
-also heard a statement from David Cameroon that he wants to curb "non violent
-extremists". Tell me how is being a "extremist" here. Governments are simply
+to store the all the data for 12 months. Indian government also published a
+draft encryption policy a few months where everyone was required to store the
+plaintext of all the encryptions for 90 days. Probably UK and US government
+have laws where someone can be arrested for being a terrorist "sympathizer" and
+I also heard a statement from David Cameroon that he wants to curb "non violent
+extremists". Tell me who is being a "extremist" here. Governments are simply
 creating Fear, Uncertainly and Doubt to control more and more aspects of our
 lives.
 

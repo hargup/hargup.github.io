@@ -3,7 +3,7 @@
 .. date: Sunday 13 December 2015 12:46:47 AM IST
 .. tags: webnotes
 
-Recently American Presidential candidate Donal Trump called out for a total ban on Muslim immigration to America. It is great to see that Sundar Pichai, the CEO of Google, came out and spoke against it. I totally support his statement that people him, people who are privileged should speak up for people who are not so privileged and whose voices are often not included in the debate.
+Recently American Presidential candidate Donal Trump called out for a total ban on Muslim immigration to America. It is great to see that Sundar Pichai, the CEO of Google, come out and speak against it. I totally support his statement that people like him, people who are privileged should speak up for people who are not so privileged because whose voices are often not included in the debate.
 
 
 .. epigraph::
