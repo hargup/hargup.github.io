@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta (webnotes)</title><link>http://hargup.in/</link><description></description><atom:link href="http://hargup.in/categories/webnotes.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 26 Feb 2017 18:17:27 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>economic_inequality</title><link>http://hargup.in/webnotes/economic_inequality.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;When Paul started off saying he is interested in inequality because he created
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta (webnotes)</title><link>http://hargup.in/</link><description></description><atom:link href="http://hargup.in/categories/webnotes.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 26 Feb 2017 18:24:29 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>economic_inequality</title><link>http://hargup.in/webnotes/economic_inequality.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;When Paul started off saying he is interested in inequality because he created
 I was half expecting him to "this is what I've done wrong and I want to fix
 it". Unfortunately it was another essay to justify "undeserved" wealth in the
 hands of startup founders.&lt;/p&gt;
@@ -58,46 +58,7 @@ politics and maybe media in America compared to Germany. Corporate surveillance
 goes hand in hand in government surveillance, if corporates doesn't support an
 issue the issue remains unattractive for the politicians. Also it would be an
 interesting exercise to study the relation between the profits a parent company
-make through breaches of privacy and its coverage on surveillance.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/why_isnt_nsa_a_hot_topic_in_us_elections.html</guid><pubDate>Thu, 28 Apr 2016 15:15:55 GMT</pubDate></item><item><title>lessons_from_brain_scans</title><link>http://hargup.in/webnotes/lessons_from_brain_scans.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;SPECT Scans&lt;/p&gt;
-&lt;p&gt;Healthy scans are syematic&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p class="first"&gt;OCD front part is active
-* Seizer too much activity&lt;/p&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 8)&lt;/p&gt;
-&lt;p&gt;Unexpected indentation.&lt;/p&gt;
-&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p class="first"&gt;Phycatrists don't look at the organ they treat
-* Same symptoms can have very different brain scans&lt;/p&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 10)&lt;/p&gt;
-&lt;p&gt;Unexpected indentation.&lt;/p&gt;
-&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Mild Traumatic Brain Injury
-* Behavior is a expression of problem&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;People who do bad things often do have bad brains.
-* Crime evaluation and treatement&lt;/p&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 16)&lt;/p&gt;
-&lt;p&gt;Unexpected indentation.&lt;/p&gt;
-&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;NFL causes brain damage&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/lessons_from_brain_scans.html</guid><pubDate>Fri, 19 Feb 2016 15:39:08 GMT</pubDate></item><item><title>Normalization of Deviation</title><link>http://hargup.in/webnotes/normailization_of_deviation.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;This was a pretty well written post about how very messed up practices end up
+make through breaches of privacy and its coverage on surveillance.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/why_isnt_nsa_a_hot_topic_in_us_elections.html</guid><pubDate>Thu, 28 Apr 2016 15:15:55 GMT</pubDate></item><item><title>Normalization of Deviation</title><link>http://hargup.in/webnotes/normailization_of_deviation.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;This was a pretty well written post about how very messed up practices end up
 normalized. The answer is a weird combinatin of over optimism, rationalization
 and adaption. And when a messed up practice gets normalized it is very hard to
 see what's wrong with it.&lt;/p&gt;
@@ -157,4 +118,13 @@ overall team performance probably due to decreased coversion in the team. I
 guess the problem is more because of hiring assholes rather than hiring talent.
 People skills and physical/sports/domain ability often don't come together.
 And as suggested by _&amp;lt;stegasourous strategy&amp;gt;, in some areas assholery appears
-more clever (say talented).&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/too_much_talent.html</guid><pubDate>Tue, 08 Dec 2015 10:42:55 GMT</pubDate></item></channel></rss>
+more clever (say talented).&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/too_much_talent.html</guid><pubDate>Tue, 08 Dec 2015 10:42:55 GMT</pubDate></item><item><title>The problem with Female SuperHeros</title><link>http://hargup.in/webnotes/problem_with_female_superheroes.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;The article summarized a research which found that exposure to a 13 minute clip
+featuring the Damsel in distress trop reduced the gender egalitarian views of
+the participant and exposure of hypersexualized female characters reduced their
+body esteem. To me the results were not unexpected. The comments thread wasn't
+unexpected either. A lot of people were saying why there are studying the
+effect on only women and not on men. Others were saying men are sexualized too.
+Both are valid propositions if they are poposed as extension of research but
+totally unvalid in the context because they were used to discredit the
+research. Just because men suffer doesn't mean the sufferings of men and women
+are equal and the problems of women are not worth the attention.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/problem_with_female_superheroes.html</guid><pubDate>Tue, 08 Dec 2015 10:24:06 GMT</pubDate></item></channel></rss>
