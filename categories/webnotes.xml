@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta (webnotes)</title><link>http://hargup.in/</link><description></description><atom:link href="http://hargup.in/categories/webnotes.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 26 Feb 2017 18:24:29 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>economic_inequality</title><link>http://hargup.in/webnotes/economic_inequality.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;When Paul started off saying he is interested in inequality because he created
-I was half expecting him to "this is what I've done wrong and I want to fix
-it". Unfortunately it was another essay to justify "undeserved" wealth in the
-hands of startup founders.&lt;/p&gt;
-&lt;p&gt;Paul's essay fails to look at the dynamics of power and money. The amount of
-money someone has is often a proxy for political power in the hand of someone.
-Increasing inequality amounts to increasing disbalance in political power.
-Concentration of political power is problematic because the powerful influence
-things in their in their favor knowingly or unknowlingly ignoring the rest.&lt;/p&gt;
-&lt;p&gt;Another issue that Paul fails to address is the reason for economic inequality.
-The wealth of someone grows exponentially, the money someone has the easier it
-will be for them to make even more money. That has nothing to do with how much
-"deserving" they are or how much wealth they have. Sure your startups have
-helped the world, but that doesn't mean they "deserve" all the wealth they
-have.&lt;/p&gt;
-&lt;p&gt;I don't have answer to the problem of inequality, but this doesn't mean the
-problem doesn't exist.&lt;/p&gt;&lt;/div&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/economic_inequality.html</guid><pubDate>Sat, 25 Feb 2017 18:30:00 GMT</pubDate></item><item><title>The Streetlight Effect: A metaphor for knowledge and ignorance</title><link>http://hargup.in/webnotes/streetlight_effect.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;This was a fascinating piece about Streetlight Effect and using it a as
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta (webnotes)</title><link>http://hargup.in/</link><description></description><atom:link href="http://hargup.in/categories/webnotes.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 26 Feb 2017 18:38:06 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The Streetlight Effect: A metaphor for knowledge and ignorance</title><link>http://hargup.in/webnotes/streetlight_effect.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;This was a fascinating piece about Streetlight Effect and using it a as
 metaphor to describe knowledge and ignorance. The really interesting bit was
 where author described totalitarianism as something where there is only one
 view point be it of boilerplate Marxism or free market capitalism or anything.
@@ -58,7 +42,23 @@ politics and maybe media in America compared to Germany. Corporate surveillance
 goes hand in hand in government surveillance, if corporates doesn't support an
 issue the issue remains unattractive for the politicians. Also it would be an
 interesting exercise to study the relation between the profits a parent company
-make through breaches of privacy and its coverage on surveillance.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/why_isnt_nsa_a_hot_topic_in_us_elections.html</guid><pubDate>Thu, 28 Apr 2016 15:15:55 GMT</pubDate></item><item><title>Normalization of Deviation</title><link>http://hargup.in/webnotes/normailization_of_deviation.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;This was a pretty well written post about how very messed up practices end up
+make through breaches of privacy and its coverage on surveillance.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/why_isnt_nsa_a_hot_topic_in_us_elections.html</guid><pubDate>Thu, 28 Apr 2016 15:15:55 GMT</pubDate></item><item><title>Economic Inequality</title><link>http://hargup.in/webnotes/economic_inequality.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;When Paul started off saying he is interested in inequality because he created
+I was half expecting him to "this is what I've done wrong and I want to fix
+it". Unfortunately it was another essay to justify "undeserved" wealth in the
+hands of startup founders.&lt;/p&gt;
+&lt;p&gt;Paul's essay fails to look at the dynamics of power and money. The amount of
+money someone has is often a proxy for political power in the hand of someone.
+Increasing inequality amounts to increasing disbalance in political power.
+Concentration of political power is problematic because the powerful influence
+things in their in their favor knowingly or unknowlingly ignoring the rest.&lt;/p&gt;
+&lt;p&gt;Another issue that Paul fails to address is the reason for economic inequality.
+The wealth of someone grows exponentially, the money someone has the easier it
+will be for them to make even more money. That has nothing to do with how much
+"deserving" they are or how much wealth they have. Sure your startups have
+helped the world, but that doesn't mean they "deserve" all the wealth they
+have.&lt;/p&gt;
+&lt;p&gt;I don't have answer to the problem of inequality, but this doesn't mean the
+problem doesn't exist.&lt;/p&gt;&lt;/div&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/economic_inequality.html</guid><pubDate>Sat, 02 Jan 2016 19:17:25 GMT</pubDate></item><item><title>Normalization of Deviation</title><link>http://hargup.in/webnotes/normailization_of_deviation.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;This was a pretty well written post about how very messed up practices end up
 normalized. The answer is a weird combinatin of over optimism, rationalization
 and adaption. And when a messed up practice gets normalized it is very hard to
 see what's wrong with it.&lt;/p&gt;

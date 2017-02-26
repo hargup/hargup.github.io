@@ -4,11 +4,11 @@
 .. tags: webnotes
 
 Academicians by their nature and training are critical, they are skeptic and
-they are trained to see where things might go wrong. What can be faulty
-assumption and what step doesn't really follow from the previous one. Facing
+they are trained to see where things might go wrong. They need to think "What can be faulty
+assumption and what step doesn't really follow from the previous one". Facing
 and embracing your criticism is important as it brings out hidden flaws and
 helps you improve overall. This can be tough for people who are new to it. It
-was touch for the author of this blog post, they have decried the events where
+was tough for the author of this blog post, they have decried the events where
 they have cried in the bathroom and though about quitting academia on their
 forth day. But people eventually cope up with criticism and author describes
 mainly two strategies people take. Some people internalize what critiques like
