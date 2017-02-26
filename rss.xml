@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta</title><link>http://hargup.in/</link><description>Personal website of Harsh Gupta</description><atom:link href="http://hargup.in/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 03 Jul 2016 11:32:36 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Normalization of Deviation</title><link>http://hargup.in/webnotes/wtf_wtf_wtf.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;span&gt;&lt;!-- url: http://danluu.com/wat/ --&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta</title><link>http://hargup.in/</link><description>Personal website of Harsh Gupta</description><atom:link href="http://hargup.in/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 26 Feb 2017 18:17:27 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Normalization of Deviation</title><link>http://hargup.in/webnotes/wtf_wtf_wtf.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;span&gt;&lt;!-- url: http://danluu.com/wat/ --&gt;
 &lt;!-- title: Normalization of Deviation --&gt;
-&lt;!-- date --&gt;&lt;/span&gt;</description><guid>http://hargup.in/webnotes/wtf_wtf_wtf.html</guid><pubDate>Sat, 02 Jul 2016 18:30:00 GMT</pubDate></item><item><title>Failed Wikipedia</title><link>http://hargup.in/webnotes/why_wikipedia.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;ul&gt;
+&lt;!-- date --&gt;&lt;/span&gt;</description><guid>http://hargup.in/webnotes/wtf_wtf_wtf.html</guid><pubDate>Sat, 25 Feb 2017 18:30:00 GMT</pubDate></item><item><title>Failed Wikipedia</title><link>http://hargup.in/webnotes/why_wikipedia.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;ul&gt;
 &lt;li&gt;Contributors follow power law, the median number of contributors is 1.&lt;/li&gt;
-&lt;/ul&gt;</description><guid>http://hargup.in/webnotes/why_wikipedia.html</guid><pubDate>Sat, 02 Jul 2016 18:30:00 GMT</pubDate></item><item><title>once_upon_a_jihad</title><link>http://hargup.in/webnotes/once_upon_a_jihad.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;This essay provides a facinating account of westners who leave their homes to
+&lt;/ul&gt;</description><guid>http://hargup.in/webnotes/why_wikipedia.html</guid><pubDate>Sat, 25 Feb 2017 18:30:00 GMT</pubDate></item><item><title>once_upon_a_jihad</title><link>http://hargup.in/webnotes/once_upon_a_jihad.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;This essay provides a facinating account of westners who leave their homes to
 fight in middle east, Afghanistan and other places to fight for "jihad". The
 highlights that for these people going and fighting in a war is pretty much
-like a personal fairly tail&lt;/p&gt;</description><guid>http://hargup.in/webnotes/once_upon_a_jihad.html</guid><pubDate>Sat, 02 Jul 2016 18:30:00 GMT</pubDate></item><item><title>economic_inequality</title><link>http://hargup.in/webnotes/economic_inequality.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;When Paul started off saying he is interested in inequality because he created
+like a personal fairly tail&lt;/p&gt;</description><guid>http://hargup.in/webnotes/once_upon_a_jihad.html</guid><pubDate>Sat, 25 Feb 2017 18:30:00 GMT</pubDate></item><item><title>icann</title><link>http://hargup.in/webnotes/icann.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;blockquote&gt;
+&lt;p&gt;But the sheer volume of minutely documented and archived process within ICANN
+produces a weird, if unintentional, sleight of hand, one that is familiar to
+anyone who’s dealt with any large “open” institution, be it a government or
+open source software projects. At a certain scale and scope, radical
+transparency becomes a means of achieving near-total inscrutability. Concepts
+and policies hide behind jargon, jargon hides behind footnotes explaining
+jargon, footnotes are full of new jargon rabbit-holes to leap through in some
+dizzying political mash-up of House of Leaves with House of Cards. To tell
+someone it’s easy to figure out how ICANN works and what the organization
+“really” does by offering them hundreds of pages of PDFs on their website is a
+little disingenuous, no matter how many languages those PDFs are available in. &lt;/p&gt;
+&lt;/blockquote&gt;</description><guid>http://hargup.in/webnotes/icann.html</guid><pubDate>Sat, 25 Feb 2017 18:30:00 GMT</pubDate></item><item><title>economic_inequality</title><link>http://hargup.in/webnotes/economic_inequality.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;When Paul started off saying he is interested in inequality because he created
 I was half expecting him to "this is what I've done wrong and I want to fix
 it". Unfortunately it was another essay to justify "undeserved" wealth in the
 hands of startup founders.&lt;/p&gt;
@@ -22,114 +34,163 @@ will be for them to make even more money. That has nothing to do with how much
 helped the world, but that doesn't mean they "deserve" all the wealth they
 have.&lt;/p&gt;
 &lt;p&gt;I don't have answer to the problem of inequality, but this doesn't mean the
-problem doesn't exist.&lt;/p&gt;&lt;/div&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/economic_inequality.html</guid><pubDate>Sat, 02 Jul 2016 18:30:00 GMT</pubDate></item><item><title>digital_activism</title><link>http://hargup.in/webnotes/digital_activism.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;ul&gt;
+problem doesn't exist.&lt;/p&gt;&lt;/div&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/economic_inequality.html</guid><pubDate>Sat, 25 Feb 2017 18:30:00 GMT</pubDate></item><item><title>eat_your_own_turtle</title><link>http://hargup.in/webnotes/eat_your_own_turtle.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;Salespeople  were  experts  in  the  art  of  psychological manipulation,
+making the client trade, often against his ow n interest, while being happy
+about it and loving them and their company&lt;/p&gt;
+&lt;h2&gt;The Most Intolerant Wins: The Dominance of the Stubborn Minority&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The Minority rule:
+intransigent will dominate because of assymetry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To Read about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Re-normalization group&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Best worse-case divergence from expectation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nobody was fired for contracting IBM.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Another example is language assemtry&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;How do books get banned? How to minority view rule the others.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It is the most intolerant person who imposes virtue on the others precisely
+    of that intolerance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The most motivated wins&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Value of courage.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Rationality&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Avoiding the unccle point&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Regular arithmetic is good only for micro benefits and losses instead of
+    macro ones.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Situations with an absorbing state are very different from the one's without
+    it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Taleb's argument present interesting argumenta. I should probably try to run
+    a simulation for that.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Take maximum risk in everything that does not entertain ruin condition,
+but take max precaution in ones who does. -- Same applies to assumption of good
+faith norms.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Things that have repeated exposure should never be analyzed as a single
+    event.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Knowing too much without ability to eliminate junk degrades knowledge. -- My
+    efforts at this should be solidifying current knowledge rather than
+    absorbing more.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Intellectual  and  ethical  freedom  requires the absence  of  the  skin  of  others in one’s gam One-dimensional stochastic process always revisits.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How to own people&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Conditioning and psycological manipulation&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Forcing people to have something significant to loose if they disobey
+    authority.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Compared to contractors, employees have a significant skin in the game.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;By being employees, the employees signal certain kind of domestication.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Today a person is employeed by the idea that (s)he needs t obe employable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The best slave is someone you overpay and who know it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Traders and salespeople were only managable when they were unprofitable, in
+    which case they weren't wanted.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Foul Language as a signal of being free.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You don't signal competence if you don't take risks for it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What matters isn't what a person has or doesn't have; it is what he or she is
+    afraid of losing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It is easier to trust the word of an autocrat than a fragile elected
+    official.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When people have something to loose they loose courage.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Disorder increases with dimentionality&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;https://medium.com/@nntaleb/commencement-address-american-university-in-beirut-2016-a5c6d57984b#.p12llhkhd&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Success is antifragile&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;International Association of Name Droppers :D&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/eat_your_own_turtle.html</guid><pubDate>Sat, 25 Feb 2017 18:30:00 GMT</pubDate></item><item><title>digital_activism</title><link>http://hargup.in/webnotes/digital_activism.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;ul&gt;
 &lt;li&gt;Technology by itself is not enough we need to leverage it to create the
   effect we want it to have&lt;/li&gt;
 &lt;li&gt;Lumia&lt;/li&gt;
 &lt;li&gt;Democracy OS&lt;/li&gt;
-&lt;/ul&gt;</description><guid>http://hargup.in/webnotes/digital_activism.html</guid><pubDate>Sat, 02 Jul 2016 18:30:00 GMT</pubDate></item><item><title>Machine Bias</title><link>http://hargup.in/webnotes/machine_bias.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;There are two lessons I take out of this story:&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Promote Free Software, Free as in Free Speech, rather mandate their use in
-such cases. Even Free Software can also be biased but in case of non free
-software it can become practically impossible to find their biases and
-correct them.&lt;/li&gt;
-&lt;li&gt;We as should selling algorithms as magic, instead of saying there is 60
-likelihood that person X will commit the crime again, say according to my
-system the person X is sixty percent similar to other people who commit the
-crime again with my rather transparent definition of similarity. Ram and
-Rahim are brother, as brothers of course they are similar at many levels,
-Ram has commited a crime does that mean Rahim will do it too?&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/machine_bias.html</guid><pubDate>Thu, 26 May 2016 19:45:33 GMT</pubDate></item><item><title>Why isn't the NSA a hot topic in the US elections?</title><link>http://hargup.in/webnotes/why_isnt_nsa_a_hot_topic_in_us_elections.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;The article talks about how NSA surveillance should be one of the topics of the
-US presidential election but isn't. It compares the situation with Germany
-where the population is very privacy conscious. It brings out important facts
-but doesn't connect them well, it says that German population is privacy
-conscious because of the human rights violation by Eastern Block Germany and
-earlier by the Nazi secret police, but it reaches the conclusion that
-surveillance isn't a hot topic because it is very nuanced and doesn't make good
-catch phrase. But every topic is nuanced if you look deep enough and every
-issue has only one answer on the surface. Politicians don't generally aim to
-change the norm during the election but rather try to attract a sect of people
-who already agrees with her/him. So the question here should be why does the
-German population care and US doesn't. Well one of the answers can be history
-as the author already mentioned, there have been thought policing in the
-McCarthy era too but not sure about the extent to which it affected the white
-population. Another important factor should be the corporate influence in
-politics and maybe media in America compared to Germany. Corporate surveillance
-goes hand in hand in government surveillance, if corporates doesn't support an
-issue the issue remains unattractive for the politicians. Also it would be an
-interesting exercise to study the relation between the profits a parent company
-make through breaches of privacy and its coverage on surveillance.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/why_isnt_nsa_a_hot_topic_in_us_elections.html</guid><pubDate>Thu, 28 Apr 2016 15:15:55 GMT</pubDate></item><item><title>lessons_from_brain_scans</title><link>http://hargup.in/webnotes/lessons_from_brain_scans.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;SPECT Scans&lt;/p&gt;
-&lt;p&gt;Healthy scans are syematic&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p class="first"&gt;OCD front part is active
-* Seizer too much activity&lt;/p&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 8)&lt;/p&gt;
-&lt;p&gt;Unexpected indentation.&lt;/p&gt;
-&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p class="first"&gt;Phycatrists don't look at the organ they treat
-* Same symptoms can have very different brain scans&lt;/p&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 10)&lt;/p&gt;
-&lt;p&gt;Unexpected indentation.&lt;/p&gt;
-&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Mild Traumatic Brain Injury
-* Behavior is a expression of problem&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;People who do bad things often do have bad brains.
-* Crime evaluation and treatement&lt;/p&gt;
-&lt;div class="system-message"&gt;
-&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 16)&lt;/p&gt;
-&lt;p&gt;Unexpected indentation.&lt;/p&gt;
-&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;NFL causes brain damage&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/lessons_from_brain_scans.html</guid><pubDate>Fri, 19 Feb 2016 15:39:08 GMT</pubDate></item><item><title>Normalization of Deviation</title><link>http://hargup.in/webnotes/normailization_of_deviation.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;This was a pretty well written post about how very messed up practices end up
-normalized. The answer is a weird combinatin of over optimism, rationalization
-and adaption. And when a messed up practice gets normalized it is very hard to
-see what's wrong with it.&lt;/p&gt;
-&lt;p&gt;A very simply solution that Atul Gawande talked about in the Checklist
-Manifesto is to have a checklist. In the book he compared the medical sector
-and infrastucture/construction sector. Both fields are immensely complex but
-medicial practitioners often end up making terrible mistakes, which includes
-cases like the one where a surgen forgot her equipment in the patient, where as
-in construction error which have any harm to human life are very very rare.&lt;/p&gt;
-&lt;p&gt;But you don't have checklist for every small thing, and Atul provided a
-guideline to making checklist, I don't clearly remember and I should go and
-read the sections of the book again.&lt;/p&gt;
-&lt;p&gt;Checklists are useful because they end up freeing your mind from the
-unnecessary boring detail. there are also other cases I can think of&lt;/p&gt;
-&lt;p&gt;Where to apply a rule:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Where the rewards or looses of doing something occur only in long term, we
-tend to ignore the long term result and focus on instant gratification.&lt;/li&gt;
-&lt;li&gt;Always and never rules&lt;/li&gt;
-&lt;li&gt;The projects the complete counts and not the one you start.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Formalization leads to gramatization, when a formal structure is in place it is
-harder see things in informal terms or whatever that doesn't fall into that
-formal structure tends to get ignored. A very clear example will be case where
-peolple who have only learned about information transfer uses of language tend
-find phatic usuages like that of small talk "useless".  But as it evident from
-the use of term phatic, the way we with problems of formalization is more
-formalization trying to capture things which weren't captured earlier, ofcourse
-that formalization also leaves something. But as it said in Statistics, all
-models are false but some are useful.&lt;/p&gt;&lt;/div&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/normailization_of_deviation.html</guid><pubDate>Wed, 30 Dec 2015 18:46:01 GMT</pubDate></item><item><title>You're only 23 stop rushing life</title><link>http://hargup.in/webnotes/you_re_only_23.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;We are young, energetic and ambitious but impatient. We want to "successful",
-fast. Success is defined relative to the "success" of our peers which gives a
-feeling that if we are not rushing things we are "falling behind". In our
-definition success is a race. When you are running a race you can't stop to see
-if this race is something worth running for. In the "race of life" everybody is
-a looser. I think I can also say "in any race of life everybody is a looser".&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/you_re_only_23.html</guid><pubDate>Sat, 12 Dec 2015 19:49:19 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;</description><guid>http://hargup.in/webnotes/digital_activism.html</guid><pubDate>Sat, 25 Feb 2017 18:30:00 GMT</pubDate></item><item><title>bullshit</title><link>http://hargup.in/webnotes/bullshit.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;A lot of bullshit happens because people don't know what they are talking about&lt;/p&gt;
+&lt;p&gt;Bullshit is not a matter of concealing the truth, it is about manipulating the
+audience.&lt;/p&gt;
+&lt;p&gt;Bullshit is vague, &lt;/p&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/bullshit.html</guid><pubDate>Sat, 25 Feb 2017 18:30:00 GMT</pubDate></item><item><title>Community vs Compliance</title><link>http://hargup.in/webnotes/community_vs_compliance.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;This a very interesting discussion about GPL law suits and GPL enforcement. The
+main point of debate is whether to use law suits to enforce GPL or not. Both of
+the parties agree that having upstream contributions and user freedoms are
+important but disagree about the particular methods to pursue that goal. The
+side which pushes for law suits or threats argue that otherwise companies won't
+comply, we don't get the code back and users loose on freedom. The other side
+argues that law suits or their threats turn companies into law suits turn
+companies into enemies. They are less likely to coorperate, meaning worse
+software. Instead the way should be through internal negotiations, and changing
+the culture from inside, companies eventually do contribute upstream they also
+benifit from it and also because the law requires them to.&lt;/p&gt;
+&lt;p&gt;My personal opinion is that GPL is important, and the possibility of existance
+of a law suit. If a company is going very antagonistic there needs to be a law
+suits because otherwise when the companies know that no one realistic change of
+law suit then GPL is powerless. Stallman himself gave examples of cases where
+they were able to get GPL compliance simply about asking companies to do and
+telling them that they are legally required to do so. So to me the question is
+really about threshold, not the fact that they should be law suit or not,&lt;/p&gt;
+&lt;p&gt;Anyway as Linus says it is often easier to change things by working with your
+opponents rathan working against them but against them should appear like a
+realistic senario when things don't work out.&lt;/p&gt;&lt;/div&gt;</description><guid>http://hargup.in/webnotes/community_vs_compliance.html</guid><pubDate>Sat, 27 Aug 2016 21:38:08 GMT</pubDate></item><item><title>The Streetlight Effect: A metaphor for knowledge and ignorance</title><link>http://hargup.in/webnotes/streetlight_effect.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;This was a fascinating piece about Streetlight Effect and using it a as
+metaphor to describe knowledge and ignorance. The really interesting bit was
+where author described totalitarianism as something where there is only one
+view point be it of boilerplate Marxism or free market capitalism or anything.
+The totalitarian view point assumes that their framework can explain it all and
+everything else. Totalitarianism is the like the streetlight where you try to
+find all your answers but they don't exist there. The opposite of
+totalitarianism isn't another view point but darkness where good and bad aren't
+well defined and where the difference of between truth and false is not known.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/streetlight_effect.html</guid><pubDate>Mon, 22 Aug 2016 06:12:50 GMT</pubDate></item></channel></rss>

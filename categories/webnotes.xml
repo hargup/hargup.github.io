@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta (webnotes)</title><link>http://hargup.in/</link><description></description><atom:link href="http://hargup.in/categories/webnotes.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 03 Jul 2016 13:29:20 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>economic_inequality</title><link>http://hargup.in/webnotes/economic_inequality.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;When Paul started off saying he is interested in inequality because he created
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Harsh Gupta (webnotes)</title><link>http://hargup.in/</link><description></description><atom:link href="http://hargup.in/categories/webnotes.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 26 Feb 2017 18:17:27 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>economic_inequality</title><link>http://hargup.in/webnotes/economic_inequality.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;When Paul started off saying he is interested in inequality because he created
 I was half expecting him to "this is what I've done wrong and I want to fix
 it". Unfortunately it was another essay to justify "undeserved" wealth in the
 hands of startup founders.&lt;/p&gt;
@@ -15,7 +15,31 @@ will be for them to make even more money. That has nothing to do with how much
 helped the world, but that doesn't mean they "deserve" all the wealth they
 have.&lt;/p&gt;
 &lt;p&gt;I don't have answer to the problem of inequality, but this doesn't mean the
-problem doesn't exist.&lt;/p&gt;&lt;/div&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/economic_inequality.html</guid><pubDate>Sat, 02 Jul 2016 18:30:00 GMT</pubDate></item><item><title>Why isn't the NSA a hot topic in the US elections?</title><link>http://hargup.in/webnotes/why_isnt_nsa_a_hot_topic_in_us_elections.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;The article talks about how NSA surveillance should be one of the topics of the
+problem doesn't exist.&lt;/p&gt;&lt;/div&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/economic_inequality.html</guid><pubDate>Sat, 25 Feb 2017 18:30:00 GMT</pubDate></item><item><title>The Streetlight Effect: A metaphor for knowledge and ignorance</title><link>http://hargup.in/webnotes/streetlight_effect.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;This was a fascinating piece about Streetlight Effect and using it a as
+metaphor to describe knowledge and ignorance. The really interesting bit was
+where author described totalitarianism as something where there is only one
+view point be it of boilerplate Marxism or free market capitalism or anything.
+The totalitarian view point assumes that their framework can explain it all and
+everything else. Totalitarianism is the like the streetlight where you try to
+find all your answers but they don't exist there. The opposite of
+totalitarianism isn't another view point but darkness where good and bad aren't
+well defined and where the difference of between truth and false is not known.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/streetlight_effect.html</guid><pubDate>Mon, 22 Aug 2016 06:12:50 GMT</pubDate></item><item><title>Another rant about academia and open source</title><link>http://hargup.in/webnotes/another_rant_about_academia_and_open_source.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;&amp;gt; You can win in two ways: you can research something that helps somebody beat
+&amp;gt; somebody else up or consume more, so that they give you funding. Or you can win
+&amp;gt; by not losing, by pulling some wild theoretical stunt that puts you out of
+&amp;gt; range of everybody else so that they can’t come after you. You become good at
+&amp;gt; critiquing things in ways that sound smart, and tell people who disagree with
+&amp;gt; you that they haven’t read your cannon. You hope that if they call your bluff
+&amp;gt; and read it, they will be so converted by the experience that they will leave
+&amp;gt; you alone.&lt;/p&gt;
+&lt;p&gt;This para drives home the point at so many levels. This is also something I
+need to be really careful while doing inter disciplinary research. Being from
+computational sciences I can use tools which no one in the humanities area
+understand and it will be trying to answer questions which no one in the area
+of the computational science cares about. So you'll be virtually unbeatable,
+which is a really bad place to be in.&lt;/p&gt;
+&lt;p&gt;Keeping your research in open and helping access it as much as possible not
+only increases the value of your research but also gives a proof that what you
+are working on is something somebody cares about.&lt;/p&gt;&lt;/div&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/another_rant_about_academia_and_open_source.html</guid><pubDate>Mon, 22 Aug 2016 05:33:14 GMT</pubDate></item><item><title>Why isn't the NSA a hot topic in the US elections?</title><link>http://hargup.in/webnotes/why_isnt_nsa_a_hot_topic_in_us_elections.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;The article talks about how NSA surveillance should be one of the topics of the
 US presidential election but isn't. It compares the situation with Germany
 where the population is very privacy conscious. It brings out important facts
 but doesn't connect them well, it says that German population is privacy
@@ -133,20 +157,4 @@ overall team performance probably due to decreased coversion in the team. I
 guess the problem is more because of hiring assholes rather than hiring talent.
 People skills and physical/sports/domain ability often don't come together.
 And as suggested by _&amp;lt;stegasourous strategy&amp;gt;, in some areas assholery appears
-more clever (say talented).&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/too_much_talent.html</guid><pubDate>Tue, 08 Dec 2015 10:42:55 GMT</pubDate></item><item><title>The problem with Female SuperHeros</title><link>http://hargup.in/webnotes/problem_with_female_superheroes.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;The article summarized a research which found that exposure to a 13 minute clip
-featuring the Damsel in distress trop reduced the gender egalitarian views of
-the participant and exposure of hypersexualized female characters reduced their
-body esteem. To me the results were not unexpected. The comments thread wasn't
-unexpected either. A lot of people were saying why there are studying the
-effect on only women and not on men. Others were saying men are sexualized too.
-Both are valid propositions if they are poposed as extension of research but
-totally unvalid in the context because they were used to discredit the
-research. Just because men suffer doesn't mean the sufferings of men and women
-are equal and the problems of women are not worth the attention.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/problem_with_female_superheroes.html</guid><pubDate>Tue, 08 Dec 2015 10:24:06 GMT</pubDate></item><item><title>How not to counter Modimania</title><link>http://hargup.in/webnotes/how_not_to_counter_modimania.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;A few weeks ago our prime minister Narendra Modi visited UK and a he was "not
-welcomed" there, at least by some of the people. An image of Modi with a sword
-in one hand and Om in background convering to Swastika symbolized that Modi is
-equivalent to Hitler. The author aptly said that such method to counter Hindu
-communalism aren't only outright offensive but also counter productive. The
-point is to attack Hindu Communalism not to attack Hindus. Author suggested
-that a better approach will be trying to evoke the spirit of tolerance and
-inclusiveness found in Vedic Hindism.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/how_not_to_counter_modimania.html</guid><pubDate>Tue, 24 Nov 2015 13:28:50 GMT</pubDate></item></channel></rss>
+more clever (say talented).&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/too_much_talent.html</guid><pubDate>Tue, 08 Dec 2015 10:42:55 GMT</pubDate></item></channel></rss>

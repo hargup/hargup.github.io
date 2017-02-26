@@ -88,6 +88,8 @@
 
 * http://vidhilegalpolicy.in
 
+* https://howdns.works How DNS works
+
 
   Superstar effect in Science
 
@@ -126,6 +128,8 @@
 
 * http://blog.invisiblethings.org/index.html
 
+* http://www.pgbovine.net
+
 
 - * * _
 
@@ -136,3 +140,11 @@
 * https://tldrlegal.com/
 
 * http://e4d.io/index/ Maker's space for underprevilaged children
+
+
+* * *
+
+
+* http://www.spliddit.org/
+
+* https://www.documentcloud.org/
