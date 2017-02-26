@@ -1,14 +1,15 @@
 .. title: Harsh Gupta
 .. slug: index
-.. tags: programming, sociology, computer science
 .. link:
 .. type: text
 
-Harsh Gupta is a fifth year undergrad student at Indian Institute of Technology
-Kharagpur. His major is in Mathematics and Computing and he interested in
+I'm Harsh Gupta, a fifth year undergrad student at Indian Institute of Technology
+Kharagpur majoring in Mathematics and Computing. I'm interested in
 understanding how technology, specifically internet, affects society at
 holistic level and then ultimately influencing its direction and impact.
 
-Most recently he has interened at Center for Internet and Society India and
-helped create Wikipedia Human Gender Indicators. He is also one of the core
-contributors of the Computer Algebra System SymPy.
+Most recently I interened at `Center for Internet and Society India <http://cis-india.org/>`_ and
+helped create `Wikipedia Human Gender Indicators <http://whgi.wmflabs.org/>`_. I'm also one of the core
+contributors of the computer algebra system `SymPy <http://sympy.org>`_. 
+
+You can write to me at *mail [at] hargup [dot] in*.
