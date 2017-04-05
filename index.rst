@@ -9,7 +9,7 @@ understanding how technology, specifically internet, affects society at
 holistic level and then ultimately influencing its direction and impact.
 
 Most recently I interened at `Center for Internet and Society India <http://cis-india.org/>`_ and
-helped create `Wikipedia Human Gender Indicators <http://whgi.wmflabs.org/>`_. I'm also one of the core
-contributors of the computer algebra system `SymPy <http://sympy.org>`_. 
+helped create `Wikipedia Human Gender Indicators <http://whgi.wmflabs.org/>`_. I'm also one of the
+founding memembers of `metaKGP <https://wiki.metakgp.org>`_.
 
 You can write to me at *mail [at] hargup [dot] in*.
