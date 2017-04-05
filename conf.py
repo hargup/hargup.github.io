@@ -85,6 +85,7 @@ NAVIGATION_LINKS = {
         ('/webnotes.html', 'Web Notes'),
         ('/sympy.html', 'SymPy'),
         ('/quotes.html', 'Quotes'),
+        ('/talks.html', 'Talks'),
         ('https://medium.com/@hargup', 'Medium Blog')
     ),
 }
