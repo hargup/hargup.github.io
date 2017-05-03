@@ -2,6 +2,12 @@
 
 .. epigraph::
 
+   Adults don't ask for permission, they do whatever they have to do.
+
+   -- (Don't remember who)
+
+.. epigraph::
+
    Life is very short and anxious for those who forget the past, neglect the
    present and fear the future.
 
