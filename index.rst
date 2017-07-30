@@ -15,4 +15,4 @@ I have interened at `Center for Internet and Society India
 You can write to me at *mail [at] hargup [dot] in*.
 
 
-`Blog <https://https://medium.com/@hargup>` | `Twitter <https://twitter.com/hargup13>` | `Github <https://github.com/hargup/>` | `GitLab <https://gitlab.com/hargup>` | `LinkedIn <https://www.linkedin.com/in/hargup/>`
+`Blog <https://https://medium.com/@hargup>`_ | `Twitter <https://twitter.com/hargup13>`_ | `Github <https://github.com/hargup/>`_ | `GitLab <https://gitlab.com/hargup>`_ | `LinkedIn <https://www.linkedin.com/in/hargup/>`_
