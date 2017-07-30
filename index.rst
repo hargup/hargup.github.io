@@ -3,7 +3,7 @@
 .. link:
 .. type: text
 
-I'm Harsh Gupta, a geek who is pretty much interested in everything. Lately
+I'm a geek who is pretty much interested in everything. Lately
 I've been exploring the intersection of law, technology and society. Everything
 expressed here is entirely personal.
 
@@ -15,4 +15,4 @@ I have interened at `Center for Internet and Society India
 You can write to me at *mail [at] hargup [dot] in*.
 
 
-`Blog <https://https://medium.com/@hargup>`_ | `Twitter <https://twitter.com/hargup13>`_ | `Github <https://github.com/hargup/>`_ | `GitLab <https://gitlab.com/hargup>`_ | `LinkedIn <https://www.linkedin.com/in/hargup/>`_
+`Blog <https://medium.com/@hargup>`_ | `Twitter <https://twitter.com/hargup13>`_ | `Github <https://github.com/hargup/>`_ | `GitLab <https://gitlab.com/hargup>`_ | `LinkedIn <https://www.linkedin.com/in/hargup/>`_
