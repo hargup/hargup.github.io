@@ -8,6 +8,18 @@
 
 .. epigraph::
 
+    All models are wrong, but some are harmful.
+
+    -- Nassim N. Taleb
+
+.. epigraph::
+
+    When we believe that we will be judged by silly criteria we will adapt and behave in silly ways.
+
+    --  Reinhard Werner, `The focus on bibliometrics makes papers less useful <http://www.nature.com/news/the-focus-on-bibliometrics-makes-papers-less-useful-1.16706>`_
+
+.. epigraph::
+
    Life is very short and anxious for those who forget the past, neglect the
    present and fear the future.
 
@@ -30,6 +42,7 @@
 
 .. epigraph::
     Not everything a feminist does is a feminist act.
+
 
 .. epigraph::
     It is difficult to get a man to understand something, when his salary
