@@ -3,9 +3,11 @@
 .. link:
 .. type: text
 
-I'm a geek who is pretty much interested in everything. Lately
-I've been exploring the intersection of law, technology and society. Everything
-expressed here is entirely personal.
+I'm a geek who is pretty much interested in everything. Lately I've been
+exploring the intersection of law, technology and society. I'm working at JP
+Morgan & Chase as a data scientist though, everything expressed on this website
+is expressed in personal capacity and doesn't reflect the position of my
+employer in any manner.
 
 I have interened at `Center for Internet and Society India
 <http://cis-india.org/>`_ and have helped create `Wikipedia Human Gender Indicators

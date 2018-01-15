@@ -61,10 +61,28 @@ target="_blank">@ralsina</a>.</p> -->
         
 
 <div class="posts">
-    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="../sympy/week-5.html" class="u-url">week 5</a></h1>
+    <article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="the_curse_of_smart_people.html" class="u-url">The Curse of Smart People</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
-            <p class="dateline"><a href="../sympy/week-5.html" rel="bookmark"><time class="post-date published dt-published" datetime="2014-06-26T17:13:01+05:30" title="2014-06-26 17:13">2014-06-26 17:13</time></a></p>
+            <p class="dateline"><a href="the_curse_of_smart_people.html" rel="bookmark"><time class="post-date published dt-published" datetime="2015-11-05T00:00:00+05:30" title="2015-11-05 00:00">2015-11-05 00:00</time></a></p>
+                <p class="commentline">
+        
+
+
+        </p>
+</div>
+    </header><div class="p-summary entry-summary">
+    <p>After working with a series of startups the author starts working for a certain
+big company and there he got surrounded by a lots and lots of smart people.
+There he realized that smart people are cursed, they are cursed by confidence.
+They have never really failed and after getting placed into a big company they
+can't really "fail". Successes are theirs but the failures get buried down by
+four layers of management and they don't need to own it.</p>
+    </div>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="why_we_use_ant.html" class="u-url">Why we use ANT?</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
+            <p class="dateline"><a href="why_we_use_ant.html" rel="bookmark"><time class="post-date published dt-published" datetime="2015-11-05T00:00:00+05:30" title="2015-11-05 00:00">2015-11-05 00:00</time></a></p>
                 <p class="commentline">
         
 
@@ -73,68 +91,27 @@ target="_blank">@ralsina</a>.</p> -->
 </div>
     </header><div class="p-summary entry-summary">
     <div>
-<h3>Solving Trigonometric Function (part I)</h3>
-<p>This week I spend time on making trigonometric solvers work.
-Every trigonometric function can be written in terms of tan.</p>
-<p>$$ sin(x) = \frac{2*tan(x/2)}{tan^{2}(x/2)} $$</p>
-<p>$$ cos(x) = \frac{-tan^{2}(x/2) + 1}{tan^{2}(x/2) + 1} $$</p>
-<p>$$ cot(x) = \frac{1}{tan(x)} $$</p>
-<p>A basic technique to solve trigonometric equations can be rewriting the equation in terms of tan.
-And if the equation is made by addition, multiplication or quotient of
-trigonometric functions then the transformed equation is a equivalent to a rational
-function in tan. That equation can be solved by the usual polynomial
-solving techniques.</p>
-<p>Taking the example from the <a href="https://github.com/sympy/sympy/wiki/solvers">doc</a>
-\( cos(x) + sin(x) \) gets converted to
-\( \frac{-tan^{2}(x/2) + 2*tan(x/2) + 1}{tan^{2}(x/2) + 1} \)</p>
-<p>The solution of this equations is \( tan(x/2) = 1 +- sqrt(2) \).
-Since the inverse of tan is
-\( \left\{2 \pi n + \operatorname{atan}{\left (y \right )}\; |\; n \in \mathbb{Z}\right\} \)
-the solution of the given equation is
-$$ \left\{2 \pi n - \frac{\pi}{8}\; |\; n \in \mathbb{Z}\right\} \cup \left\{2 \pi n + \frac{3 \pi}{8}\; |\; n \in \mathbb{Z}\right\} $$</p>
-<p>Though it appears this technique should work universally for trigonometric
-equation it fails for even \( sin(x) = 0 \). From the table above
-\( sin(x) = \frac{2*tan(x/2)}{tan^{2}(x/2)} \)
-So, the \( sin(x) = 0 \) occurs at \( tan(x/2) = 0 \) which has solution
-\( \left\{2 \pi n\; |\; n \in \mathbb{Z}\right\} \)
-But the solution is \( \left\{ \pi n\; |\; n \in \mathbb{Z}\right\} \)
-. Why are we missing some solutions? The
-reason is \( sin(x) = 0 \) also occurs when denominator tends to \( \infty \),
-i.e.,
-the values where \( tan^{2}(x/2) + 1 \) tends to \( \infty \).
-We had encountered a similar problem for the solution of
-$$ \frac{1}{\left(\frac{x}{x + 1} + 3\right)^{2}} $$</p>
-<p>here \( x = -1 \) is not a point in the domain of the of the equation. The solver
-simplifies the equation to</p>
-<p>$$ \frac{\left(x + 1\right)^{2}}{\left(4 x + 3\right)^{2}} $$</p>
-<p>which extends the domain to include the point \( x = -1 \) which is also the
-solution to the transformed equation. There we wrote a sub procedure
-<code>domain_check</code> to verify if the returned solution is part of the domain of the
-original equation. The problem here is slightly different in the sense that
-transforming the equation decreases the domain of the solutions and not increase
-it.</p>
-<p>To find such solution we have allow \( \infty \) to be solution to equations, we
-will be working on extended reals instead of just reals.  I think this change
-will simplify a lot of things.</p>
-<p>Another thing which should be taken care off is that we cannot naively search
-for the values for which the denominator tends to infinity as for the same
-value numerator might also attain infinitely large value, we will have to
-conceder the limiting value of the equation.</p>
-<!--
-A technique followed by current solvers is.
-- Git Rebase
-- The tan technique
-- The problems with tan technique
-- the Exp technique
-- The problem with exp technique
-- Complex logarithms and multivalued(set valued) functions
--->
+<p>Bruce Eckel writes about his experience with ANT a build system in JAVA, which
+turned out to be a much more complex and much less useful tool than their
+developers intended it to be. A lot of problems of it are there because its
+developers tried to solve a much more general problem than they were required
+to solve, Bruce warns against that because general problem can turn out to be
+a lot harder than a specific one and you might never solve it given the time
+and resources. Bruce also warns against having excessive frills in your
+software.</p>
+<p>I agree with his second advice and kinda agree with the first one not fully,
+I'm from mathematics and mathematicians love to generalize and often their
+generalizations leads much more simpler and elegant and powerful solution than
+the one you would have got if you worked on a specific part of it. In short
+term they building general solutions can be very costly, in long term they can
+pay very well.</p>
+<p><a class="reference external" href="https://xkcd.com/1319/">https://xkcd.com/1319/</a></p>
 </div>
     </div>
-    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="../sympy/week-4.html" class="u-url">week 4</a></h1>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="nepotism_in_america.html" class="u-url">Just How Nepotistic Are We (USA)?</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
-            <p class="dateline"><a href="../sympy/week-4.html" rel="bookmark"><time class="post-date published dt-published" datetime="2014-06-18T11:29:01+05:30" title="2014-06-18 11:29">2014-06-18 11:29</time></a></p>
+            <p class="dateline"><a href="nepotism_in_america.html" rel="bookmark"><time class="post-date published dt-published" datetime="2015-11-01T00:00:00+05:30" title="2015-11-01 00:00">2015-11-01 00:00</time></a></p>
                 <p class="commentline">
         
 
@@ -142,57 +119,16 @@ A technique followed by current solvers is.
         </p>
 </div>
     </header><div class="p-summary entry-summary">
-    <div>
-<h3>Intersections of Infinitely indexed sets</h3>
-<p>This week I implemented a method to do intersection of imagesets using the
-solutions of Diophantine equations at <a href="https://github.com/sympy/sympy/pull/7587">PR</a>.</p>
-<p>Say you have
-to find the intersection of sets <code>2*n| n in Integers</code> and <code>3*m| m in Integers</code>.
-The intersection of these sets is the set of the common values in the two sets,
-which in this case is equivalent to the values of <code>n</code> for which the equation <code>2*n - 3*m</code> has
-some integral solution in <code>m</code>. Or the values of <code>m</code> for which the <code>2*n - 3*m</code>
-has some integral solution in <code>n</code>. Diophantine equations are equations for
-which only integral solutions are searched for.
-The Diophantine module was written by
-<a href="https://github.com/thilinarmtb">Thilina</a> as his GSoC project last year.
-It gives the parametric solution for such equation.</p>
-<pre class="code literal-block">In [17]: diophantine(2*n - 3*m)
-Out[17]: {(-2*t, -3*t)}
-</pre>
-
-
-<p>The Solution is sorted according to alphabetic order of the variables involved.
-So the value of LHS (<code>2*n</code>) for which the equation is <code>2*(-3*t)</code> that is <code>-6*t</code>
-and it is the intersection of the sets described above <code>-6*t| t in Integers</code>.
-Since <code>-6*t| t in Integers</code> is same as <code>6*t| t in Integers</code> I also wrote some
-simplification rules for the imagesets with Integers as baseset.</p>
-<h3>Sets for Invert Function</h3>
-<p>The sets module turned out to be better than I expected. I had a perception
-that substitutions doesn't work properly with sets and I have even opened an
-<a href="https://github.com/sympy/sympy/issues/7483">issue</a> for that but it turned out
-I hadn't looked closely enough. It worked well for the free variables and it
-didn't worked for the things it shouldn't work i.e., the bound variables in the
-imagesets.</p>
-<p>Using sets simplified the code. All the list comprehensions like this
-<code>[i.subs(symbol, symbol/g) for i in _invert(h, symbol)]</code> were converted to
-simple substitutions for sets and other sets operations.  <code>_invert(h,
-symbol).subs(symbol, symbol/g)</code></p>
-<p>Just by changing the output of invert to sets, then by adding the inverse of
-trigonometric function and writing the code to rewrite then as tan I was able
-to return all the solutions of the equations like <code>cos(x) + sin(x) == 0</code> it
-turned to out to easier than I thought. Using sets as output makes thinking
-about the mathematics of the solvers much more easier and the code comes
-out to be pretty natural. Now when we can see the results I can surely say
-there can be no better output for solvers than sets.</p>
-<p>This week I'll study LambertW function and then code additional techniques to
-solve real equations. I'll also try to figure out techniques to perform Union
-on infinitely indexed sets.</p>
-</div>
+    <p>The article does shallow number crunching to show that that you are 28 thousand
+more likely to be a billionaire if your father was a billionaire, some nine
+thousand times more likely to be a reality T.V. star if your father was a
+reality T.V. star and he showed a similar number for politics. Politics and
+wealth are not meritocratic as some people might assume them to be.</p>
     </div>
-    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="../sympy/week-3.html" class="u-url">week 3</a></h1>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="why_do_what_you_love_is_bad_career_advice.html" class="u-url">Why “do what you love” is bad career advice?</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
-            <p class="dateline"><a href="../sympy/week-3.html" rel="bookmark"><time class="post-date published dt-published" datetime="2014-06-09T20:20:06+05:30" title="2014-06-09 20:20">2014-06-09 20:20</time></a></p>
+            <p class="dateline"><a href="why_do_what_you_love_is_bad_career_advice.html" rel="bookmark"><time class="post-date published dt-published" datetime="2015-11-01T00:00:00+05:30" title="2015-11-01 00:00">2015-11-01 00:00</time></a></p>
                 <p class="commentline">
         
 
@@ -200,39 +136,19 @@ on infinitely indexed sets.</p>
         </p>
 </div>
     </header><div class="p-summary entry-summary">
-    <div>
-<p>Hi,
-At the start of this week I wrote a method to check if a given solution
-lies in the domain of the equation or not. The problem it targeted was equations like <code>(x
-- 1)/(1 + 1/(x - 1))</code> though at <code>x = 1</code> the eqution has value zero the point is
-not present in the domain of the given equation. Though there is some
-disagreement on the implementation, the idea was to traverse the expression
-tree and check if any of the subexpression goes unbounded for the given
-value.  Later I observed that caching was messing with the tests. Sometimes
-the tests passed and sometimes the same test suit run without any
-modification in the code failed. To do the check on the subexpressions I need
-to have a copy of the original equation before the solver performs any
-simplification on it. Being not sure of the mutability of the equations
-I used deepcopy to copy the original equation to a variable. Later in a
-meeting we figured out that deepcopy was messing with caching. Aaron told me
-that every expression in sympy is immutable so don't need to perform deepcopy
-on anything.</p>
-<p>This week we will restart working on the sets to represent infinite solutions,
-Almost every equation in complex domain other than polynomials and rationals
-has infinitly many solutions. For example even the simple equation <code>exp(x) ==
-1</code> has infinitely many solutions that is <code>i*2*n*pi</code> where <code>n</code> is an integer.
-To return these solutions we first need to have infrastructure to handle them.
-The old(current) solvers does it wrong, it implicity mixes up the complex and real
-domains, the answer it returns to <code>exp(x) == 1</code> is only <code>[0]</code>. Earlier I was also doing it wrong
-so I decided that I should have two seperate solvers for reals and complex
-instead of one. This also simplifed the code for the reals solvers to a large
-extent.</p>
+    <ul class="simple">
+<li>Whatever you love should love you back!</li>
+<li>If you want to pursue creative fields, seeing life before going into it will
+help you create better art.</li>
+<li>If whatever you do doesn't pay your bill you end up hating it.</li>
+<li>You don't get to hear the failure stories of the advice "Do what you love".</li>
+<li>You can love more than one career path.</li>
+</ul>
 </div>
-    </div>
-    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="../sympy/week-1-and-week-2.html" class="u-url">Week 1 and Week 2</a></h1>
+    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="once_upon_a_jihad.html" class="u-url">Once Upon a Jihad</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
-            <p class="dateline"><a href="../sympy/week-1-and-week-2.html" rel="bookmark"><time class="post-date published dt-published" datetime="2014-06-02T17:15:54+05:30" title="2014-06-02 17:15">2014-06-02 17:15</time></a></p>
+            <p class="dateline"><a href="once_upon_a_jihad.html" rel="bookmark"><time class="post-date published dt-published" datetime="1990-01-01T00:00:00+05:30" title="1990-01-01 00:00">1990-01-01 00:00</time></a></p>
                 <p class="commentline">
         
 
@@ -240,82 +156,10 @@ extent.</p>
         </p>
 </div>
     </header><div class="p-summary entry-summary">
-    <div>
-<p>Hi, As I told you about in the previous post, My work for this summer will be
-improving the current equation solvers of sympy. There are basically three
-thing I'll have to do.</p>
-<ol>
-<li>Create a basic set infrastructure for solvers to return sets.</li>
-<li>Rewrite the current solvers to be clean and robust.</li>
-<li>On the top of 1 and 2 write new solvers and function, they will returning
-   and handling all the solutions of equations like <code>sin(x) == 0</code> and a general
-   singularity finder.</li>
-</ol>
-<p>You can look at the details in my
-<a href="https://github.com/sympy/sympy/wiki/GSoC-2014-Application-Harsh-Gupta:-Solvers">proposal</a></p>
-<p>A started working on the sets module in the community bonding period, basically
-writing a set difference class at <a href="https://github.com/sympy/sympy/pull/7462">this
-PR</a> , I try to get it merged by the
-end of this week.</p>
-<p>Set are a pretty general mathematical constructs, and you can solve a lot of
-hard problems if you could compute general set operations. The whole number
-theory can be defined in terms of sets. So, computing general set operations,
-e.g, intersection, unions is pretty hard problem too and we should not aim to
-do all them.  In a meeting with Matthew and Sergey we discussed that it would
-    be better if complete the part 2 first. It will give a general idea about
-    what capabilities of sets we need.  Also some sets problems can be reduced
-    to equations and vice versa.  <!-- Explain --></p>
-<p>I've started working on the univariate solvers <a href="https://github.com/sympy/sympy/pull/7523">at
-PR</a>.  My aim for this
-week will be.</p>
-<ol>
-<li>Completing the rational solvers</li>
-<li>Getting the open PR for the sets merged.</li>
-</ol>
-</div>
-    </div>
-    </article><article class="post h-entry post-text"><header><h1 class="post-title p-name"><a href="../sympy/gsoc-2014-with-sympy.html" class="u-url">GSoC 2014 with Sympy</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">Harsh Gupta</span></p>
-            <p class="dateline"><a href="../sympy/gsoc-2014-with-sympy.html" rel="bookmark"><time class="post-date published dt-published" datetime="2014-05-26T00:54:22+05:30" title="2014-05-26 00:54">2014-05-26 00:54</time></a></p>
-                <p class="commentline">
-        
-
-
-        </p>
-</div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p>Hi, I'm Harsh Gupta an undergrad student at IIT Kharagpur, I've been accepted
-this year for the Google Summer of Code program with Sympy.</p>
-<p><strong>So, What is a Google Summer of Code?</strong></p>
-<p>Google Summer of Code is a program by Google to promote opensource development.
-In this program Google pays handsome stipends to students to work for various opensource
-organisations. In the application phase the students have to write proposals to
-the organisations describing the projects they want to do
-and how do they fit for it. If the proposal is accepted the student is provided
-with a mentor and with the guidance of the mentor the student has to complete
-the project in the given timeline. You can look at my
-<a href="https://github.com/sympy/sympy/wiki/GSoC-2014-Application-Harsh-Gupta:-Solvers">proposal</a>.
-I proposed to work on improving the current equation solvers in
-Sympy. My mentors for the Project are <a href="https://github.com/mrocklin">Matthew Rocklin</a>
-and <a href="https://github.com/skirpichev">Sergey B Kipirchev</a>.</p>
-<p><strong>A word about Sympy.</strong></p>
-<p><a href="http://sympy.org/">Sympy</a> is a pure python library for symbolic computation. Symbolic
-computation is similar to the maths you do by hands and it differs from
-numerical computations. More about Symbolic and Numerical computation in
-some other post. Sympy has been created by hundreds of contributors starting from 2006.
-It has an awesome developer
-community and we encourage outsiders to contribute and get their hands dirty with
-the code. What do you need to start contributing? Some python skills and little
-patience. Download the <a href="https://github.com/sympy/sympy">latest development code</a>.
-Go through the <a href="https://github.com/sympy/sympy/wiki/Development-workflow">development workflow</a>.
-Find something to work on from the
-<a href="https://github.com/sympy/sympy/issues?labels=Easy+to+Fix&amp;milestone=&amp;page=1&amp;state=open">EasyToFix Issues</a>.
-Code it and send us a <a href="https://help.github.com/articles/using-pull-requests">pull request</a>. Happy Coding.</p>
-<p>I'll give a brief about the project aim and current state of work in the next post.
-I'm looking forward for a great summer with Sympy.</p>
-</div>
+    <p>This essay provides a facinating account of westners who leave their homes to
+fight in middle east, Afghanistan and other places to fight for "jihad". The
+highlights that for these people going and fighting in a war is pretty much
+like a personal fairly tail</p>
     </div>
     </article>
 </div>
@@ -324,8 +168,7 @@ I'm looking forward for a great summer with Sympy.</p>
 <li class="previous">
                 <a href="index-2.html" rel="prev">Newer posts</a>
             </li>
-        </ul></nav><script type="text/x-mathjax-config">
-        MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});</script><script src="../assets/js/mathjax.js"></script><footer id="footer" role="contentinfo"><p>
+        </ul></nav><footer id="footer"><p>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="../files/cc-by-sa4.png"></a>
 

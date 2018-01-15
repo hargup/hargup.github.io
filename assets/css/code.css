@@ -10,8 +10,10 @@ pre.code .n { color: #000000 } /* Name */
 pre.code .o { color: #ce5c00; font-weight: bold } /* Operator */
 pre.code .x { color: #000000 } /* Other */
 pre.code .p { color: #000000; font-weight: bold } /* Punctuation */
+pre.code .ch { color: #8f5902; font-style: italic } /* Comment.Hashbang */
 pre.code .cm { color: #8f5902; font-style: italic } /* Comment.Multiline */
 pre.code .cp { color: #8f5902; font-style: italic } /* Comment.Preproc */
+pre.code .cpf { color: #8f5902; font-style: italic } /* Comment.PreprocFile */
 pre.code .c1 { color: #8f5902; font-style: italic } /* Comment.Single */
 pre.code .cs { color: #8f5902; font-style: italic } /* Comment.Special */
 pre.code .gd { color: #a40000 } /* Generic.Deleted */
@@ -54,8 +56,10 @@ pre.code .mf { color: #0000cf; font-weight: bold } /* Literal.Number.Float */
 pre.code .mh { color: #0000cf; font-weight: bold } /* Literal.Number.Hex */
 pre.code .mi { color: #0000cf; font-weight: bold } /* Literal.Number.Integer */
 pre.code .mo { color: #0000cf; font-weight: bold } /* Literal.Number.Oct */
+pre.code .sa { color: #4e9a06 } /* Literal.String.Affix */
 pre.code .sb { color: #4e9a06 } /* Literal.String.Backtick */
 pre.code .sc { color: #4e9a06 } /* Literal.String.Char */
+pre.code .dl { color: #4e9a06 } /* Literal.String.Delimiter */
 pre.code .sd { color: #8f5902; font-style: italic } /* Literal.String.Doc */
 pre.code .s2 { color: #4e9a06 } /* Literal.String.Double */
 pre.code .se { color: #4e9a06 } /* Literal.String.Escape */
@@ -66,8 +70,10 @@ pre.code .sr { color: #4e9a06 } /* Literal.String.Regex */
 pre.code .s1 { color: #4e9a06 } /* Literal.String.Single */
 pre.code .ss { color: #4e9a06 } /* Literal.String.Symbol */
 pre.code .bp { color: #3465a4 } /* Name.Builtin.Pseudo */
+pre.code .fm { color: #000000 } /* Name.Function.Magic */
 pre.code .vc { color: #000000 } /* Name.Variable.Class */
 pre.code .vg { color: #000000 } /* Name.Variable.Global */
 pre.code .vi { color: #000000 } /* Name.Variable.Instance */
+pre.code .vm { color: #000000 } /* Name.Variable.Magic */
 pre.code .il { color: #0000cf; font-weight: bold } /* Literal.Number.Integer.Long */
 table.codetable { width: 100%;} td.linenos {text-align: right; width: 4em;}

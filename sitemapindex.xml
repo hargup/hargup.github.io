@@ -1,31 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>http://hargup.in/categories/gsoc.xml</loc>
-  <lastmod>2016-05-04</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://hargup.in/categories/mathjax.xml</loc>
-  <lastmod>2016-05-04</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://hargup.in/categories/sympy.xml</loc>
-  <lastmod>2016-05-05</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://hargup.in/categories/webnotes.xml</loc>
-  <lastmod>2017-02-27</lastmod>
+  <lastmod>2018-01-15T07:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://hargup.in/rss.xml</loc>
-  <lastmod>2017-07-30</lastmod>
+  <lastmod>2018-01-15T07:10:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://hargup.in/sitemap.xml</loc>
-  <lastmod>2017-07-30</lastmod>
+  <lastmod>2018-01-15T07:11:00Z</lastmod>
  </sitemap>
 </sitemapindex>

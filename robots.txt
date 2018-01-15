@@ -1,2 +1,4 @@
 Sitemap: http://hargup.in/sitemapindex.xml
 
+User-Agent: *
+Host: hargup.in

@@ -2,14 +2,13 @@
 .. type: text
 
 
-I spend way too much time on Internet. And in that, a lot of time is spend on
-reading blogs, news and articles. I've learned a lot of interesting and
-sometimes important things this way but I've realized that most of the time I'm
-only amusing myself through this stream of information flowing in front of my
-eyes. In the spirit of Niel Postman I want to be educated not just entertained.
-So I've decided for whatever blog or new article I read over the internet I'll
-write a two line note about it. I'm hoping that this will slow me down and will
-force me to think about the information I consume.
+These are semi public notes on things I read online. Sometime in 2015-2016 I
+was writing these notes regularly and then I stopped. I hope to start writing
+these notes again sometime. These notes are "semi-public" in the sense that
+there is no intended audience for these notes, these notes might might contain
+unexaplained context, typos or grammatical mistakes, or something even more
+wrong. Read these on your own risk :)
+
 
 .. post-list::
     :tags: webnotes
