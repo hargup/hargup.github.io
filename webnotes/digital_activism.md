@@ -1,3 +1,8 @@
+----
+url:
+date: 1st Jan 1970
+----
+
 * Climbing mount everest.
 * Think Together, keep going together through deferences.
 * Pain stacking

@@ -1,3 +1,8 @@
+---
+url:
+date: 1st Jan 1970
+---
+
 Beware  of  the  person  who gives  advice,  telling you  that  a  certain
 action on your part is “good for you” while it is also good for him, while the
 harm to you doesn't directly affect him .
@@ -59,7 +64,7 @@ faith norms.
     efforts at this should be solidifying current knowledge rather than
     absorbing more.
 
-* Intellectual  and  ethical  freedom  requires the absence  of  the  skin  of  others in one’s gam One-dimensional stochastic process always revisits.
+* Intellectual  and  ethical  freedom  requires the absence  of  the  skin  of  others in one’s game One-dimensional stochastic process always revisits.
 
 
 # How to own people
@@ -71,7 +76,7 @@ faith norms.
 * Compared to contractors, employees have a significant skin in the game.
     * By being employees, the employees signal certain kind of domestication.
 
-* Today a person is employeed by the idea that (s)he needs t obe employable.
+* Today a person is employeed by the idea that (s)he needs to be employable.
 
 * The best slave is someone you overpay and who know it.
 
