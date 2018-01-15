@@ -132,7 +132,7 @@ POSTS = (
 # ("posts/*.rst", "blog", "post.tmpl"),
 # ("posts/*.md", "blog", "post.tmpl"),
 ("webnotes/*.rst", "webnotes", "post.tmpl"),
-("webnotes/*.md", "webnotes", "post.tmpl"),
+# ("webnotes/*.md", "webnotes", "post.tmpl"),
 ("sympy/*.rst", "sympy", "post.tmpl"),
 ("sympy/*.md", "sympy", "post.tmpl"),
 )

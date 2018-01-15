@@ -6,6 +6,15 @@
 
    -- (Don't remember who)
 
+
+.. epigraph::
+
+   Life is very short and anxious for those who forget the past, neglect the
+   present and fear the future.
+
+   -- Seneca, On Shortness of Life
+
+
 .. epigraph::
 
     All models are wrong, but some are harmful.
@@ -18,12 +27,6 @@
 
     --  Reinhard Werner, `The focus on bibliometrics makes papers less useful <http://www.nature.com/news/the-focus-on-bibliometrics-makes-papers-less-useful-1.16706>`_
 
-.. epigraph::
-
-   Life is very short and anxious for those who forget the past, neglect the
-   present and fear the future.
-
-   -- Seneca, On Shortness of Life
 
 .. epigraph::
 
