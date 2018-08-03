@@ -31,19 +31,23 @@
  </url>
  <url>
   <loc>http://hargup.in/archive.html</loc>
-  <lastmod>2018-01-15T07:10:00Z</lastmod>
+  <lastmod>2018-08-03T19:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/categories/</loc>
-  <lastmod>2018-01-15T07:10:00Z</lastmod>
+  <lastmod>2018-08-03T19:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://hargup.in/categories/thought.html</loc>
+  <lastmod>2018-08-03T19:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/categories/webnotes.html</loc>
-  <lastmod>2018-01-15T07:10:00Z</lastmod>
+  <lastmod>2018-08-03T19:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/quotes.html</loc>
-  <lastmod>2018-01-15T07:10:00Z</lastmod>
+  <lastmod>2018-08-03T19:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/talks.html</loc>
@@ -51,11 +55,11 @@
  </url>
  <url>
   <loc>http://hargup.in/webnotes.html</loc>
-  <lastmod>2018-01-15T07:11:00Z</lastmod>
+  <lastmod>2018-08-03T19:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/webnotes/</loc>
-  <lastmod>2018-01-15T07:10:00Z</lastmod>
+  <lastmod>2018-08-03T19:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/webnotes/a_non_programmers_apology.html</loc>
@@ -83,7 +87,7 @@
  </url>
  <url>
   <loc>http://hargup.in/webnotes/currents_of_fear.html</loc>
-  <lastmod>2018-01-15T07:10:00Z</lastmod>
+  <lastmod>2018-08-03T19:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/webnotes/drive_by_commenting.html</loc>
@@ -131,7 +135,7 @@
  </url>
  <url>
   <loc>http://hargup.in/webnotes/index-7.html</loc>
-  <lastmod>2018-01-15T07:10:00Z</lastmod>
+  <lastmod>2018-08-03T19:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/webnotes/k_naan_censoring_myself_for_sucess.html</loc>
@@ -180,6 +184,10 @@
  <url>
   <loc>http://hargup.in/webnotes/rich_vs_poor_upbringing.html</loc>
   <lastmod>2018-01-15T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://hargup.in/webnotes/stimulated_thinking.html</loc>
+  <lastmod>2018-08-03T19:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/webnotes/streetlight_effect.html</loc>

@@ -6,15 +6,19 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://hargup.in/categories/thought.xml</loc>
+  <lastmod>2018-08-03T19:15:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://hargup.in/categories/webnotes.xml</loc>
-  <lastmod>2018-01-15T07:10:00Z</lastmod>
+  <lastmod>2018-08-03T19:15:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://hargup.in/rss.xml</loc>
-  <lastmod>2018-01-15T07:10:00Z</lastmod>
+  <lastmod>2018-08-03T19:15:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://hargup.in/sitemap.xml</loc>
-  <lastmod>2018-01-15T07:11:00Z</lastmod>
+  <lastmod>2018-08-03T19:15:00Z</lastmod>
  </sitemap>
 </sitemapindex>
