@@ -2,6 +2,19 @@
 
 .. epigraph::
 
+    You should decide whether something makes sense by its content, not by the letters after the name of the person who says it. And the idea that you're supposed to have special qualifications to talk about things that are common sense, that's just another scam.
+
+    -- Noam Chomsky (not to steal authority from him)
+
+.. epigraph::
+
+    Wisdom isn’t correlated with knowledge, it’s correlated with being in touch
+    with reality.
+
+    -- Wait But Why
+
+.. epigraph::
+
    Adults don't ask for permission, they do whatever they have to do.
 
    -- (Don't remember who)
