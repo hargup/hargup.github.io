@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://hargup.in/</loc>
-  <lastmod>2018-01-15T07:10:00Z</lastmod>
+  <lastmod>2018-08-03T19:17:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/1990/</loc>
@@ -31,7 +31,7 @@
  </url>
  <url>
   <loc>http://hargup.in/archive.html</loc>
-  <lastmod>2018-08-03T19:15:00Z</lastmod>
+  <lastmod>2018-08-04T07:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/categories/</loc>
@@ -43,7 +43,7 @@
  </url>
  <url>
   <loc>http://hargup.in/categories/webnotes.html</loc>
-  <lastmod>2018-08-03T19:15:00Z</lastmod>
+  <lastmod>2018-08-04T07:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/quotes.html</loc>
@@ -55,11 +55,11 @@
  </url>
  <url>
   <loc>http://hargup.in/webnotes.html</loc>
-  <lastmod>2018-08-03T19:15:00Z</lastmod>
+  <lastmod>2018-08-04T07:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/webnotes/</loc>
-  <lastmod>2018-08-03T19:15:00Z</lastmod>
+  <lastmod>2018-08-04T07:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/webnotes/a_non_programmers_apology.html</loc>
@@ -135,7 +135,7 @@
  </url>
  <url>
   <loc>http://hargup.in/webnotes/index-7.html</loc>
-  <lastmod>2018-08-03T19:15:00Z</lastmod>
+  <lastmod>2018-08-04T07:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/webnotes/k_naan_censoring_myself_for_sucess.html</loc>
@@ -160,6 +160,10 @@
  <url>
   <loc>http://hargup.in/webnotes/mathematical_alchemy_and_wrestling.html</loc>
   <lastmod>2018-01-15T07:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://hargup.in/webnotes/ml_isn_t_kaggle_competition.html</loc>
+  <lastmod>2018-08-04T07:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/webnotes/nepotism_in_america.html</loc>
@@ -187,7 +191,7 @@
  </url>
  <url>
   <loc>http://hargup.in/webnotes/stimulated_thinking.html</loc>
-  <lastmod>2018-08-03T19:15:00Z</lastmod>
+  <lastmod>2018-08-04T07:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://hargup.in/webnotes/streetlight_effect.html</loc>

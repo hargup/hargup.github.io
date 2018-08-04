@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Harsh Gupta (Posts about webnotes)</title><link>http://hargup.in/</link><description></description><atom:link href="http://hargup.in/categories/webnotes.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 03 Aug 2018 19:15:34 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>"On Thinking and Stimulated Thinking"</title><link>http://hargup.in/webnotes/stimulated_thinking.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;There is a distinction between two modes of working, one is the "explore
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Harsh Gupta (Posts about webnotes)</title><link>http://hargup.in/</link><description></description><atom:link href="http://hargup.in/categories/webnotes.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 04 Aug 2018 07:41:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Machine Learning isn't Kaggle Competition</title><link>http://hargup.in/webnotes/ml_isn_t_kaggle_competition.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;Kaggle is a machine learning contest platform, where the participants are given
+a machine learning problem, a training dataset, an evaluation criterion and
+they have to build the best model. But, while doing machine learning in
+production these things comes much later, you have to first define the Business
+Problem very clearly, determine if it is even a right ML problem or not. Get
+the right data, clean it up, determine the right metrics, do a lot of
+engineering part to put it in product and keep it running. The Kaggle
+Competition part is much smaller and much less significant than people would
+imagine.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/ml_isn_t_kaggle_competition.html</guid><pubDate>Sat, 04 Aug 2018 07:30:53 GMT</pubDate></item><item><title>"On Thinking and Stimulated Thinking"</title><link>http://hargup.in/webnotes/stimulated_thinking.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;div&gt;&lt;p&gt;There is a distinction between two modes of working, one is the "explore
 mode", you need to put in a lot of effort, and be concious while you are doing
 something. This which occurs while you are learning something, say learning to
 drive a car or bike. Other mode is the "habit mode" where you are able to do
@@ -146,9 +154,4 @@ pure programming jobs, or else it will become harder and harded to come out of
 comfort zone. Take computational social science or ethics or civics intern and
 more policy and social issue and please keep writing and share your writings.
 You'll be misrepresented/misunderstood a few times, but its okay thats the way
-you'll learn.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/a_non_programmers_apology.html</guid><pubDate>Wed, 09 Dec 2015 20:56:18 GMT</pubDate></item><item><title>The Surprising Problem of Too Much Talent</title><link>http://hargup.in/webnotes/too_much_talent.html</link><dc:creator>Harsh Gupta</dc:creator><description>&lt;p&gt;The study from some sports suggests that add more talented people decreases the
-overall team performance probably due to decreased coversion in the team. I
-guess the problem is more because of hiring assholes rather than hiring talent.
-People skills and physical/sports/domain ability often don't come together.
-And as suggested by _&amp;lt;stegasourous strategy&amp;gt;, in some areas assholery appears
-more clever (say talented).&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/too_much_talent.html</guid><pubDate>Tue, 08 Dec 2015 10:42:55 GMT</pubDate></item></channel></rss>
+you'll learn.&lt;/p&gt;</description><category>webnotes</category><guid>http://hargup.in/webnotes/a_non_programmers_apology.html</guid><pubDate>Wed, 09 Dec 2015 20:56:18 GMT</pubDate></item></channel></rss>
