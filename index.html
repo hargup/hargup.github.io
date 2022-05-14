@@ -1,109 +1,684 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Harsh Gupta, bio</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Simple minimalist theme">
-<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
 
-<base href="">
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
 
-<title>Harsh Gupta</title>
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
 
-<meta name="generator" content="Hugo 0.16" />
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
 
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
 
-<link href="#ZgotmplZ" rel="alternate" type="application/rss+xml" title="Harsh Gupta" />
-<link href="#ZgotmplZ" rel="feed" type="application/rss+xml" title="Harsh Gupta" />
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
 
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
 
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
 
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/main.css">
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
 
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
 
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
 
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
+mark {
+	background-color: transparent;
+}
 
-</head>
-<body lang="en-US">
-  <div class="container">
+.indented {
+	padding-left: 1.5em;
+}
 
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
 
-    <header class="row text-center header">
-      <img src="assets/img/headshot.jpg" alt="Author Image" class="img-circle text-center headshot">
-      <h1 class="author">Harsh Gupta</h1>
-    </header>
+img {
+	max-width: 100%;
+}
 
-    <section id="info-pane" class="row text-center info">
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
 
-      <h3 class="intro">Building Awesome Search Experiences at <a href="https://neera.ai">@neera.ai</a> | Chai Enthusiast</h3>
+@page {
+	margin: 1in;
+}
 
-    </section>
+.collection-content {
+	font-size: 0.875rem;
+}
 
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
 
-    <section id="social-pane" class="row text-center social">
+.column {
+	padding: 0 1em;
+}
 
-      <a href="https://twitter.com/hargup13"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+.column:first-child {
+	padding-left: 0;
+}
 
-      <a href="https://github.com/hargup"><i class="fa fa-github" aria-hidden="true"></i></a>
+.column:last-child {
+	padding-right: 0;
+}
 
-      <a href="https://linkedin.com/in/hargup"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
 
-      <a href="https://medium.com/@hargup"><i class="fa fa-medium" aria-hidden="true"></i></a>
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
 
-      <a href="mailto:mail AT hargup DOT in"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
 
-    </section>
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
 
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
 
-    <section id="main-menu-pane" class="row text-center main-menu">
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
 
+table {
+	border-left: none;
+	border-right: none;
+}
 
-      <h4><a class="menu-item" href="https://user.fm/files/v2-92fd7734cd3c4d3148ef157701b4ee6d/resume_harsh_gupta.pdf">/resume</a></h4>
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
 
-      <h4><a class="menu-item" href="https://hargup.substack.com/">/blog</a></h4>
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
 
-    </section>
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
 
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
 
+ul > li {
+	list-style: disc;
+}
 
-<footer class="row text-center footer">
-  <hr />
+ul.to-do-list {
+	text-indent: -1.7em;
+}
 
-  <h6 class="text-center powered">Theme inspired by <a href="https://github.com/shenoybr/hugo-goa">Hugo-Goa</a>.</h6>
+ul.to-do-list > li {
+	list-style: none;
+}
 
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
 
-</footer>
+ul.toggle > li {
+	list-style: none;
+}
 
-</div>
+ul {
+	padding-inline-start: 1.7em;
+}
 
+ul > li {
+	padding-left: 0.1em;
+}
 
+ol {
+	padding-inline-start: 1.6em;
+}
 
+ol > li {
+	padding-left: 0.2em;
+}
 
+.mono ol {
+	padding-inline-start: 2em;
+}
 
+.mono ol > li {
+	text-indent: -0.4em;
+}
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'XYZ', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
-</body>
-</html>
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="bb73255d-3c91-43c1-91ca-3aadb058f7fa" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/nasa_space_shuttle_columbia.jpg" style="object-position:center 38.28%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="Harsh%20Gupta,%20bio%20934faeb61e1b4aeb93f5245f8529c5d4/Profile_Photo_Mug_Shot.jpg"/></div><h1 class="page-title">Harsh Gupta, bio</h1></header><div class="page-body"><h2 id="735f1867-f0f8-4b8f-8f01-9dc8812411c4" class="">A living document about me 🙂</h2><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="82c16b09-268b-44fe-954c-286daf763c54"><div style="font-size:1.5em"><span class="icon">👋🏻</span></div><div style="width:100%">Hi I’m Harsh Gupta
+
+Currently building awesome search experiences at <a href="https://felvin.com/">Felvin</a> 🚀<p id="e9b24a08-f208-4771-88f7-399ef7c4759b" class=""><strong>Highlights:</strong></p><ul id="03c0a740-144f-4dff-bb1a-5f552b46b049" class="bulleted-list"><li style="list-style-type:disc">CEO/Founder of <a href="http://felvin.com">felvin.com</a></li></ul><ul id="9e355cfe-c467-4d92-b89c-8c5cd2dd11b5" class="bulleted-list"><li style="list-style-type:disc">Backend Engineer and Chatbots engineer at <a href="https://www.helpshift.com/">HelpShift</a>, a CRM software with 1B+ SDK installs</li></ul><ul id="661753b0-1431-4f0a-b15b-2ccdcf11db78" class="bulleted-list"><li style="list-style-type:disc">Studied Mathematics and Computer Science at IIT Kharagpur</li></ul><ul id="42f1cc2f-bff0-4c9a-9936-aa85e6e94717" class="bulleted-list"><li style="list-style-type:disc">Currently staying in NYC / nomad life</li></ul><p id="5efd58d9-85e7-46e8-8f35-5e2560d7636d" class=""><strong>Contact:</strong>
+Email: harsh@felvin.com
+Twitter: <a href="https://twitter.com/hargup13">@hargup13</a>
+LinkedIn: <a href="https://www.linkedin.com/in/hargup/">@hargup</a>
+Github: <a href="https://github.com/hargup/">@hargup</a></p></div></figure><p id="0bdd2ffe-38fb-4c12-9347-0e96e05a0d9c" class="">
+</p><p id="c5a1e83a-9705-421b-8df1-c23ab653031d" class=""><strong>👋 About Me</strong></p><ul id="53f3b4eb-f50c-4d4d-898d-6261f9bd2e31" class="bulleted-list"><li style="list-style-type:disc">🍇🇮🇳 Raised in Nashik, India. The wine capital of India. </li></ul><ul id="a56fbe39-df50-45a7-8383-fa28e7fe8cc6" class="bulleted-list"><li style="list-style-type:disc">📜 Studied Mathematics and computer science at IIT Kharagpur. Did ton of open source, was a core contributor to SymPy a software which helpful in finding gravitational waves, and they won Nobel Prize in 2017 🌊</li></ul><ul id="a10a4a51-9643-4f75-a9a9-3064421d3e31" class="bulleted-list"><li style="list-style-type:disc">🏛 My friends and I built MetaKGP (<a href="https://wiki.metakgp.org/">https://wiki.metakgp.org</a>) which allows IIT Kharagpur students to find all the information they want about campus quickly. The wiki has 4K content pages and more than a million unique page views over the last 5 years. Our community slack is 1300 member strong 💪🏻</li></ul><ul id="58f690a9-035e-4ecf-ba41-12f9d83a5ac4" class="bulleted-list"><li style="list-style-type:disc">🌆 I love communities and a sense of belonging. I love it when a bunch of people come together to build something awesome! That’s what attracted me to open source initially, and that’s what we aim to do at Felvin.</li></ul><p id="a7195255-fc02-47dd-afb0-f02c1708c798" class="">
+</p><h3 id="cf222e1f-7de0-4a28-87de-d8ef8407f2c0" class=""><strong>Past Experience</strong></h3><p id="e5c28d86-87bf-4ee7-b91a-38dc4c4ce854" class="">Check my <a href="https://drive.google.com/file/d/1-ABj2VE3hvgNEn5qFJXaS3jTht2Jnz-d/view?usp=sharing">resume for more details</a>.</p><ul id="1085fde3-31d1-46f7-a989-9fefdf2620ac" class="bulleted-list"><li style="list-style-type:disc"><strong>Felvin: </strong>I am building an running this company from scratch, and learned more in a year than I could have learned in a decade. Engineering, Legal, Venture Capital, Design, Accounting, Taxation, Marketing, so many things needs to come together to a business work! <a href="https://hargup.substack.com/p/starting-from-the-finish-line?s=w">And things are just starting to come together, not gonna stop till we make it a 100B+ business</a>.</li></ul><ul id="69dc135a-67f2-464f-a520-f9f1cd783713" class="bulleted-list"><li style="list-style-type:disc"><strong>HelpShift:</strong> Senior Software Engineer, saw massive scale of engineering operation, with 1B+ SDK installs, there just so many things which can go wrong in the system, and they do. </li></ul><ul id="38e3f0e5-53d7-4dc9-9ff0-6f0360ba3a7a" class="bulleted-list"><li style="list-style-type:disc"><strong>JP Morgan &amp; Chase: </strong>Go to see the insights of a massive institution. Learned how they behave and why they behave the way they do, reason, management is hard.</li></ul><ul id="0a98773d-af32-4982-8fab-2d70239f220c" class="bulleted-list"><li style="list-style-type:disc"><strong>Anaconda Inc:</strong> Even though it was a internship, saw an organization monetizing open source works<strong>.</strong></li></ul><ul id="85d925df-9d8e-4851-8d60-b154eac12306" class="bulleted-list"><li style="list-style-type:disc"><strong>Center for Internet and Society, India: </strong>After doing ton of software internships, I decided to work with a non profit in the summer of my final year of undergrad. I loved the experience, 
+and at the end of the intership I asked the director of the org for a full-time position.
+
+”Every year lot of incredibly talented and young folks come to me and say they want to work with me because they want to make an impact. I tell them, if you want to make an impact, go work in the industry, everything you see around you from, from your mobile phone to the clothes you wear, everything was made by a for profit.”
+</li></ul><h3 id="b0b6730a-2b28-455f-b042-e1af61caaab0" class=""><strong>Abilities</strong></h3><p id="bd4ff97b-07ef-48c3-8c35-56ba3f36f8f9" class="">Courage: I dare to go on a path which others don’t and I am willing to be misunderstood for a long time:</p><ul id="83dbd8d3-30cb-4745-8609-cd0ccc938f19" class="bulleted-list"><li style="list-style-type:disc">Doing a startup when I could be working at FAANG and earning 300K</li></ul><ul id="deffa601-20e2-43ab-a39a-8b1d17433a20" class="bulleted-list"><li style="list-style-type:disc">Doing a “search engine” startup, when it wasn’t obvious there is even a market for this.</li></ul><ul id="1488bf81-e143-45bf-9d8f-530a6335016f" class="bulleted-list"><li style="list-style-type:disc">Moving to the US when I could have built the business from India.</li></ul><ul id="cd8b5267-d2a3-451b-af0c-a5f1b25f763f" class="bulleted-list"><li style="list-style-type:disc">Did internship at a non profit, when all friends were doing industry interenships</li></ul><ul id="c7484e25-f4ad-4020-a1c8-6964de24af46" class="bulleted-list"><li style="list-style-type:disc">Took law courses as additionals when I could have gone a little bit deeper in compilers. (I did 4 semester long law courses during my engineering undergrad, and at a point was considering getting a law degree)</li></ul><p id="065c65b7-1573-4588-ab62-39e45b8ce4c0" class="">Building: I can take any idea from 0 to 1</p><ul id="d7786149-5a2d-402f-9060-c87726895487" class="bulleted-list"><li style="list-style-type:disc">I know frontend, backend, datascience, and have been increasingly becoming better at design, product, marketing and hiring as well.</li></ul><p id="7bbfd2bb-2d53-4616-9366-e37f2f0b4ea7" class=""><a href="https://hargup.substack.com/p/sometimes-you-see-forest-for-trees?s=w">Strategic and big picture thinking:</a></p><ul id="102e56d1-4241-4587-8226-467b6aaab861" class="bulleted-list"><li style="list-style-type:disc">I like to believe I can see patterns and trends before they become main stream. My diverse background allows me to see things which others don’t, and I am courageous enough to take a bet on it.</li></ul><p id="929d5fd7-8f33-41e8-a49c-fb8a84f73911" class="">
+</p><figure id="934faeb6-1e1b-4aeb-93f5-245f8529c5d4" class="image"><a href="Harsh%20Gupta,%20bio%20934faeb61e1b4aeb93f5245f8529c5d4/42857968325_ca9ea03216_o.jpg"><img style="width:4895px" src="Harsh%20Gupta,%20bio%20934faeb61e1b4aeb93f5245f8529c5d4/42857968325_ca9ea03216_o.jpg"/></a></figure><h3 id="eefbb486-dcff-4900-aa86-41ad56b90e1e" class="">My Communities</h3><ul id="b8132444-459c-4c4b-a8dc-b5e6623931aa" class="bulleted-list"><li style="list-style-type:disc">⛴ OnDeck Founder Fellowship</li></ul><ul id="9bb8df77-65ca-431f-bb32-ade3f39c41f8" class="bulleted-list"><li style="list-style-type:disc">📜 Indian Institute of Technology</li></ul><ul id="de3792d7-93d1-4e88-915b-2a41ebb42338" class="bulleted-list"><li style="list-style-type:disc">🧠 Lenny Rachitsky’s PM Slack</li></ul><ul id="1f6910b3-8b16-4ef9-9bad-587381710213" class="bulleted-list"><li style="list-style-type:disc">☕️ Founder’s Cafe</li></ul><h3 id="f62c2d2c-ac98-4b64-b10e-d96135224eee" class="">Hobbies</h3><ul id="62111796-5486-43c1-a68e-814cc9948e59" class="bulleted-list"><li style="list-style-type:disc">🚶🏻Walking</li></ul><ul id="85665b2c-a629-418f-b196-b6591539eac8" class="bulleted-list"><li style="list-style-type:disc">💻 Coding</li></ul><ul id="b09fc005-7ce1-4314-af87-c60f96ff094f" class="bulleted-list"><li style="list-style-type:disc">🤓 Reading</li></ul><ul id="80714008-71e6-4fd1-a4a4-fdeec8792ba3" class="bulleted-list"><li style="list-style-type:disc">☯️ Getting into Tai-Chi these days</li></ul><ul id="9c5f7e49-5313-41cf-9c9d-fe9b6741886f" class="bulleted-list"><li style="list-style-type:disc">✈️ Travelling, want to visit all top 50 cities of the world before I turn 50</li></ul><div id="47ed26bf-864b-4b75-ac73-3f3325ad1246" class="column-list"><div id="25048625-ee99-4eb5-b1bc-07ae4d5bbb7c" style="width:49.99999999999999%" class="column"><figure id="78dd476a-9cb3-405d-b79d-f5a8e1b09952" class="image"><a href="Harsh%20Gupta,%20bio%20934faeb61e1b4aeb93f5245f8529c5d4/IMG_0761.jpg"><img style="width:480px" src="Harsh%20Gupta,%20bio%20934faeb61e1b4aeb93f5245f8529c5d4/IMG_0761.jpg"/></a></figure></div><div id="6fb766cd-47be-4cac-9fc9-9f4a002e6982" style="width:49.99999999999999%" class="column"><figure id="cf3bb165-cbcb-4571-b462-00a96e27fe6c" class="image"><a href="Harsh%20Gupta,%20bio%20934faeb61e1b4aeb93f5245f8529c5d4/PXL_20210911_130834713.jpg"><img style="width:4032px" src="Harsh%20Gupta,%20bio%20934faeb61e1b4aeb93f5245f8529c5d4/PXL_20210911_130834713.jpg"/></a></figure></div></div><figure id="9f796d84-4170-4873-968e-71e0ecf058fe" class="image"><a href="Harsh%20Gupta,%20bio%20934faeb61e1b4aeb93f5245f8529c5d4/IMG_20200124_224337.jpg"><img style="width:480px" src="Harsh%20Gupta,%20bio%20934faeb61e1b4aeb93f5245f8529c5d4/IMG_20200124_224337.jpg"/></a></figure><h3 id="cf09965e-5825-4215-acc0-576d283c3a74" class="">Asks</h3><ul id="bd6bb35c-7429-4a16-8390-c978eb428d20" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Feedback</strong></em> on anything I’m working on</li></ul><ul id="1fdb2a08-7f9d-4b41-827a-4c1d655c343a" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Collaborators</strong></em>: If you are a designer, engineer, PM or markeeter thinking about the future of how we find information online, ping me, probably we can do something together.</li></ul><h3 id="30634d77-e384-40e9-a22e-85d4397946f0" class="">Offers</h3><ul id="3a8873af-137d-421d-8b59-177a63b1cfbb" class="bulleted-list"><li style="list-style-type:disc">I can help you with your technical architecture, choice of tech stack or general brain storming</li></ul><ul id="3125122e-8ecc-40d3-a145-946ec91a7b2b" class="bulleted-list"><li style="list-style-type:disc">If you are applying for tech jobs, I can review your resume so that you have a higher chances of getting selected.</li></ul><ul id="6db87396-e42d-4397-8a41-6737de295167" class="bulleted-list"><li style="list-style-type:disc">I can review your pitch deck.</li></ul><h3 id="938fa971-a566-483f-8da0-43b7d3901816" class="">Gratitude 🙏🏻</h3><ul id="5ec67e9f-72e7-4c78-8ec2-38ebb7b830b4" class="bulleted-list"><li style="list-style-type:disc">People have been incredibly kind to me. Without their generosity, I would be no where.</li></ul><ul id="1a898f8b-397e-437a-bd11-0aff39d67763" class="bulleted-list"><li style="list-style-type:disc">Thank you America 🇺🇸 for being welcoming to millions of immigrants like me. There is hardly any other place in the world where an outsider with no roots can come and make it big. </li></ul><ul id="c4dea2cc-dfd3-4c4c-8b3a-e4290168b5df" class="bulleted-list"><li style="list-style-type:disc">Thank you India 🇮🇳, wherever I go, will remain <em>dil se desi </em>(Indian at Heart).</li></ul><ul id="4cb72e7a-cee3-4f94-9771-c54429e90b91" class="bulleted-list"><li style="list-style-type:disc">Thank you all my friends who have given me place in their homes to stay, and who never let me feel that I am away from home.</li></ul><ul id="a17194b1-e5f8-413e-8da3-9be784b4eb00" class="bulleted-list"><li style="list-style-type:disc">Thank you to my family for bearing all my craziness, my dear dad, I know told you I’ll be back from US in a 2 month, I’ll be back soon 🙈</li></ul><ul id="fbcbf4dd-53b5-4dee-bbd5-befc974dca38" class="bulleted-list"><li style="list-style-type:disc">Thank you all our investors for believing in me and my company. 📈</li></ul><ul id="63b66f11-5667-4a14-8471-d147b5e903d4" class="bulleted-list"><li style="list-style-type:disc">Thank you to the IIT community, you are awesome! Time to build our tech giant, instead of joining other tech giants as CEOs.</li></ul><ul id="131d9ac3-a9f4-401b-8a0e-a44a533fc447" class="bulleted-list"><li style="list-style-type:disc">Thank you <a href="https://www.beondeck.com/">OnDeck</a>, you have gathered an incredible community, without you, I would have been an outsider, even after being phsycially located in the US.</li></ul><p id="7141d53a-4f0b-495f-9465-f6eabfe7ca6b" class="">h/t <a href="http://victorhunt.xyz/">Victor Hunt</a> for inspiration on this.</p><p id="e59c39a0-9df1-4584-82c1-a84776faee14" class="">
+</p><figure id="b80a416b-46c4-471a-970b-a6b254406a38" class="image"><a href="Harsh%20Gupta,%20bio%20934faeb61e1b4aeb93f5245f8529c5d4/IMG_0037.jpg"><img style="width:2980px" src="Harsh%20Gupta,%20bio%20934faeb61e1b4aeb93f5245f8529c5d4/IMG_0037.jpg"/></a><figcaption>Friends don’t let friends miss Diwali dinner ✨</figcaption></figure><figure id="45197d0e-04f1-492e-a429-7efccb533b12" class="image"><a href="Harsh%20Gupta,%20bio%20934faeb61e1b4aeb93f5245f8529c5d4/IMG_0729.jpg"><img style="width:3752px" src="Harsh%20Gupta,%20bio%20934faeb61e1b4aeb93f5245f8529c5d4/IMG_0729.jpg"/></a><figcaption>Someone asked me are you a skyscraper person or a landscape person, you know my answer 😝</figcaption></figure><p id="212de1f1-f748-4dd5-88c9-349d104e6a40" class="">
+</p></div></article></body></html>
